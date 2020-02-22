@@ -1,0 +1,61 @@
+.header {
+  margin: 0 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 92%;
+}
+
+.header .select i-icon .i-iconLog {
+  margin-left: 10rpx;
+}
+
+.header .select {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 15%;
+  width: 200rpx;
+  font-size: 30rpx;
+}
+
+.header .addressLess {
+  position: fixed;
+  top: 38rpx;
+  margin-left: 15rpx;
+  font-size: 20rpx;
+  color: #bbbec4;
+}
+
+image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50rpx;
+}
+
+.header van-search .search {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  right: 11.5%;
+  width: 60%;
+}
+
+.header van-search .search .search2 {
+  padding-left: 30rpx;
+  border: 1rpx solid #bbbec4;
+  border-radius: 40rpx;
+}
+
+.header i-icon .i-iconLog2 {
+  position: fixed;
+  right: 4%;
+  top: 15rpx;
+  color: #80848f
+}
+
+.header i-badge .i-badgeLog {
+  position: fixed;
+  right: 5%;
+  top: 25rpx
+}

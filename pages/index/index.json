@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "shop-search": "../../dist/header/search/search",
+    "i-button": "../../dist/iview/button/index"
+  },
+  "navigationBarTitleText": "趣便购买菜"
+}

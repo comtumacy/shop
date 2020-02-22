@@ -1,0 +1,4 @@
+<!-- 步骤栏组价 -->
+<view class="i-class i-steps">
+    <slot></slot>
+</view>

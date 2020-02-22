@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "i-icon": "../../iview/icon/index",
+    "i-badge": "../../iview/badge/index",
+    "i-row": "../../iview/row/index",
+    "i-col": "../../iview/col/index",
+    "van-search": "../../vant/search/index"
+  }
+}
