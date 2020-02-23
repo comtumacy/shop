@@ -1,5 +1,5 @@
 <!--pages/index.wxml-->
 <view>
   <shop-search bind:confirm="bindsearch"></shop-search>
-  <!-- <i-button bind:getuserinfo="test">默认按钮</i-button> -->
+  <i-button bind:getuserinfo="test">默认按钮</i-button>
 </view>
