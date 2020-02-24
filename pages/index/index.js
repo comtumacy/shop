@@ -7,11 +7,16 @@ Page({
   data: {
 
   },
-  bindsearch: (res) => {
-    console.log(2)
+  // 返回搜索框输入内容
+  onSearch: (res) => {
     console.log(res)
-  }, 
-  test: (res) => {
+  },
+  // 返回分类组件的选择内容
+  onChange: (res) => {
+    console.log(res)
+  },
+  // 返回分类组件的按钮事件
+  clickClass: (res) => {
     console.log(res)
   },
   /**

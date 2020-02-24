@@ -15,7 +15,7 @@ Component({
     },
     placeholder: {
       type: String,
-      value: "小主，请输入关键字搜索"
+      value: "请输入关键字搜索"
     }
   },
 
@@ -24,11 +24,5 @@ Component({
   },
 
   method: {
-    onSearch() {
-      console.log(1)
-      console.log(this.data.value)
-      // if (this.data.value) return false;
-      // this.triggerEvent('bindsearch', this.data.value);
-    },
   }
 })

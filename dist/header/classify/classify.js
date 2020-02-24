@@ -1,3 +1,0 @@
-Component({
-  externalClasses: ['sp-class'],
-})

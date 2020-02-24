@@ -1,5 +1,11 @@
 <!--pages/index.wxml-->
 <view>
-  <shop-search bind:confirm="bindsearch"></shop-search>
-  <i-button bind:getuserinfo="test">默认按钮</i-button>
+  <!-- 搜索组件 -->
+  <shop-search class="shop-search" bind:search="onSearch"></shop-search>
+  <!-- 分类组件 -->
+  <shop-classify class="shop-classify" bind:change="onChange" bind:click="clickClass"></shop-classify>
+  <!-- 滚动组件 -->
+  <!-- <shop-swiper class="shop-swiper"></shop-swiper> -->
+  <!-- 子菜单分类组件 -->
+  <!-- <shop-submenuClassification class="submenuClassification"></shop-submenuClassification> -->
 </view>

@@ -1,0 +1,54 @@
+@import "../../../font/style.wxss";
+
+.classify {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.classify .buttonContent1 {
+  margin-right: 10rpx;
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  order: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-size: 26rpx;
+  border-radius: 40rpx;
+  line-height: 4rpx;
+  background-image: linear-gradient(to right, #20ddb3, #19e288, #20ddb3) !important;
+}
+
+.classify .buttonContent2 {
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  order: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+  font-size: 26rpx;
+  border-radius: 40rpx;
+  line-height: 4rpx;
+  background-image: linear-gradient(to right, #fe5f00, #ff9b04, #fe5f00) !important;
+}
+
+.classify .i-tabs {
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  margin-top: 8rpx;
+  order: 2;
+  flex-grow: 2;
+  flex-shrink: 1;
+  overflow: auto;
+  width: 180rpx;
+}
+
+.classify .classifyIcon {
+  order: 3;
+  flex-grow: 0;
+  flex-shrink: 0;
+}

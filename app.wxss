@@ -8,3 +8,9 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+button::after {
+  border: none
+}
+
+@import "font/style.wxss";

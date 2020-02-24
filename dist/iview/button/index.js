@@ -55,20 +55,22 @@ Component({
     sendMessageTitle: String,
     sendMessagePath: String,
     sendMessageImg: String,
-    showMessageCard: Boolean
+    showMessageCard: Boolean,
+    Selected: {
+      type: String,
+      value: ""
+    }
   },
 
   methods: {
     handleTap() {
-      console.log('000')
+      console.log(this.data.Selected)
       if (this.data.disabled) return false;
-      this.triggerEvent('click');
+      this.triggerEvent('click', {}, { bubbles: true, composed: true });
     },
     bindgetuserinfo(
       {detail = {}} = {}
     ) {
-      console.log(123)
-      console.log(detail)
       this.triggerEvent('getuserinfo', detail);
     },
     bindcontact({

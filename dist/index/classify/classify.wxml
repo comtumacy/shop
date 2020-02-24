@@ -1,0 +1,8 @@
+<view class="classify">
+  <button class="buttonContent1">{{buttonContent1}}</button>
+  <button class="buttonContent2">{{buttonContent2}}</button>
+  <i-tabs class="i-tabs" i-class="i-tabsLog" current="{{current}}" scroll color="rgb(128,132,143)">
+    <i-tab wx:for="{{contentClassify}}" wx:key="item" key="{{item}}" title="{{item}}"></i-tab>
+  </i-tabs>
+  <text class="iconfont icon-wuxupailie classifyIcon"></text>
+</view>

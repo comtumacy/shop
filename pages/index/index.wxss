@@ -1,1 +1,33 @@
 /* pages/index.wxss */
+
+.shop-search {
+  margin: 0 4%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 92%;
+}
+
+.shop-classify {
+  margin: 0 4%;
+  position: absolute;
+  top: 6%;
+  left: 0;
+  width: 92%;
+}
+
+.shop-swiper {
+  margin: 0 4%;
+  position: absolute;
+  top: 12%;
+  left: 0;
+  width: 92%;
+}
+
+.submenuClassification {
+  margin: 0 4%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 92%;
+}

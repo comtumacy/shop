@@ -58,7 +58,7 @@ VantComponent({
             }, 200);
         },
         onSearch() {
-            this.$emit('search', this.data.value);
+          this.$emit('search', this.data.value, { bubbles: true, composed: true });
         },
         onFocus() {
             this.$emit('focus');

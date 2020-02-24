@@ -6,7 +6,7 @@
   background-image: none;
   white-space: nowrap;
   user-select: none;
-  font-size: 14px;
+  font-size: 24rpx;
   border-radius: 2px;
   border: 0 !important;
   position: relative;
@@ -49,6 +49,16 @@
   color: #fff !important;
   background: #fff !important;
   color: #495060 !important;
+}
+
+.i-btn-content1 {
+  color: #fff !important;
+  background-image: linear-gradient(to right, #20DDB3 , #19E288, #20DDB3) !important
+}
+
+.i-btn-content2 {
+  color: #fff !important;
+  background-image: linear-gradient(to right, #FE5F00 , #FF9B04, #FE5F00) !important
 }
 
 .i-btn-success {

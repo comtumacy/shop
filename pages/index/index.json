@@ -1,7 +1,10 @@
 {
   "usingComponents": {
-    "shop-search": "../../dist/header/search/search",
+    "shop-search": "../../dist/index/search/search",
+    "shop-classify": "../../dist/index/classify/classify",
+    "shop-swiper": "../../dist/index/swiperAssembly/swiperAssembly",
+    "shop-submenuClassification": "../../dist/index/submenuClassification/submenuClassification",
     "i-button": "../../dist/iview/button/index"
   },
-  "navigationBarTitleText": "趣便购买菜"
+  "navigationBarTitleText": "趣便购买"
 }
