@@ -17,19 +17,22 @@
   </view>
   <view class="more">{{more}}</view>
 </view>
-<!-- 四栏商品 -->
+<!-- 商品 -->
 <view class="fourGoodsbar">
   <view class="imgRow">
-    <view wx:for="{{imgs}}" wx:key="index">
+    <view wx:for="{{imgs}}" wx:key="index" class="imgRowFor">
       <image class="goodImg" src="{{item}}" mode="scaleToFill" lazy-load="true"></image>
       <image class="goodDiscountImg" src="{{disCountImg}}" mode="scaleToFill" lazy-load="true"></image>
       <view class="fourDiscountText">{{fourDiscountText[index]}}</view>
     </view>
   </view>
   <view class="TitleRow">
-  <view class="TitleCol" wx:for="{{TitleText}}" wx:key="index">{{TitleText[index]}}
+    <view class="TitleCol" wx:for="{{TitleText}}" wx:key="index">{{TitleText[index]}}</view>
   </view>
+  <view class="priceTypeIcon">
+    <view class="priceTypeIconItem" wx:for="{{TitleText}}" wx:key="index">
+      <view class="priceTypeIconItemTitle" style="color: {{priceType[priceTypeSign].color}};border-color: {{priceType[priceTypeSign].color}}">{{priceType[priceTypeSign].title}}</view>
+    </view>
   </view>
-  <view class="MinTitleRow"></view>
   <view class="priceRow"></view>
 </view>

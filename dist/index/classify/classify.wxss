@@ -48,6 +48,9 @@
 }
 
 .classify .classifyIcon {
+  position: relative;
+  right: 8rpx;
+  bottom: 4rpx;
   order: 3;
   flex-grow: 0;
   flex-shrink: 0;

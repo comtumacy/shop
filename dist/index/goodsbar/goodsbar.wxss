@@ -9,7 +9,7 @@
 
 .goodsbarHeader .goodsbarTitle {
   flex: none;
-  font-size: 30rpx;
+  font-size: 35rpx;
 }
 
 .goodsbarHeader .goodsbarSecondTitle {
@@ -58,14 +58,18 @@
   align-items: center;
 }
 
-.fourGoodsbar .imgRow .goodImg {
+.fourGoodsbar .imgRow .imgRowFor{
+  height: 160rpx
+}
+
+.fourGoodsbar .imgRow .imgRowFor .goodImg {
   width: 160rpx;
   height: 160rpx;
   border-bottom-left-radius: 20rpx;
   border-top-right-radius: 20rpx;
 }
 
-.fourGoodsbar .imgRow .goodDiscountImg {
+.fourGoodsbar .imgRow .imgRowFor .goodDiscountImg {
   position: relative;
   bottom: 50rpx;
   width: 120rpx;
@@ -74,7 +78,7 @@
   border-top-right-radius: 20rpx;
 }
 
-.fourGoodsbar .imgRow .fourDiscountText {
+.fourGoodsbar .imgRow .imgRowFor .fourDiscountText {
   position: relative;
   left: 14rpx;
   bottom: 96rpx;
@@ -84,13 +88,40 @@
 }
 
 .fourGoodsbar .TitleRow {
+  position: relative;
   display: flex;
+  top: 10rpx;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .fourGoodsbar .TitleRow .TitleCol{
-  flex: 1 1 auto;
-  font-size: 24rpx
+  flex: 0 0 auto;
+  width: 160rpx;
+  font-size: 28rpx
 }
+
+.fourGoodsbar .priceTypeIcon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start
+}
+
+.fourGoodsbar .priceTypeIcon .priceTypeIconItem {
+  flex: 0 0 auto;
+  width: 176rpx;
+}
+
+.fourGoodsbar .priceTypeIcon .priceTypeIconItem .priceTypeIconItemTitle {
+  position: relative;
+  top: 20rpx;
+  width: 90rpx;
+  text-align: center;
+  font-size: 24rpx;
+  border-width: 1rpx;
+  border-style: solid;
+  border-radius: 20rpx
+}
+

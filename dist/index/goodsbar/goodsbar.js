@@ -2,10 +2,10 @@ Component({
   externalClasses: ['sp-class'],
   created() {},
   attached(res) {},
-  ready() { },
-  moved() { },
-  detached() { },
-  error() { },
+  ready() {},
+  moved() {},
+  detached() {},
+  error() {},
   properties: {
     time: {
       "type": Number,
@@ -46,7 +46,27 @@ Component({
     },
     TitleText: {
       "type": ArrayBuffer,
-      "value": ["烟台红富士苹果 单果230克以上", "都乐Dole 进口大把香蕉2kg装", "山东大樱桃智利车厘子", "福建牛奶青枣 2kg 装 单果"]
+      "value": ["烟台红富士苹果", "都乐进口香蕉2kg装", "山东大樱桃智利车厘子", "福建牛奶青枣2kg一装"]
+    },
+    priceType: {
+      "type": ArrayBuffer,
+      "value": [{
+          "title": "秒杀价",
+          "color": "#ed3f14"
+        },
+        {
+          "title": "团购价",
+          "color": "#19be6b"
+        },
+        {
+          "title": "会员价",
+          "color": "#ff9900"
+        }
+      ]
+    },
+    priceTypeSign: {
+      "type": Number,
+      "value": 0
     }
   },
   data: {
@@ -56,7 +76,7 @@ Component({
   },
 
   methods: {
-    onChange (res) {
+    onChange(res) {
       this.setData({
         timeData: res.detail
       });
