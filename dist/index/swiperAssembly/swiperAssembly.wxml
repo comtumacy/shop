@@ -1,3 +1,4 @@
+<!-- 主页轮播图组件 -->
 <view>
   <swiper autoplay="true" circular="true" autoplay="1000">
     <swiper-item wx:for="{{images}}" wx:key="index">

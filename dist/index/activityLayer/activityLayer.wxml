@@ -1,3 +1,4 @@
+<!-- 主页活动宣传图片组件 -->
 <view class="activityLayer">
   <image src="{{imgUrl}}" mode="scaleToFill" bind:tap="click"></image>
 </view>

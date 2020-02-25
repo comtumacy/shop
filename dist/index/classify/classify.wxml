@@ -1,3 +1,4 @@
+<!-- 主页分类组件 -->
 <view class="classify">
   <button class="buttonContent1">{{buttonContent1}}</button>
   <button class="buttonContent2">{{buttonContent2}}</button>

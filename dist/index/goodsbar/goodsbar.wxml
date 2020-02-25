@@ -1,14 +1,28 @@
+<!-- 主页商品栏组件 -->
+<!-- 头部 -->
 <view class="goodsbarHeader">
   <view class="goodsbarTitle">{{Title}}</view>
-  <view class="goodsbarSecondTitle" wx:if="{{SecondTitleSign}}">{{SecondTitle}}</view>
+  <view class="goodsbarSecondTitle" hidden="{{SecondTitleSign}}">{{SecondTitle}}</view>
   <view class="goodsbarTime">
-    <van-count-down use-slot  millisecond time="{{ time }}" bind:change="onChange">
+    <van-count-down use-slot  millisecond="{{millisecond}}" time="{{ time }}" bind:change="onChange" auto-start="{{autoStart}}">
       剩余
-      <text class="item">{{ timeData.hours }}</text>:
-      <text class="item">{{ timeData.minutes }}</text>:
-      <text class="item">{{ timeData.seconds }}</text>:
-      <text class="item">{{ timeData.milliseconds }}</text>
+      <text class="item">{{ timeData.hours }}</text>
+      <text>:</text>
+      <text class="item">{{ timeData.minutes }}</text>
+      <text>:</text>
+      <text class="item">{{ timeData.seconds }}</text>
+      <text wx:if="{{millisecond}}">:</text>
+      <text class="item" wx:if="{{millisecond}}">{{ timeData.milliseconds }}</text>
     </van-count-down>
   </view>
   <view class="more">{{more}}</view>
+</view>
+<!-- 四栏商品 -->
+<view class="fourGoodsbar">
+  <view class="imgRow">
+    <image class="goodImg" wx:for="{{imgs}}" wx:key="index" src="{{item}}" mode="scaleToFill" lazy-load="true"></image>
+  </view>
+  <view class="TitleRow"></view>
+  <view class="MinTitleRow"></view>
+  <view class="priceRow"></view>
 </view>

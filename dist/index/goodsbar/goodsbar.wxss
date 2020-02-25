@@ -1,3 +1,5 @@
+/* 头部 */
+
 .goodsbarHeader {
   display: flex;
   flex-flow: row nowrap;
@@ -21,7 +23,7 @@
 .goodsbarHeader .goodsbarTime {
   margin-right: 10rpx;
   flex: 1;
-  text-align: right
+  text-align: right;
 }
 
 .goodsbarHeader .more {
@@ -38,9 +40,25 @@
   display: inline-block;
   width: 28rpx;
   margin-right: 10rpx;
+  margin-left: 10rpx;
   color: #fff;
   font-size: 24rpx;
   text-align: center;
   background-color: rgb(85, 101, 127);
   border-radius: 12rpx;
+}
+
+/* 四栏商品 */
+
+.fourGoodsbar .imgRow {
+  margin-top: 20rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fourGoodsbar .imgRow .goodImg {
+  width: 160rpx;
+  height: 160rpx
 }
