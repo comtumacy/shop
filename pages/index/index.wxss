@@ -34,6 +34,5 @@
 
 van-count-down {
   position: relative;
-  top: 80rpx
 }
 
