@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-
   },
   // 返回搜索框输入内容
   onSearch: (res) => {
@@ -25,6 +24,10 @@ Page({
   },
   // 返回活动点击事件
   enterActivity: (res) => {
+    console.log(res)
+  },
+  // 返回时间控制事件
+  onChangeTime: function(res) {
     console.log(res)
   },
   /**

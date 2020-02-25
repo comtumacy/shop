@@ -1,0 +1,11 @@
+<view class="goodsbarHeader">
+  <view class="goodsbarTitle"></view>
+  <view class="goodsbarTime">
+    <van-count-down use-slot  millisecond time="{{ time }}" bind:change="onChange">
+      <text class="item">{{ timeData.hours }}</text>
+      <text class="item">{{ timeData.minutes }}</text>
+      <text class="item">{{ timeData.seconds }}</text>
+      <text class="item">{{ timeData.milliseconds }}</text>
+    </van-count-down>
+  </view>
+</view>

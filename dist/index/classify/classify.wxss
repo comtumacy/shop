@@ -33,7 +33,7 @@
   font-size: 26rpx;
   border-radius: 40rpx;
   line-height: 4rpx;
-  background-image: linear-gradient(to right, #fe5f00, #ff9b04, #fe5f00) !important;
+  background-image: linear-gradient(to right, rgb(120,239,233), rgb(233,223,222), rgb(120,239,233)) !important;
 }
 
 .classify .i-tabs {

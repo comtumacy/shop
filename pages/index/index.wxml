@@ -10,4 +10,6 @@
   <shop-submenuClassification class="submenuClassification"></shop-submenuClassification>
   <!-- 活动图片组件 -->
   <shop-activityLayer class="activityLayer" bind:enterActivity="enterActivity"></shop-activityLayer>
+  <!-- 商品栏目组件 -->
+  <shop-goodsBar class="goodsBar"></shop-goodsBar>
 </view>
