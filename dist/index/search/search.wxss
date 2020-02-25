@@ -39,6 +39,6 @@
   border-radius: 40rpx;
 }
 
-.searchIndex .third .i-badge .i-badgeLog {
+.searchIndex .third i-badge .i-badgeLog {
   margin-bottom: 20rpx
 }
