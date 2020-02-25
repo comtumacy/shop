@@ -26,7 +26,10 @@
       <view class="fourDiscountText">{{fourDiscountText[index]}}</view>
     </view>
   </view>
-  <view class="TitleRow"></view>
+  <view class="TitleRow">
+  <view class="TitleCol" wx:for="{{TitleText}}" wx:key="index">{{TitleText[index]}}
+  </view>
+  </view>
   <view class="MinTitleRow"></view>
   <view class="priceRow"></view>
 </view>

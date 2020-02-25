@@ -48,7 +48,7 @@
   border-radius: 12rpx;
 }
 
-/* 四栏商品 */
+/* 商品 */
 
 .fourGoodsbar .imgRow {
   margin-top: 20rpx;
@@ -81,4 +81,16 @@
   font-family: SimHei;
   font-size: 24rpx;
   color: #fff;
+}
+
+.fourGoodsbar .TitleRow {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fourGoodsbar .TitleRow .TitleCol{
+  flex: 1 1 auto;
+  font-size: 24rpx
 }

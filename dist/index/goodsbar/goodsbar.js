@@ -43,6 +43,10 @@ Component({
     fourDiscountText: {
       "type": ArrayBuffer,
       "value": ["立省4元", "立省6元", "立省14元", "立省10元"]
+    },
+    TitleText: {
+      "type": ArrayBuffer,
+      "value": ["烟台红富士苹果 单果230克以上", "都乐Dole 进口大把香蕉2kg装", "山东大樱桃智利车厘子", "福建牛奶青枣 2kg 装 单果"]
     }
   },
   data: {
