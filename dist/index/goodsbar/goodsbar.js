@@ -25,7 +25,7 @@ Component({
     // 开启小标题开关
     SecondTitleSign: {
       "type": Boolean,
-      "value": true
+      "value": false
     },
     more: {
       "type": String,
@@ -38,12 +38,17 @@ Component({
     },
     imgs: {
       "type": ArrayBuffer,
-      value: ["../../../image/goodsbar/fruits/apple.png", "../../../image/goodsbar/fruits/banana.png", "../../../image/goodsbar/fruits/cherry.png", "../../../image/goodsbar/fruits/jujube.png"]
+      "value": ["../../../image/goodsbar/fruits/apple.png", "../../../image/goodsbar/fruits/banana.png", "../../../image/goodsbar/fruits/cherry.png", "../../../image/goodsbar/fruits/jujube.png"]
+    },
+    fourDiscountText: {
+      "type": ArrayBuffer,
+      "value": ["立省4元", "立省6元", "立省14元", "立省10元"]
     }
   },
   data: {
     // 开启毫秒计算
-    millisecond: true
+    millisecond: true,
+    disCountImg: "../../../image/goodsbar/discount/discount.png"
   },
 
   methods: {

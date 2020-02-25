@@ -4,7 +4,7 @@
   <view class="goodsbarTitle">{{Title}}</view>
   <view class="goodsbarSecondTitle" hidden="{{SecondTitleSign}}">{{SecondTitle}}</view>
   <view class="goodsbarTime">
-    <van-count-down use-slot  millisecond="{{millisecond}}" time="{{ time }}" bind:change="onChange" auto-start="{{autoStart}}">
+    <van-count-down use-slot millisecond="{{millisecond}}" time="{{ time }}" bind:change="onChange" auto-start="{{autoStart}}">
       剩余
       <text class="item">{{ timeData.hours }}</text>
       <text>:</text>
@@ -20,7 +20,11 @@
 <!-- 四栏商品 -->
 <view class="fourGoodsbar">
   <view class="imgRow">
-    <image class="goodImg" wx:for="{{imgs}}" wx:key="index" src="{{item}}" mode="scaleToFill" lazy-load="true"></image>
+    <view wx:for="{{imgs}}" wx:key="index">
+      <image class="goodImg" src="{{item}}" mode="scaleToFill" lazy-load="true"></image>
+      <image class="goodDiscountImg" src="{{disCountImg}}" mode="scaleToFill" lazy-load="true"></image>
+      <view class="fourDiscountText">{{fourDiscountText[index]}}</view>
+    </view>
   </view>
   <view class="TitleRow"></view>
   <view class="MinTitleRow"></view>

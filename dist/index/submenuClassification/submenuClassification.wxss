@@ -10,7 +10,7 @@
 .submenuClassification .outerLayer {
   width: 100rpx;
   height: 100rpx;
-  border-radius: 60rpx
+  border-radius: 60rpx;
 }
 
 .submenuClassification .outerLayer .submenuClassification0 {
@@ -56,9 +56,32 @@
 }
 
 .submenuClassificationText view {
-  width: 100rpx;
-  padding-left: 7rpx;
+  flex: 1 1 auto;
   padding-top: 10rpx;
   font-size: 20rpx;
-  color: rgb(128,132,143)
+  color: rgb(128, 132, 143);
+}
+
+.submenuClassificationText .icon0 {
+  padding-left: 8rpx;
+  text-align: left;
+}
+
+.submenuClassificationText .icon4 {
+  padding-right: 8rpx;
+  text-align: right;
+}
+
+.submenuClassificationText .icon2 {
+  text-align: center;
+}
+
+.submenuClassificationText .icon1 {
+  padding-right: 20rpx;
+  text-align: center;
+}
+
+.submenuClassificationText .icon3 {
+  padding-left: 20rpx;
+  text-align: center;
 }

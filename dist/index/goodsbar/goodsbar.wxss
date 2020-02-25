@@ -60,5 +60,25 @@
 
 .fourGoodsbar .imgRow .goodImg {
   width: 160rpx;
-  height: 160rpx
+  height: 160rpx;
+  border-bottom-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.fourGoodsbar .imgRow .goodDiscountImg {
+  position: relative;
+  bottom: 50rpx;
+  width: 120rpx;
+  height: 40rpx;
+  border-bottom-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.fourGoodsbar .imgRow .fourDiscountText {
+  position: relative;
+  left: 14rpx;
+  bottom: 96rpx;
+  font-family: SimHei;
+  font-size: 24rpx;
+  color: #fff;
 }
