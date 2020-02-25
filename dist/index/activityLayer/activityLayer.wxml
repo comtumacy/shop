@@ -1,0 +1,3 @@
+<view class="activityLayer">
+  <image src="{{imgUrl}}" mode="scaleToFill" bind:tap="click"></image>
+</view>

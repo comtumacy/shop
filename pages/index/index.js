@@ -19,6 +19,14 @@ Page({
   clickClass: (res) => {
     console.log(res)
   },
+  // 返回点击轮播图点击事件
+  swiperChange: (res) => {
+    console.log(res)
+  },
+  // 返回活动点击事件
+  enterActivity: (res) => {
+    console.log(res)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

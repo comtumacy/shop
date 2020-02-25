@@ -4,6 +4,7 @@
     "shop-classify": "../../dist/index/classify/classify",
     "shop-swiper": "../../dist/index/swiperAssembly/swiperAssembly",
     "shop-submenuClassification": "../../dist/index/submenuClassification/submenuClassification",
+    "shop-activityLayer": "../../dist/index/activityLayer/activityLayer",
     "i-button": "../../dist/iview/button/index"
   },
   "navigationBarTitleText": "趣便购买"

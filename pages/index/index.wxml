@@ -1,11 +1,13 @@
 <!--pages/index.wxml-->
-<view>
+<view class="index">
   <!-- 搜索组件 -->
   <shop-search class="shop-search" bind:search="onSearch"></shop-search>
   <!-- 分类组件 -->
   <shop-classify class="shop-classify" bind:change="onChange" bind:click="clickClass"></shop-classify>
   <!-- 滚动组件 -->
-  <!-- <shop-swiper class="shop-swiper"></shop-swiper> -->
+  <shop-swiper class="shop-swiper" bind:clickSwiper="swiperChange"></shop-swiper>
   <!-- 子菜单分类组件 -->
-  <!-- <shop-submenuClassification class="submenuClassification"></shop-submenuClassification> -->
+  <shop-submenuClassification class="submenuClassification"></shop-submenuClassification>
+  <!-- 活动图片组件 -->
+  <shop-activityLayer class="activityLayer" bind:enterActivity="enterActivity"></shop-activityLayer>
 </view>

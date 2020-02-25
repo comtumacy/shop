@@ -1,0 +1,64 @@
+@import "../../../font/style.wxss";
+
+.submenuClassification {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenuClassification .outerLayer {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 60rpx
+}
+
+.submenuClassification .outerLayer .submenuClassification0 {
+  flex: auto;
+  padding-top: 20rpx;
+  padding-left: 26rpx;
+  font-size: 50rpx;
+}
+
+.submenuClassification .outerLayer .submenuClassification1 {
+  flex: auto;
+  padding-top: 20rpx;
+  padding-left: 26rpx;
+  font-size: 50rpx;
+}
+
+.submenuClassification .outerLayer .submenuClassification2 {
+  flex: auto;
+  padding-top: 20rpx;
+  padding-left: 26rpx;
+  font-size: 50rpx;
+}
+
+.submenuClassification .outerLayer .submenuClassification3 {
+  flex: auto;
+  padding-top: 20rpx;
+  padding-left: 26rpx;
+  font-size: 50rpx;
+}
+
+.submenuClassification .outerLayer .submenuClassification4 {
+  flex: auto;
+  padding-top: 20rpx;
+  padding-left: 26rpx;
+  font-size: 50rpx;
+}
+
+.submenuClassificationText {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submenuClassificationText view {
+  width: 100rpx;
+  padding-left: 7rpx;
+  padding-top: 10rpx;
+  font-size: 20rpx;
+  color: rgb(128,132,143)
+}

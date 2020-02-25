@@ -1,7 +1,7 @@
 <view>
   <swiper autoplay="true" circular="true" autoplay="1000">
     <swiper-item wx:for="{{images}}" wx:key="index">
-      <image class="swiperImage" src="{{item}}" mode="scaleToFill"></image>
+      <image class="swiperImage" src="{{item}}" mode="scaleToFill" bindtap="changeItem" data-item="{{item}}"></image>
     </swiper-item>
   </swiper>
 </view>

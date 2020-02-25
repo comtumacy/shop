@@ -1,4 +1,13 @@
-<view>
-123
-  <text class="icona-home2"></text>
+<view class="submenuClassification">
+  <view class="outerLayer" wx:for="{{contents}}" wx:key="item" style="background-color: {{backgroundColor[index]}}">
+    <view class="iconfont icon-{{icons[index]}} submenuClassification{{index}}">
+    </view>
+  </view>
+</view>
+<view class="submenuClassificationText">
+  <view wx:for="{{contents}}" wx:key="item">
+    <view class="icon{{index}}">
+      {{item}}
+    </view>
+  </view>
 </view>

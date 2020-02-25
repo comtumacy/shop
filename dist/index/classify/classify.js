@@ -24,6 +24,6 @@ Component({
     url: "../../../image/icon/icon.png"
   },
 
-  method: {
+  methods: {
   }
 })

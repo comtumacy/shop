@@ -1,59 +1,44 @@
-.header .select {
-  position: absolute;
+.searchIndex {
   display: flex;
-  top: 0;
-  left: 12%;
-  width: 20%;
-  font-size: 30rpx;
+  flex-flow: row nowrap;
 }
 
-.header .search .down {
-  position: absolute;
-  top: -10rpx
-}
-
-.header .addressLess {
-  position: relative;
-  top: -10rpx;
-  margin-left: 15rpx;
-  font-size: 20rpx;
-  color: #bbbec4;
-}
-
-.header .searchIcon {
+.searchIndex .searchIcon {
+  flex: 0 0 auto;
   width: 70rpx;
   height: 70rpx;
   border-radius: 50rpx;
 }
 
-.header van-search .search {
-  position: absolute;
-  padding: 0;
-  top: 0;
-  right: 10.5%;
-  width: 60%;
+.searchIndex .first {
+  flex: 0 0 auto;
+  margin-left: 20rpx;
+  font-size: 30rpx;
 }
 
-.header van-search .search .search2 {
+.searchIndex .addressLess {
+  position: absolute;
+  width: 100rpx;
+  font-size: 20rpx;
+  color: #bbbec4;
+}
+
+.searchIndex .second {
+  align-self: flex-start
+}
+
+.searchIndex van-search .search {
+  margin: 0 16rpx;
+  padding: 0
+}
+
+.searchIndex van-search .search .search2 {
   height: 60rpx;
   padding-left: 30rpx;
   border: 1rpx solid #bbbec4;
   border-radius: 40rpx;
 }
 
-.header van-search .van-cell--borderless{
-  padding: 0
-}
-
-.header .i-iconClass .i-iconLog2 {
-  position: absolute;
-  right: 0;
-  top: 15rpx;
-  color: #80848f
-}
-
-.header i-badge .i-badgeLog {
-  position: absolute;
-  right: 1%;
-  top: 25rpx
+.searchIndex .third .i-badge .i-badgeLog {
+  margin-bottom: 20rpx
 }

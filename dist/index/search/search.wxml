@@ -1,14 +1,18 @@
 <!-- 主界面头像、搜索组件 -->
-<view class="header">
+<view class="searchIndex">
   <image class="searchIcon" src="{{url}}" mode="scaleToFill"></image>
-  <view class="select">
-    <text class="address">{{city}}</text>
-    <i-icon class="down" type="unfold" size="14" color="#80848f" i-class="i-iconLog"/>
-  </view>
+  <view class="first">
+    <view class="select">
+      <text class="address">{{city}}</text>
+      <i-icon class="down" type="unfold" size="14" color="#80848f" i-class="i-iconLog" />
+    </view>
     <text class="addressLess">{{addressLess}}</text>
-  <van-search value="{{ value }}" placeholder="{{placeholder}}" background="#ffffff" shape="round" custom-class="search" field-class="search2" input-class="search3"/>
-  <i-icon class="i-iconClass" type="remind_fill" i-class="i-iconLog2" size="24"/>
-  <i-badge dot i-class="i-badgeLog">
-    <view class="demo-badge"></view>
-  </i-badge>
+  </view>
+  <van-search class="second" value="{{ value }}" placeholder="{{placeholder}}" background="#ffffff" shape="round" custom-class="search" field-class="search2" input-class="search3" />
+  <view class="third">
+    <i-icon class="i-iconClass" type="remind_fill" i-class="i-iconLog2" size="24" />
+    <i-badge dot i-class="i-badgeLog">
+      <view class="demo-badge"></view>
+    </i-badge>
+  </view>
 </view>

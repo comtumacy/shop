@@ -1,33 +1,27 @@
 /* pages/index.wxss */
+.index {
+  margin: 0 4%
+}
 
 .shop-search {
-  margin: 0 4%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 92%;
+  position: relative;
 }
 
 .shop-classify {
-  margin: 0 4%;
-  position: absolute;
-  top: 6%;
-  left: 0;
-  width: 92%;
+  position: relative;
 }
 
 .shop-swiper {
-  margin: 0 4%;
-  position: absolute;
-  top: 12%;
-  left: 0;
-  width: 92%;
+  position: relative;
+  top: 20rpx
 }
 
 .submenuClassification {
-  margin: 0 4%;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 92%;
+  position: relative;
+  top: 40rpx
+}
+
+.activityLayer {
+  position: relative;
+  top: 60rpx
 }
