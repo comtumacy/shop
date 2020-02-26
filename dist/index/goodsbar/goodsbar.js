@@ -124,7 +124,7 @@ Component({
     goodsbarSecondTitleColor: {
       "type": String,
       "value": "#80848F"
-    },
+    }
   },
   data: {
     // 开启毫秒计算

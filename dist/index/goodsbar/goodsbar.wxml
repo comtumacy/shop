@@ -1,6 +1,6 @@
 <!-- 主页商品栏组件 -->
 <!-- 头部 -->
-<view style="position: relative; top: 80rpx; height: 460rpx">
+<view style="position: relative; top: 80rpx; height: {{goodsNumber === 3? '540rpx' : '460rpx'}}">
   <view class="goodsbarHeader">
     <view class="goodsbarTitle" style="font-size: {{TitleFontSize}}rpx; color: {{TitleColor}}">{{Title}}</view>
     <view class="goodsbarSecondTitle" hidden="{{SecondTitleSign}}" style="margin-left: {{goodsbarSecondTitleMarginLeft}}rpx; margin-top: {{goodsbarSecondTitleMarginTop}}rpx; font-size: {{goodsbarSecondTitleFontSize}}rpx; color: {{goodsbarSecondTitleColor}}">{{SecondTitle}}</view>
@@ -35,7 +35,7 @@
         <view class="priceTypeIconItemTitle" style="color: {{priceType[priceTypeSign].color}};border-color: {{priceType[priceTypeSign].color}}">{{priceType[priceTypeSign].title}}</view>
       </view>
     </view>
-    <view class="priceRow">
+    <view class="{{goodsNumber === 3? 'priceRowThree' : 'priceRow'}}">
       <view class="priceRowChild" wx:for="{{goodsNumber}}" wx:key="index">
         <view class="priceColLeft">
           <view class="iconfont icon-money moneyIcon"></view>
@@ -48,7 +48,7 @@
         </view>
       </view>
     </view>
-    <view class="priceRow2">
+    <view class="{{goodsNumber === 3? 'priceRow2Three' : 'priceRow2'}}">
       <view class="priceColLeftOld" wx:for="{{goodsNumber}}" wx:key="index">{{priceColLeftOld[index]}}</view>
     </view>
   </view>

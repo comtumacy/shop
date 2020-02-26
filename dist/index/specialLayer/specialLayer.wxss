@@ -1,0 +1,75 @@
+.specialIndex {
+  position: relative;
+  top: 60rpx;
+}
+
+.specialIndex .specialHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.specialIndex .specialHeader .specialTitle {
+  flex: none;
+}
+
+.specialIndex .specialHeader .specialSecondTitle {
+  flex: none;
+}
+
+.specialIndex .specialHeader .specialTime {
+  margin-right: 10rpx;
+  flex: 1;
+  text-align: right;
+}
+
+.specialIndex .specialHeader .more {
+  position: relative;
+  left: 356rpx;
+  flex: none;
+  font-size: 24rpx;
+  color: rgb(128, 132, 143);
+}
+
+.specialContent .specialContentTwo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.specialContent .specialContentTwo .specialContentTwoFlex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specialContent .specialContentTwo .specialContentTwoFlex .left {
+  position: relative;
+  display: flex;
+  right: 20rpx;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.specialContent .specialContentTwo .specialContentTwoFlex .left .leftTop {
+  position: relative;
+  bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.specialContent .specialContentTwo .specialContentTwoFlex .left .leftBottom {
+  padding: 6rpx;
+  font-size: 20rpx;
+  background-color: #19be6b;
+  color: #fff;
+  border-radius: 80rpx;
+}
+
+.specialContent .specialContentTwo .specialContentTwoFlex .right .specialContentTwoImage {
+  width: 160rpx;
+  height: 160rpx;
+}

@@ -6,7 +6,7 @@
     "shop-submenuClassification": "../../dist/index/submenuClassification/submenuClassification",
     "shop-activityLayer": "../../dist/index/activityLayer/activityLayer",
     "shop-goodsBar": "../../dist/index/goodsbar/goodsbar",
-    "i-button": "../../dist/iview/button/index"
+    "shop-specialLayer": "../../dist/index/specialLayer/specialLayer"
   },
   "navigationBarTitleText": "趣便购买"
 }

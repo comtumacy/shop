@@ -1,0 +1,26 @@
+<!-- 特惠专区组件 -->
+<!-- 头部 -->
+<view class="specialIndex">
+  <view class="specialHeader">
+    <view class="specialTitle" style="font-size: {{TitleFontSize}}rpx; color: {{TitleColor}}">{{Title}}</view>
+    <view class="specialSecondTitle" hidden="{{SecondTitleSign}}" style="margin-left: {{specialSecondTitleMarginLeft}}rpx; margin-top: {{specialSecondTitleMarginTop}}rpx; font-size: {{specialSecondTitleFontSize}}rpx; color: {{specialSecondTitleColor}}">
+      {{SecondTitle}}
+    </view>
+    <view class="more">{{more}}</view>
+  </view>
+  <view class="specialContent">
+    <view class="specialContentTwo">
+      <view class="specialContentTwoFlex" wx:for="{{2}}" wx:key="index">
+        <view class="left">
+          <view class="leftTop">{{specialContentTwoText[0]}}</view>
+          <view class="leftBottom">
+            <view>{{specialContentTwoButtonText}}</view>
+          </view>
+        </view>
+        <view class="right">
+          <image class="specialContentTwoImage" src="{{specialContentTwoImage[index]}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
