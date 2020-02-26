@@ -9,16 +9,29 @@
     <view class="more">{{more}}</view>
   </view>
   <view class="specialContent">
-    <view class="specialContentTwo">
+    <view class="specialContentTwo" wx:for="{{specialContentTwoNumber}}" wx:key="index">
       <view class="specialContentTwoFlex" wx:for="{{2}}" wx:key="index">
         <view class="left">
-          <view class="leftTop">{{specialContentTwoText[0]}}</view>
+          <view class="leftTop">{{specialContentTwoText[index]}}</view>
           <view class="leftBottom">
-            <view>{{specialContentTwoButtonText}}</view>
+            <view>{{specialContentTwoButtonText[index]}}</view>
           </view>
         </view>
         <view class="right">
           <image class="specialContentTwoImage" src="{{specialContentTwoImage[index]}}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="specialContentThree" wx:for="{{specialContentThreeNumber}}" wx:key="index">
+      <view class="specialContentThreeFlex" wx:for="{{3}}" wx:key="index">
+        <view class="specialContentThreeTop">
+          <image class="specialContentThreeImage" src="{{specialContentThreeImage[index]}}"></image>
+        </view>
+        <view class="specialContentThreeMiddle">
+          {{specialContentThreeText[index]}}
+        </view>
+        <view class="specialContentThreeBottom">
+          {{specialContentTwoButtonText[index]}}
         </view>
       </view>
     </view>

@@ -16,4 +16,6 @@
   <shop-goodsBar class="goodsBar" goodsNumber="3"></shop-goodsBar>
   <!-- 特惠专区组件 -->
   <shop-specialLayer class="specialLayer"></shop-specialLayer>
+  <!-- 留空 -->
+  <view class="blank"></view>
 </view>

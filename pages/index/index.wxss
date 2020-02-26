@@ -1,5 +1,10 @@
 /* pages/index.wxss */
 
 .index {
-  margin: 0 4%;
+  margin: 0 4%
+}
+
+.blank {
+  position: relative;
+  height: 240rpx
 }

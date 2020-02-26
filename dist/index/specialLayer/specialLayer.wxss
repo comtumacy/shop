@@ -1,6 +1,6 @@
 .specialIndex {
   position: relative;
-  top: 60rpx;
+  top: 60rpx
 }
 
 .specialIndex .specialHeader {
@@ -62,7 +62,7 @@
 }
 
 .specialContent .specialContentTwo .specialContentTwoFlex .left .leftBottom {
-  padding: 6rpx;
+  padding: 6rpx 10rpx;
   font-size: 20rpx;
   background-color: #19be6b;
   color: #fff;
@@ -72,4 +72,38 @@
 .specialContent .specialContentTwo .specialContentTwoFlex .right .specialContentTwoImage {
   width: 160rpx;
   height: 160rpx;
+}
+
+.specialContent .specialContentThree {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center
+}
+
+.specialContent .specialContentThree .specialContentThreeFlex {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.specialContent .specialContentThree .specialContentThreeFlex .specialContentThreeTop .specialContentThreeImage{
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.specialContent .specialContentThree .specialContentThreeFlex .specialContentThreeMiddle {
+  position: relative;
+  bottom: 10rpx;
+  font-size: 30rpx;
+}
+
+.specialContent .specialContentThree .specialContentThreeFlex .specialContentThreeBottom {
+  padding: 6rpx 18rpx;
+  font-size: 20rpx;
+  background-color: #19be6b;
+  color: #fff;
+  border-radius: 80rpx;
 }
