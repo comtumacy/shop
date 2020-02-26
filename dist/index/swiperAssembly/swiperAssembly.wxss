@@ -1,4 +1,9 @@
-.swiperImage {
+.swiperIndex {
+  position: relative;
+  top: 20rpx;
+}
+
+.swiperIndex .swiperImage {
   width: 100%;
   height: 100%;
   border-radius: 40rpx

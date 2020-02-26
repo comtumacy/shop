@@ -3,36 +3,3 @@
 .index {
   margin: 0 4%;
 }
-
-.shop-search {
-  position: relative;
-}
-
-.shop-classify {
-  position: relative;
-}
-
-.shop-swiper {
-  position: relative;
-  top: 20rpx;
-}
-
-.submenuClassification {
-  position: relative;
-  top: 40rpx;
-}
-
-.activityLayer {
-  position: relative;
-  top: 60rpx;
-}
-
-.goodsBar {
-  position: relative;
-  top: 80rpx;
-}
-
-van-count-down {
-  position: relative;
-}
-

@@ -47,7 +47,7 @@
 
 /* 商品 */
 
-.fourGoodsbar .imgRow {
+.Goodsbar .imgRow {
   margin-top: 20rpx;
   display: flex;
   flex-flow: row nowrap;
@@ -55,18 +55,29 @@
   align-items: center;
 }
 
-.fourGoodsbar .imgRow .imgRowFor {
+.Goodsbar .imgRow .imgRowFor {
   height: 160rpx;
 }
 
-.fourGoodsbar .imgRow .imgRowFor .goodImg {
+.Goodsbar .imgRow .imgRowForThree {
+  height: 220rpx;
+}
+
+.Goodsbar .imgRow .imgRowFor .goodImg {
   width: 160rpx;
   height: 160rpx;
   border-bottom-left-radius: 20rpx;
   border-top-right-radius: 20rpx;
 }
 
-.fourGoodsbar .imgRow .imgRowFor .goodDiscountImg {
+.Goodsbar .imgRow .imgRowForThree .goodImg {
+  width: 220rpx;
+  height: 220rpx;
+  border-bottom-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.Goodsbar .imgRow .imgRowFor .goodDiscountImg {
   position: relative;
   bottom: 50rpx;
   width: 120rpx;
@@ -75,7 +86,16 @@
   border-top-right-radius: 20rpx;
 }
 
-.fourGoodsbar .imgRow .imgRowFor .fourDiscountText {
+.Goodsbar .imgRow .imgRowForThree .goodDiscountImg {
+  position: relative;
+  bottom: 50rpx;
+  width: 120rpx;
+  height: 40rpx;
+  border-bottom-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.Goodsbar .imgRow .imgRowFor .DiscountText {
   position: relative;
   left: 14rpx;
   bottom: 96rpx;
@@ -84,7 +104,16 @@
   color: #fff;
 }
 
-.fourGoodsbar .TitleRow {
+.Goodsbar .imgRow .imgRowForThree .DiscountText {
+  position: relative;
+  left: 14rpx;
+  bottom: 96rpx;
+  font-family: SimHei;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.Goodsbar .TitleRow {
   position: relative;
   display: flex;
   top: 10rpx;
@@ -93,25 +122,54 @@
   align-items: flex-start;
 }
 
-.fourGoodsbar .TitleRow .TitleCol {
+.Goodsbar .TitleRowThree {
+  position: relative;
+  display: flex;
+  top: 10rpx;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.Goodsbar .TitleRow .TitleCol {
   flex: 0 0 auto;
   width: 160rpx;
   font-size: 28rpx;
 }
 
-.fourGoodsbar .priceTypeIcon {
+.Goodsbar .TitleRowThree .TitleCol {
+  flex: 0 0 auto;
+  width: 200rpx;
+  font-size: 30rpx;
+}
+
+.Goodsbar .priceTypeIcon {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.fourGoodsbar .priceTypeIcon .priceTypeIconItem {
+.Goodsbar .priceTypeIconThree {
+  position: relative;
+  display: flex;
+  right: 10px;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.Goodsbar .priceTypeIcon .priceTypeIconItem {
   flex: 0 0 auto;
   width: 176rpx;
 }
 
-.fourGoodsbar .priceTypeIcon .priceTypeIconItem .priceTypeIconItemTitle {
+.Goodsbar .priceTypeIconThree .priceTypeIconItem {
+  flex: 0 0 auto;
+  width: 176rpx;
+}
+
+.Goodsbar .priceTypeIcon .priceTypeIconItem .priceTypeIconItemTitle {
   position: relative;
   top: 20rpx;
   width: 90rpx;
@@ -122,7 +180,18 @@
   border-radius: 20rpx;
 }
 
-.fourGoodsbar .priceRow {
+.Goodsbar .priceTypeIconThree .priceTypeIconItem .priceTypeIconItemTitle {
+  position: relative;
+  top: 20rpx;
+  width: 90rpx;
+  text-align: center;
+  font-size: 24rpx;
+  border-width: 1rpx;
+  border-style: solid;
+  border-radius: 20rpx;
+}
+
+.Goodsbar .priceRow {
   position: relative;
   display: flex;
   top: 15px;
@@ -131,45 +200,64 @@
   align-items: flex-start;
 }
 
-.fourGoodsbar .priceRow .priceRowChild{
+.Goodsbar .priceRow .priceRowChild {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  flex: 0 0 auto
-}
-
-.fourGoodsbar .priceRow .priceRowChild .priceColLeft {
-  display: flex;
-  align-items: flex-start;
   flex: 1 0 auto;
 }
 
-.fourGoodsbar .priceRow .priceRowChild .priceColLeft .moneyIcon {
-  font-size: 18rpx
+.Goodsbar .priceRow .priceRowChild .priceColLeft {
+  display: flex;
+  align-items: flex-start;
 }
 
-.fourGoodsbar .priceRow .priceRowChild .priceColLeft .priceColLeftNew {
-  font-size: 30rpx
-}
-
-.fourGoodsbar .priceRow .priceRowChild .priceColLeft .priceColLeftOld {
-  text-decoration: line-through;
-  color: #80848F;
-  font-size: 18rpx
-}
-
-.fourGoodsbar .priceRow .priceRowChild .priceColLeft .priceColLeftNew .priceColLeftCompany {
-  position: relative;
-  right: 8rpx;
+.Goodsbar .priceRow .priceRowChild .priceColLeft .moneyIcon {
   font-size: 18rpx;
 }
 
-.fourGoodsbar .priceRow .priceRowChild .priceColRight {
-  flex: 0 0 auto
+.Goodsbar .priceRow .priceRowChild .priceColLeft .priceColLeftNew {
+  font-size: 26rpx;
 }
 
-.fourGoodsbar .priceRow .priceRowChild .priceColRight {
-  flex: 0 0 auto
+.Goodsbar .priceRow .priceRowChild .priceColLeft .priceColLeftNew .priceColLeftCompany {
+  position: relative;
+  right: 8rpx;
+  font-size: 14rpx;
 }
 
+.Goodsbar .priceRow .priceRowChild .priceColRight {
+  position: relative;
+  top: 10rpx;
+  right: 24rpx;
+  padding: 12rpx;
+  width: 24rpx;
+  align-self: center;
+  border-radius: 30rpx;
+  background-color: #19be6b;
+}
+
+.Goodsbar .priceRow .priceRowChild .priceColRight .iconfont {
+  flex: 1 0 auto;
+  align-self: center;
+  font-size: 22rpx;
+  color: #fff;
+}
+
+.Goodsbar .priceRow2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Goodsbar .priceRow2 .priceColLeftOld {
+  position: relative;
+  top: 20rpx;
+  left: 24rpx;
+  flex: 1 0 auto;
+  font-size: 18rpx;
+  color: #80848f;
+  text-decoration: line-through;
+}

@@ -39,6 +39,11 @@
   border-radius: 40rpx;
 }
 
+.searchIndex van-search .search .search3 {
+  bottom: 6rpx;
+  font-size: 30rpx
+}
+
 .searchIndex .third i-badge .i-badgeLog {
   margin-bottom: 20rpx
 }

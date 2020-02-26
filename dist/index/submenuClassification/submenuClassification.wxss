@@ -1,6 +1,8 @@
 @import "../../../font/style.wxss";
 
 .submenuClassification {
+  position: relative;
+  top: 40rpx;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -49,6 +51,8 @@
 }
 
 .submenuClassificationText {
+  position: relative;
+  top: 40rpx;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

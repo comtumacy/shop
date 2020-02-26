@@ -16,6 +16,10 @@ Component({
     timeData: {
       "type": Object
     },
+    goodsNumber: {
+      "type": Number,
+      "value": 3
+    },
     // 大标题
     Title: {
       "type": String,
@@ -47,7 +51,7 @@ Component({
       "value": ["../../../image/goodsbar/fruits/apple.png", "../../../image/goodsbar/fruits/banana.png", "../../../image/goodsbar/fruits/cherry.png", "../../../image/goodsbar/fruits/jujube.png"]
     },
     // 图片优惠文字设置
-    fourDiscountText: {
+    DiscountText: {
       "type": ArrayBuffer,
       "value": ["立省4元", "立省6元", "立省14元", "立省10元"]
     },
