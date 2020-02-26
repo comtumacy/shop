@@ -1,4 +1,6 @@
 /* 头部 */
+@import "./moneyFont.wxss";
+@import "./buyCarFont.wxss";
 
 .goodsbarHeader {
   display: flex;
@@ -9,15 +11,10 @@
 
 .goodsbarHeader .goodsbarTitle {
   flex: none;
-  font-size: 35rpx;
 }
 
 .goodsbarHeader .goodsbarSecondTitle {
-  margin-left: 20rpx;
-  margin-top: 10rpx;
   flex: none;
-  font-size: 16rpx;
-  color: rgb(128, 132, 143);
 }
 
 .goodsbarHeader .goodsbarTime {
@@ -58,8 +55,8 @@
   align-items: center;
 }
 
-.fourGoodsbar .imgRow .imgRowFor{
-  height: 160rpx
+.fourGoodsbar .imgRow .imgRowFor {
+  height: 160rpx;
 }
 
 .fourGoodsbar .imgRow .imgRowFor .goodImg {
@@ -96,17 +93,17 @@
   align-items: flex-start;
 }
 
-.fourGoodsbar .TitleRow .TitleCol{
+.fourGoodsbar .TitleRow .TitleCol {
   flex: 0 0 auto;
   width: 160rpx;
-  font-size: 28rpx
+  font-size: 28rpx;
 }
 
 .fourGoodsbar .priceTypeIcon {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: flex-start
+  align-items: flex-start;
 }
 
 .fourGoodsbar .priceTypeIcon .priceTypeIconItem {
@@ -122,6 +119,57 @@
   font-size: 24rpx;
   border-width: 1rpx;
   border-style: solid;
-  border-radius: 20rpx
+  border-radius: 20rpx;
+}
+
+.fourGoodsbar .priceRow {
+  position: relative;
+  display: flex;
+  top: 15px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.fourGoodsbar .priceRow .priceRowChild{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 0 0 auto
+}
+
+.fourGoodsbar .priceRow .priceRowChild .priceColLeft {
+  display: flex;
+  align-items: flex-start;
+  flex: 1 0 auto;
+}
+
+.fourGoodsbar .priceRow .priceRowChild .priceColLeft .moneyIcon {
+  font-size: 18rpx
+}
+
+.fourGoodsbar .priceRow .priceRowChild .priceColLeft .priceColLeftNew {
+  font-size: 30rpx
+}
+
+.fourGoodsbar .priceRow .priceRowChild .priceColLeft .priceColLeftOld {
+  text-decoration: line-through;
+  color: #80848F;
+  font-size: 18rpx
+}
+
+.fourGoodsbar .priceRow .priceRowChild .priceColLeft .priceColLeftNew .priceColLeftCompany {
+  position: relative;
+  right: 8rpx;
+  font-size: 18rpx;
+}
+
+.fourGoodsbar .priceRow .priceRowChild .priceColRight {
+  flex: 0 0 auto
+}
+
+.fourGoodsbar .priceRow .priceRowChild .priceColRight {
+  flex: 0 0 auto
 }
 

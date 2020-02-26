@@ -1,8 +1,8 @@
 <!-- 主页商品栏组件 -->
 <!-- 头部 -->
 <view class="goodsbarHeader">
-  <view class="goodsbarTitle">{{Title}}</view>
-  <view class="goodsbarSecondTitle" hidden="{{SecondTitleSign}}">{{SecondTitle}}</view>
+  <view class="goodsbarTitle" style="font-size: {{TitleFontSize}}rpx; color: {{TitleColor}}">{{Title}}</view>
+  <view class="goodsbarSecondTitle" hidden="{{SecondTitleSign}}" style="margin-left: {{goodsbarSecondTitleMarginLeft}}rpx; margin-top: {{goodsbarSecondTitleMarginTop}}rpx; font-size: {{goodsbarSecondTitleFontSize}}rpx; color: {{goodsbarSecondTitleColor}}">{{SecondTitle}}</view>
   <view class="goodsbarTime">
     <van-count-down use-slot millisecond="{{millisecond}}" time="{{ time }}" bind:change="onChange" auto-start="{{autoStart}}">
       剩余
@@ -34,5 +34,20 @@
       <view class="priceTypeIconItemTitle" style="color: {{priceType[priceTypeSign].color}};border-color: {{priceType[priceTypeSign].color}}">{{priceType[priceTypeSign].title}}</view>
     </view>
   </view>
-  <view class="priceRow"></view>
+  <view class="priceRow">
+    <view class="priceRowChild" wx:for="{{priceColLeftNew}}" wx:key="index">
+      <view class="priceColLeft">
+        <view class="iconfont icon-money moneyIcon"></view>
+        <view class="priceColLeftNew">{{priceColLeftNew[index]}}
+          <text class="priceColLeftCompany">{{priceColLeftCompany[index]}}</text>
+        </view>
+      </view>
+      <view class="priceColRight">
+        <view class="priceColRightButton iconfont icon-gouwuche"></view>
+      </view>
+    </view>
+    <view class="priceRowChild2" wx:for="{{priceColLeftNew}}" wx:key="index">
+      <view class="priceColLeftOld">{{priceColLeftOld[index]}}</view>
+    </view>
+  </view>
 </view>
