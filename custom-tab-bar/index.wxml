@@ -1,8 +1,8 @@
 <!-- 导航栏自定义组件 -->
-<van-tabbar active="{{ active }}" bind:change="onChange" z-index="{{100}}">
-  <van-tabbar-item wx:if="{{tabbarNumber >= 1 ? true : false}}" icon="wap-home-o" info="{{info1}}" dot="{{dot1}}">{{text1}}</van-tabbar-item>
-  <van-tabbar-item wx:if="{{tabbarNumber >= 2 ? true : false}}" icon="shopping-cart-o" info="{{info2}}" dot="{{dot2}}">{{text2}}</van-tabbar-item>
-  <van-tabbar-item wx:if="{{tabbarNumber >= 3 ? true : false}}" icon="friends-o" info="{{info3}}" dot="{{dot3}}">{{text3}}</van-tabbar-item>
-  <van-tabbar-item wx:if="{{tabbarNumber >= 4 ? true : false}}" icon="friends-o" info="{{info4}}" dot="{{dot4}}">{{text4}}</van-tabbar-item>
-  <van-tabbar-item wx:if="{{tabbarNumber >= 5 ? true : false}}" icon="friends-o" info="{{info5}}" dot="{{dot5}}">{{text5}}</van-tabbar-item>
+<van-tabbar active="{{ active }}" bind:change="onChange" z-index="{{100}}" inactive-color="{{inactiveColor}}" inactive-color="{{inactiveColor}}" safe-area-inset-bottom="{{safeAreaInsetBottom}}">
+  <van-tabbar-item wx:if="{{tabbarNumber >= 1 ? true : false}}" icon="{{icon1}}" icon-active="{{iconActive1}}" info="{{info1}}" dot="{{dot1}}">{{text1}}</van-tabbar-item>
+  <van-tabbar-item wx:if="{{tabbarNumber >= 2 ? true : false}}" icon="{{icon2}}" icon-active="{{iconActive2}}" info="{{info2}}" dot="{{dot2}}">{{text2}}</van-tabbar-item>
+  <van-tabbar-item wx:if="{{tabbarNumber >= 3 ? true : false}}" icon="{{icon3}}" icon-active="{{iconActive3}}" info="{{info3}}" dot="{{dot3}}">{{text3}}</van-tabbar-item>
+  <van-tabbar-item wx:if="{{tabbarNumber >= 4 ? true : false}}" icon="{{icon4}}" icon-active="{{iconActive4}}" info="{{info4}}" dot="{{dot4}}">{{text4}}</van-tabbar-item>
+  <van-tabbar-item wx:if="{{tabbarNumber >= 5 ? true : false}}" icon="{{icon5}}" icon-active="{{iconActive5}}" info="{{info5}}" dot="{{dot5}}">{{text5}}</van-tabbar-item>
 </van-tabbar>
