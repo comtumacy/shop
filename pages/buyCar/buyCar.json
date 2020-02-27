@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "shop-repurchase": "../../dist/buycar/repurchase/repurchase"
+  },
+  "navigationBarTitleText": "购物车"
 }

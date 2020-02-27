@@ -1,2 +1,4 @@
-<!--pages/buyCar/buyCar.wxml-->
-<text>pages/buyCar/buyCar.wxml</text>
+<!-- 购物车页面 -->
+<view class="buyCarIndex">
+  <shop-repurchase></shop-repurchase>
+</view>

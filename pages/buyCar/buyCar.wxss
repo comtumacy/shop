@@ -1,1 +1,3 @@
-/* pages/buyCar/buyCar.wxss */
+.buyCarIndex {
+  margin: 0 4%
+}

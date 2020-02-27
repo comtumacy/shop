@@ -1,4 +1,4 @@
-<!--pages/index.wxml-->
+<!-- 首页页面 -->
 <view class="index">
   <!-- 搜索组件 -->
   <shop-search class="shop-search" bind:search="onSearch"></shop-search>

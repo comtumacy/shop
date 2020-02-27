@@ -1,0 +1,12 @@
+<view class="repurchaseIndex">
+  <view class="repurchaseLeft" style="font-size: {{repurchaseLeftFontSize}}rpx; padding:{{repurchaseLeftPadingUD}}rpx {{repurchaseLeftPadingLR}}rpx; background-color:{{repurchaseLeftBackgroundColor}}; color:{{repurchaseLeftColor}}">
+    {{repurchaseLeft}}
+  </view>
+  <view class="repurchaseMiddle">
+  {{describe1}}{{number1}}{{company1}}可{{verb}}{{number2}}{{company2}}商品，还{{describe2}}{{number3}}{{company3}}
+  </view>
+  <view class="repurchaseRight">
+  去{{repurchaseRightText}}
+  <text class=""></text>
+  </view>
+</view>

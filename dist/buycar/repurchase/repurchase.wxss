@@ -1,0 +1,10 @@
+.repurchaseIndex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.repurchaseIndex .repurchaseLeft {
+  border-radius: 80rpx;
+}
