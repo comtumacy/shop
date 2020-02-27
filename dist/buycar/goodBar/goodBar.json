@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-swipe-cell": "../../vant/swipe-cell/index",
+    "van-toast": "../../vant/toast/index",
+    "van-stepper": "../../vant/stepper/index"
+  }
+}

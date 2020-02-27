@@ -7,7 +7,9 @@ Page({
   data: {
 
   },
-
+  changeStepper: function (res) {
+    console.log(res.detail)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,0 +1,77 @@
+@import "../../../font/style.wxss";
+@import "./moneyFont.wxss";
+
+.goodBarIndex {
+  position: relative;
+  display: flex;
+  margin-top: 30rpx;
+  flex-flow: flex-start;
+}
+
+.goodBarIndex .allow {
+  position: relative;
+  margin-right: 28rpx;
+  align-self: center;
+  flex: 0 1 auto;
+}
+
+.goodBarIndex .allow .allowItem {
+  padding: 5rpx;
+  width: 32rpx;
+  height: 32rpx;
+  border-style: solid;
+  border-width: 2rpx;
+  color: white;
+}
+
+.goodBarIndex .img {
+  position: relative;
+  margin-right: 28rpx;
+  flex: 0 1 auto;
+}
+
+.goodBarIndex .img .goodBarImg {
+  width: 230rpx;
+  height: 230rpx;
+}
+
+.goodBarIndex .goodBarContent {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex: 0 1 auto;
+}
+
+.goodBarIndex .goodBarContent .goodBarContentTop {
+  font-size: 26rpx;
+}
+
+.goodBarIndex .goodBarContent .goodBarContentBottom {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.goodBarIndex .goodBarContent .goodBarContentBottom .goodBarPrice {
+  font-size: 36rpx;
+}
+
+.goodBarIndex .goodBarContent .goodBarContentBottom .goodBarPrice .goodBarIcon{
+  display: inline;
+  font-size: 36rpx;
+}
+
+.goodBarIndex .goodBarContent .goodBarContentBottom .goodBarPrice .goodBarNewPrice {
+  display: inline 
+}
+
+.goodBarIndex .goodBarContent .goodBarContentBottom .goodBarPrice .goodBarOldPrice {
+  position: relative;
+  left: 10rpx;
+  display: inline;
+  font-size: 20rpx;
+  text-decoration: line-through;
+  color: #80848f;
+}

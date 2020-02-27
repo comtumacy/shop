@@ -46,7 +46,7 @@ Component({
     // 右边按钮文字
     repurchaseRightText: {
       "type": String,
-      "value": "换购"
+      "value": "凑单"
     },
     // 样式
     repurchaseLeftFontSize: {
@@ -55,11 +55,11 @@ Component({
     },
     repurchaseLeftPadingUD: {
       "type": String,
-      "value": "6"
+      "value": "4"
     },
     repurchaseLeftPadingLR: {
       "type": String,
-      "value": "10"
+      "value": "20"
     },
     repurchaseLeftBackgroundColor: {
       "type": String,
@@ -68,7 +68,23 @@ Component({
     repurchaseLeftColor: {
       "type": String,
       "value": "#ffffff"
-    }
+    },
+    repurchaseLeftBorderRadius: {
+      "type": String,
+      "value": "80"
+    },
+    repurchaseMiddleFontSize: {
+      "type": String,
+      "value": "24"
+    },
+    repurchaseMiddleColor: {
+      "type": String,
+      "value": "#19be6b"
+    },
+    repurchaseRightFontSize: {
+      "type": String,
+      "value": "28"
+    },
   },
   created() {},
   attached() {},

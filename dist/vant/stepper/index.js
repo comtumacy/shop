@@ -162,7 +162,7 @@ VantComponent({
             this.setData({
                 value: this.data.asyncChange ? this.data.value : value
             });
-            this.$emit('change', value);
+          this.$emit('change', value, { bubbles: true, composed: true });
         },
         computeInputStyle() {
             let style = '';

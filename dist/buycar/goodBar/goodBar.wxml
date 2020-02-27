@@ -1,0 +1,21 @@
+<view class="goodBarIndex">
+  <view class="allow">
+    <view class="iconfont icon-duigou allowItem" style="border-color: {{allowColor}}; border-radius:{{allowBorderRadius}}rpx"></view>
+  </view>
+  <view class="img">
+    <image class="goodBarImg" src="{{img}}" style="border-radius: {{goodBarImgBorderRadius}}rpx"></image>
+  </view>
+  <view class="goodBarContent">
+    <view class="goodBarContentTop">{{title}}</view>
+    <view class="goodBarContentBottom">
+      <view class="goodBarPrice">
+        <view class="iconfont icon-money goodBarIcon"></view>
+        <view class="goodBarNewPrice">2499</view>
+        <view class="goodBarOldPrice">3000</view>
+      </view>
+      <view class="goodsBarStepper">
+        <van-stepper value="{{ 1 }}"/>
+      </view>
+    </view>
+  </view>
+</view>

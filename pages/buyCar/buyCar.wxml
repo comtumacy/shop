@@ -1,4 +1,5 @@
 <!-- 购物车页面 -->
 <view class="buyCarIndex">
   <shop-repurchase></shop-repurchase>
+  <shop-goodBar bind:change="changeStepper"></shop-goodBar>
 </view>

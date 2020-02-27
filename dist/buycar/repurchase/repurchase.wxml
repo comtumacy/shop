@@ -1,12 +1,12 @@
 <view class="repurchaseIndex">
-  <view class="repurchaseLeft" style="font-size: {{repurchaseLeftFontSize}}rpx; padding:{{repurchaseLeftPadingUD}}rpx {{repurchaseLeftPadingLR}}rpx; background-color:{{repurchaseLeftBackgroundColor}}; color:{{repurchaseLeftColor}}">
+  <view class="repurchaseLeft" style="font-size: {{repurchaseLeftFontSize}}rpx; padding:{{repurchaseLeftPadingUD}}rpx {{repurchaseLeftPadingLR}}rpx; background-color:{{repurchaseLeftBackgroundColor}}; color:{{repurchaseLeftColor}}; border-radius:{{repurchaseLeftBorderRadius}}rpx;">
     {{repurchaseLeft}}
   </view>
-  <view class="repurchaseMiddle">
-  {{describe1}}{{number1}}{{company1}}可{{verb}}{{number2}}{{company2}}商品，还{{describe2}}{{number3}}{{company3}}
+  <view class="repurchaseMiddle" style="font-size:{{repurchaseMiddleFontSize}}rpx">
+    {{describe1}}<text style="color: {{repurchaseMiddleColor}}"> {{number1}} </text>{{company1}}可{{verb}} {{number2}} {{company2}}商品，还{{describe2}} {{number3}} {{company3}}
   </view>
-  <view class="repurchaseRight">
-  去{{repurchaseRightText}}
-  <text class=""></text>
+  <view class="repurchaseRight" style="font-size:{{repurchaseRightFontSize}}rpx">
+    去{{repurchaseRightText}}
+    <text class="iconfont icon-youjiantou2 repurchaseRightAllow"></text>
   </view>
 </view>
