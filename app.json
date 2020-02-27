@@ -32,6 +32,14 @@
       {
         "pagePath": "pages/user/user",
         "text": "我的"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "测试4"
+      },
+      {
+        "pagePath": "pages/getuser/getuser",
+        "text": "测试5"
       }
     ]
   }

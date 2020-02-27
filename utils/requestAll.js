@@ -8,7 +8,6 @@ const getContent = () => {
         'page': 0
       },
       success: (res) => {
-        console.log(res.data)
         let result = res.data
         resolve(result)
       },
