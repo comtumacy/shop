@@ -99,7 +99,8 @@ Component({
       this.setData({
         allowItemSelected: selected
       })
-      this.triggerEvent('click', {'Select': 'good'});
+      let select = this.data.title
+      this.triggerEvent('click', {'Select': select});
     },
   }
 })

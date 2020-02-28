@@ -5,7 +5,7 @@
     <van-cell-group>
       <view class="goodBarIndex">
         <view class="allow" bind:tap="selectGood">
-          <view class="iconfont icon-duigou allowItem {{allowItemSelected === true ? 'allowItemSelected' : ''}}" style="border-color: {{allowBorderColor}}; border-radius:{{allowBorderRadius}}rpx; background-color:{{allowItemSelectedColor}}"></view>
+          <view class="iconfont icon-duigou allowItem" style="border-color: {{allowBorderColor}}; border-radius:{{allowBorderRadius}}rpx; background-color:{{allowItemSelected? allowItemSelectedColor: '#ffffff'}}"></view>
         </view>
         <view class="img">
           <image class="goodBarImg" src="{{img}}" style="border-radius: {{goodBarImgBorderRadius}}rpx"></image>

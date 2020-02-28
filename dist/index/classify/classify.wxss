@@ -1,6 +1,8 @@
 @import "../../../font/style.wxss";
 
 .classify {
+  position: relative;
+  margin-top: 10rpx;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -54,4 +56,5 @@
   order: 3;
   flex-grow: 0;
   flex-shrink: 0;
+  box-shadow: -10px 0 5px #ffffff;
 }

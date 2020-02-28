@@ -23,6 +23,11 @@
   color: #bbbec4;
 }
 
+.searchIndex .searchIcon .first .select i-icon .i-iconLog {
+  position: relative;
+  left: 6rpx
+}
+
 .searchIndex .second {
   align-self: flex-start
 }

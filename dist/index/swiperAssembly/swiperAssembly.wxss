@@ -1,10 +1,17 @@
 .swiperIndex {
   position: relative;
-  top: 20rpx;
+  margin-top: 20rpx;
+}
+
+.swiperIndex swiper {
+  height: 320rpx
+}
+
+.swiperIndex swiper {
+  height: 320rpx
 }
 
 .swiperIndex .swiperImage {
   width: 100%;
-  height: 100%;
-  border-radius: 40rpx
+  height: 320rpx
 }

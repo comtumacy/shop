@@ -13,7 +13,7 @@
   <!-- 分割线 -->
   <shop-dividerLayer></shop-dividerLayer>
   <!-- 商品栏 -->
-  <shop-goodsBar class="goodsBar" goodsNumber="3" goodsbarHeaderSign="{{goodsbarHeaderSign}}"></shop-goodsBar>
+  <!-- <shop-goodsBar class="goodsBar" goodsNumber="3" goodsbarHeaderSign="{{goodsbarHeaderSign}}" style=""></shop-goodsBar> -->
   <!-- 弹出层在最外层 -->
   <van-dialog id="van-dialog" />
   <!-- 留空 -->

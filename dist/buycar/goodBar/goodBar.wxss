@@ -29,10 +29,6 @@
   color: white;
 }
 
-.goodBarIndex .allow .allowItemSelected {
-  background-color: #19be6b
-}
-
 .goodBarIndex .img {
   position: relative;
   margin-right: 28rpx;

@@ -10,6 +10,10 @@ Component({
     images: {
       "type": ArrayBuffer,
       "value": ["../../../image/swiper/swiper.jpg", "../../../image/swiper/swiper2.jpg", "../../../image/swiper/swiper3.jpg", "../../../image/swiper/swiper1.jpg"]
+    },
+    swiperIndexBorderRadius: {
+      "type": String,
+      "value": "40"
     }
   },
   data: {
