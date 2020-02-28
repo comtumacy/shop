@@ -9,7 +9,7 @@ Component({
   properties: {
     imgUrl: {
       "type": String,
-      "value": "../../../image/activity/activity.png"
+      "value": "../../../image/activity/activity.jpg"
     }
   },
   data: {},

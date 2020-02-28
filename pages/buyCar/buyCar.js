@@ -7,7 +7,7 @@ Page({
   data: {
 
   },
-  changeStepper: function (res) {
+  changeStepper: function(res) {
     console.log(res.detail)
   },
   /**

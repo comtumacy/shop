@@ -1,3 +1,5 @@
+import Dialog from '../../vant/dialog/dialog'
+
 Component({
   externalClasses: ['sp-class'],
 
@@ -24,15 +26,42 @@ Component({
       "value": "20"
     }
   },
-  created() { },
-  attached() { },
-  ready() { },
-  detached() { },
-  moved() { },
+  created() {},
+  attached() {},
+  ready() {},
+  detached() {},
+  moved() {},
 
   data: {},
 
   methods: {
-
+    onClose: function(event) {
+      const {
+        position,
+        instance
+      } = event.detail;
+      switch (position) {
+        case 'left':
+        case 'cell':
+          Dialog.alert({
+            title: '提示',
+            message: '收藏成功'
+          }).then(() => {
+            instance.close();
+          }).catch(() => {
+            instance.close();
+          })
+          break;
+        case 'right':
+          Dialog.confirm({
+            message: '确定删除吗？'
+          }).then(() => {
+            instance.close();
+          }).catch(() => {
+            instance.close();
+          })
+          break;
+      }
+    }
   }
 })

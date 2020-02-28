@@ -1,10 +1,13 @@
 @import "../../../font/style.wxss";
 @import "./moneyFont.wxss";
 
-.goodBarIndex {
+.goodBar {
   position: relative;
-  display: flex;
   margin-top: 30rpx;
+}
+
+.goodBarIndex {
+  display: flex;
   flex-flow: flex-start;
 }
 
@@ -52,25 +55,26 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .goodBarIndex .goodBarContent .goodBarContentBottom .goodBarPrice {
   font-size: 36rpx;
 }
 
-.goodBarIndex .goodBarContent .goodBarContentBottom .goodBarPrice .goodBarIcon{
+.goodBarIndex .goodBarContent .goodBarContentBottom .goodBarPrice .goodBarIcon {
   display: inline;
   font-size: 36rpx;
 }
 
 .goodBarIndex .goodBarContent .goodBarContentBottom .goodBarPrice .goodBarNewPrice {
-  display: inline 
+  display: inline;
 }
 
 .goodBarIndex .goodBarContent .goodBarContentBottom .goodBarPrice .goodBarOldPrice {
   position: relative;
   left: 10rpx;
-  display: inline;
+  display: block;
   font-size: 20rpx;
   text-decoration: line-through;
   color: #80848f;

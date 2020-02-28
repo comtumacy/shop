@@ -1,3 +1,5 @@
+
+
 Component({
   externalClasses: ['sp-class'],
   created() {},
@@ -48,7 +50,7 @@ Component({
     // 图片路径
     imgs: {
       "type": ArrayBuffer,
-      "value": ["../../../image/goodsbar/fruits/apple.png", "../../../image/goodsbar/fruits/banana.png", "../../../image/goodsbar/fruits/cherry.png", "../../../image/goodsbar/fruits/jujube.png"]
+      "value": ["../../../image/goodsbar/fruits/apple.jpg", "../../../image/goodsbar/fruits/banana.jpg", "../../../image/goodsbar/fruits/cherry.jpg", "../../../image/goodsbar/fruits/jujube.jpg"]
     },
     // 图片优惠文字设置
     DiscountText: {
@@ -129,7 +131,7 @@ Component({
   data: {
     // 开启毫秒计算
     millisecond: true,
-    disCountImg: "../../../image/goodsbar/discount/discount.png"
+    disCountImg: "../../../image/goodsbar/discount/discount.jpg"
   },
 
   methods: {

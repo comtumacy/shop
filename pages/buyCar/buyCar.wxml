@@ -1,5 +1,9 @@
 <!-- 购物车页面 -->
 <view class="buyCarIndex">
+  <!-- 换购组件 -->
   <shop-repurchase></shop-repurchase>
+  <!-- 商品栏单行组件 -->
   <shop-goodBar bind:change="changeStepper"></shop-goodBar>
+  <!-- 弹出层在最外层 -->
+  <van-dialog id="van-dialog" />
 </view>

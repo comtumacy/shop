@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "shop-repurchase": "../../dist/buycar/repurchase/repurchase",
-    "shop-goodBar": "../../dist/buycar/goodBar/goodBar"
+    "shop-goodBar": "../../dist/buycar/goodBar/goodBar",
+    "van-dialog": "../../dist/vant/dialog/index"
   },
   "navigationBarTitleText": "购物车"
 }
