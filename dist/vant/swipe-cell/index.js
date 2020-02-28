@@ -5,6 +5,18 @@ const THRESHOLD = 0.3;
 let ARRAY = [];
 VantComponent({
     props: {
+        outButtonColor: {
+          type: String,
+          value: "#ffffff"
+        },
+        outButtonBgLeftColor: {
+          type: String,
+          value: "#19be6b"
+        },
+        outButtonBgRightColor: {
+          type: String,
+          value: "#ed3f14"
+        },
         disabled: Boolean,
         leftWidth: {
             type: Number,

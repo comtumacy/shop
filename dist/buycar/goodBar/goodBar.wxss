@@ -29,6 +29,10 @@
   color: white;
 }
 
+.goodBarIndex .allow .allowItemSelected {
+  background-color: #19be6b
+}
+
 .goodBarIndex .img {
   position: relative;
   margin-right: 28rpx;
@@ -46,10 +50,6 @@
   flex-flow: column nowrap;
   justify-content: space-between;
   flex: 0 1 auto;
-}
-
-.goodBarIndex .goodBarContent .goodBarContentTop {
-  font-size: 26rpx;
 }
 
 .goodBarIndex .goodBarContent .goodBarContentBottom {
@@ -79,5 +79,4 @@
   display: block;
   font-size: 20rpx;
   text-decoration: line-through;
-  color: #80848f;
 }

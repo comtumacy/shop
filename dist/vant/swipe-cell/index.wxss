@@ -17,7 +17,6 @@
   align-items: center;
   left: 0;
   width: 18%;
-  background-color: #19be6b;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
@@ -28,7 +27,6 @@
   align-items: center;
   right: 0;
   width: 18%;
-  background-color: #ed3f14;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }

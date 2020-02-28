@@ -9,11 +9,11 @@ Component({
   properties: {
     images: {
       "type": ArrayBuffer,
-      "value": ["../../../image/swiper/swiper.png", "../../../image/swiper/swiper2.png", "../../../image/swiper/swiper3.png", "../../../image/swiper/swiper1.png"]
+      "value": ["../../../image/swiper/swiper.jpg", "../../../image/swiper/swiper2.jpg", "../../../image/swiper/swiper3.jpg", "../../../image/swiper/swiper1.jpg"]
     }
   },
   data: {
-    url: "../../../image/icon/icon.png"
+    url: "../../../image/icon/icon.jpg"
   },
 
   methods: {

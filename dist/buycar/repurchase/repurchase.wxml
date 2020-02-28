@@ -1,3 +1,4 @@
+<!-- 换购组件 -->
 <view class="repurchaseIndex">
   <view class="repurchaseLeft" style="font-size: {{repurchaseLeftFontSize}}rpx; padding:{{repurchaseLeftPadingUD}}rpx {{repurchaseLeftPadingLR}}rpx; background-color:{{repurchaseLeftBackgroundColor}}; color:{{repurchaseLeftColor}}; border-radius:{{repurchaseLeftBorderRadius}}rpx;">
     {{repurchaseLeft}}

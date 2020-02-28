@@ -9,6 +9,11 @@ Component({
   detached() {},
   error() {},
   properties: {
+    // 头部显示控制
+    goodsbarHeaderSign: {
+      "type": Boolean,
+      "value": true
+    },
     // 时间设置
     time: {
       "type": Number,

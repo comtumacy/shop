@@ -55,12 +55,12 @@ Component({
     // 两个分类栏组件图片地址
     specialContentTwoImage: {
       "type": ArrayBuffer,
-      "value": ["../../../image/special/apple.png", "../../../image/special/banana.png"]
+      "value": ["../../../image/special/apple.jpg", "../../../image/special/banana.jpg"]
     },
     // 三个分类栏组件图片地址
     specialContentThreeImage: {
       "type": ArrayBuffer,
-      "value": ["../../../image/special/cherry.png", "../../../image/special/orange.png", "../../../image/special/kiwifruit.png"]
+      "value": ["../../../image/special/cherry.jpg", "../../../image/special/orange.jpg", "../../../image/special/kiwifruit.jpg"]
     },
     // 两个分类栏组件按钮名称
     specialContentTwoButtonText: {

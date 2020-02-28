@@ -2,6 +2,7 @@
 
 .repurchaseIndex {
   position: relative;
+  margin-right: 4%;
   margin-top: 30rpx;
   display: flex;
   flex-flow: row nowrap;

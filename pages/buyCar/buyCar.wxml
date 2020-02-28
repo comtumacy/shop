@@ -3,7 +3,19 @@
   <!-- 换购组件 -->
   <shop-repurchase></shop-repurchase>
   <!-- 商品栏单行组件 -->
-  <shop-goodBar bind:change="changeStepper"></shop-goodBar>
+  <shop-goodBar bind:change="changeStepper" bind:click="selectGood"></shop-goodBar>
+  <shop-goodBar bind:change="changeStepper" bind:click="selectGood"></shop-goodBar>
+  <!-- 换购组件 -->
+  <shop-repurchase></shop-repurchase>
+  <!-- 商品栏单行组件 -->
+  <shop-goodBar bind:change="changeStepper" bind:click="selectGood"></shop-goodBar>
+  <shop-goodBar bind:change="changeStepper" bind:click="selectGood"></shop-goodBar>
+  <!-- 分割线 -->
+  <shop-dividerLayer></shop-dividerLayer>
+  <!-- 商品栏 -->
+  <shop-goodsBar class="goodsBar" goodsNumber="3" goodsbarHeaderSign="{{goodsbarHeaderSign}}"></shop-goodsBar>
   <!-- 弹出层在最外层 -->
   <van-dialog id="van-dialog" />
+  <!-- 留空 -->
+  <view class="blank"></view>
 </view>

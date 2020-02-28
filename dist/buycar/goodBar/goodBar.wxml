@@ -1,20 +1,21 @@
+<!-- 商品栏组件，单商品 -->
 <view class="goodBar">
-  <van-swipe-cell id="swipe-cell" right-width="{{ 65 }}" left-width="{{ 65 }}" async-close bind:close="onClose" >
+  <van-swipe-cell id="swipe-cell" right-width="{{ 65 }}" left-width="{{ 65 }}" async-close bind:close="onClose" outButtonColor="{{outButtonColor}}" outButtonBgLeftColor="{{outButtonBgLeftColor}}" outButtonBgRightColor="{{outButtonBgRightColor}}" disabled="{{swipeNotDisabled}}">
     <view slot="left">收藏</view>
     <van-cell-group>
       <view class="goodBarIndex">
-        <view class="allow">
-          <view class="iconfont icon-duigou allowItem" style="border-color: {{allowColor}}; border-radius:{{allowBorderRadius}}rpx"></view>
+        <view class="allow" bind:tap="selectGood">
+          <view class="iconfont icon-duigou allowItem {{allowItemSelected === true ? 'allowItemSelected' : ''}}" style="border-color: {{allowBorderColor}}; border-radius:{{allowBorderRadius}}rpx; background-color:{{allowItemSelectedColor}}"></view>
         </view>
         <view class="img">
           <image class="goodBarImg" src="{{img}}" style="border-radius: {{goodBarImgBorderRadius}}rpx"></image>
         </view>
         <view class="goodBarContent">
-          <view class="goodBarContentTop">{{title}}
+          <view class="goodBarContentTop" style="font-size:{{goodBarContentTopFontSize}}rpx">{{title}}
           </view>
           <view class="goodBarContentBottom">
             <view class="goodBarPrice">
-              <view class="goodBarOldPrice">3000</view>
+              <view class="goodBarOldPrice" style="color:{{goodBarOldPriceColor}}">3000</view>
               <view class="iconfont icon-money goodBarIcon"></view>
               <view class="goodBarNewPrice">2499</view>
             </view>
