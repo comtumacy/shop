@@ -1,55 +1,42 @@
 .specialIndex {
   position: relative;
-  top: 60rpx
+  margin-top: 20rpx
 }
 
 .specialIndex .specialHeader {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.specialIndex .specialHeader .specialTitle {
-  flex: none;
-}
-
-.specialIndex .specialHeader .specialSecondTitle {
-  flex: none;
-}
-
-.specialIndex .specialHeader .specialTime {
-  margin-right: 10rpx;
-  flex: 1;
-  text-align: right;
-}
-
-.specialIndex .specialHeader .more {
-  position: relative;
-  left: 356rpx;
-  flex: none;
-  font-size: 24rpx;
-  color: rgb(128, 132, 143);
-}
-
-.specialContent .specialContentTwo {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.specialContent .specialContentTwo .specialContentTwoFlex {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
 
+.specialIndex .specialHeader .more {
+  color: rgb(128, 132, 143);
+}
+
+.specialContent .specialContentTwo {
+  position: relative;
+  margin-top: 10rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specialContent .specialContentTwo .specialContentTwoFlex {
+  display: flex;
+  padding: 20rpx;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f9;
+  border-radius: 20rpx
+}
+
 .specialContent .specialContentTwo .specialContentTwoFlex .left {
   position: relative;
   display: flex;
-  right: 20rpx;
+  margin-right: 20rpx;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
@@ -57,12 +44,12 @@
 
 .specialContent .specialContentTwo .specialContentTwoFlex .left .leftTop {
   position: relative;
-  bottom: 10rpx;
+  margin-bottom: 10rpx;
   font-size: 30rpx;
 }
 
 .specialContent .specialContentTwo .specialContentTwoFlex .left .leftBottom {
-  padding: 6rpx 10rpx;
+  padding: 6rpx 16rpx;
   font-size: 20rpx;
   background-color: #19be6b;
   color: #fff;
@@ -70,28 +57,33 @@
 }
 
 .specialContent .specialContentTwo .specialContentTwoFlex .right .specialContentTwoImage {
-  width: 160rpx;
-  height: 160rpx;
+  width: 155rpx;
+  height: 155rpx;
 }
 
 .specialContent .specialContentThree {
+  position: relative;
   display: flex;
+  margin-top: 20rpx;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center
 }
 
 .specialContent .specialContentThree .specialContentThreeFlex {
   display: flex;
+  padding: 20rpx 26rpx;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
+  background-color: #f8f8f9;
+  border-radius: 20rpx
 }
 
 .specialContent .specialContentThree .specialContentThreeFlex .specialContentThreeTop .specialContentThreeImage{
-  width: 120rpx;
-  height: 120rpx;
+  width: 155rpx;
+  height: 155rpx;
 }
 
 .specialContent .specialContentThree .specialContentThreeFlex .specialContentThreeMiddle {
@@ -101,7 +93,7 @@
 }
 
 .specialContent .specialContentThree .specialContentThreeFlex .specialContentThreeBottom {
-  padding: 6rpx 18rpx;
+  padding: 6rpx 22rpx;
   font-size: 20rpx;
   background-color: #19be6b;
   color: #fff;

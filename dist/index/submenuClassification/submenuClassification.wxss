@@ -1,91 +1,32 @@
-@import "../../../font/style.wxss";
+@import "./font.wxss";
 
-.submenuClassification {
+.submenuClassificationIndex {
   position: relative;
-  top: 40rpx;
+  margin-top: 20rpx;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: center
 }
 
-.submenuClassification .outerLayer {
-  width: 100rpx;
-  height: 100rpx;
-  border-radius: 60rpx;
-}
-
-.submenuClassification .outerLayer .submenuClassification0 {
-  flex: auto;
-  padding-top: 20rpx;
-  padding-left: 26rpx;
-  font-size: 50rpx;
-}
-
-.submenuClassification .outerLayer .submenuClassification1 {
-  flex: auto;
-  padding-top: 20rpx;
-  padding-left: 26rpx;
-  font-size: 50rpx;
-}
-
-.submenuClassification .outerLayer .submenuClassification2 {
-  flex: auto;
-  padding-top: 20rpx;
-  padding-left: 26rpx;
-  font-size: 50rpx;
-}
-
-.submenuClassification .outerLayer .submenuClassification3 {
-  flex: auto;
-  padding-top: 20rpx;
-  padding-left: 26rpx;
-  font-size: 50rpx;
-}
-
-.submenuClassification .outerLayer .submenuClassification4 {
-  flex: auto;
-  padding-top: 20rpx;
-  padding-left: 26rpx;
-  font-size: 50rpx;
-}
-
-.submenuClassificationText {
+.submenuClassificationIndex .submenuClassOuterLayer {
   position: relative;
-  top: 40rpx;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center
 }
 
-.submenuClassificationText view {
-  flex: 1 1 auto;
-  padding-top: 10rpx;
-  font-size: 20rpx;
-  color: rgb(128, 132, 143);
+.submenuClassificationIndex .submenuClassOuterLayer .submenuClassIcon {
+  width: 110rpx;
+  height: 110rpx;
+  font-size: 80rpx;
+  border-radius: 80rpx
 }
 
-.submenuClassificationText .icon0 {
-  padding-left: 8rpx;
-  text-align: left;
-}
-
-.submenuClassificationText .icon4 {
-  padding-right: 8rpx;
-  text-align: right;
-}
-
-.submenuClassificationText .icon2 {
-  text-align: center;
-}
-
-.submenuClassificationText .icon1 {
-  padding-right: 20rpx;
-  text-align: center;
-}
-
-.submenuClassificationText .icon3 {
-  padding-left: 20rpx;
-  text-align: center;
+.submenuClassificationIndex .submenuClassOuterLayer .submenuText {
+  position: relative;
+  margin-top: 4rpx;
+  font-size: 28rpx;
+  color: #80848F
 }

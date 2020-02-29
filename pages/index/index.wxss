@@ -6,5 +6,5 @@
 
 .blank {
   position: relative;
-  height: 240rpx
+  height: 160rpx
 }

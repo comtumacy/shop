@@ -3,9 +3,6 @@
 <view class="specialIndex">
   <view class="specialHeader">
     <view class="specialTitle" style="font-size: {{TitleFontSize}}rpx; color: {{TitleColor}}">{{Title}}</view>
-    <view class="specialSecondTitle" hidden="{{SecondTitleSign}}" style="margin-left: {{specialSecondTitleMarginLeft}}rpx; margin-top: {{specialSecondTitleMarginTop}}rpx; font-size: {{specialSecondTitleFontSize}}rpx; color: {{specialSecondTitleColor}}">
-      {{SecondTitle}}
-    </view>
     <view class="more">{{more}}</view>
   </view>
   <view class="specialContent">
@@ -18,14 +15,14 @@
           </view>
         </view>
         <view class="right">
-          <image class="specialContentTwoImage" src="{{specialContentTwoImage[index]}}"></image>
+          <image class="specialContentTwoImage" src="{{specialContentTwoImage[index]}}" style="border-radius:{{specialContentTwoImageBorderRadius}}rpx"></image>
         </view>
       </view>
     </view>
     <view class="specialContentThree" wx:for="{{specialContentThreeNumber}}" wx:key="index">
       <view class="specialContentThreeFlex" wx:for="{{3}}" wx:key="index">
         <view class="specialContentThreeTop">
-          <image class="specialContentThreeImage" src="{{specialContentThreeImage[index]}}"></image>
+          <image class="specialContentThreeImage" src="{{specialContentThreeImage[index]}}" style="border-radius:{{specialContentThreeImageBorderRadius}}rpx"></image>
         </view>
         <view class="specialContentThreeMiddle">
           {{specialContentThreeText[index]}}

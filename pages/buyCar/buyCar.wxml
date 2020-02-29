@@ -1,19 +1,15 @@
 <!-- 购物车页面 -->
 <view class="buyCarIndex">
-  <!-- 换购组件 -->
-  <shop-repurchase></shop-repurchase>
-  <!-- 商品栏单行组件 -->
-  <shop-goodBar bind:change="changeStepper" bind:click="selectGood"></shop-goodBar>
-  <shop-goodBar bind:change="changeStepper" bind:click="selectGood"></shop-goodBar>
-  <!-- 换购组件 -->
-  <shop-repurchase></shop-repurchase>
-  <!-- 商品栏单行组件 -->
-  <shop-goodBar bind:change="changeStepper" bind:click="selectGood"></shop-goodBar>
-  <shop-goodBar bind:change="changeStepper" bind:click="selectGood"></shop-goodBar>
+  <!-- 换购、商品栏组件 -->
+  <shop-goodBar bind:change="changeStepper" bind:click="selectGood" wx:for="{{shopGoodBarNumber}}" wx:key="index"></shop-goodBar>
   <!-- 分割线 -->
-  <shop-dividerLayer></shop-dividerLayer>
-  <!-- 商品栏 -->
-  <!-- <shop-goodsBar class="goodsBar" goodsNumber="3" goodsbarHeaderSign="{{goodsbarHeaderSign}}" style=""></shop-goodsBar> -->
+  <shop-dividerLayer dividerText="你可能还想买"></shop-dividerLayer>
+  <!-- 商品栏目组件 -->
+  <shop-goodsBar class="goodsBar" goodsNumber="2" marginLeftAndRight="4%" SecondTitleSign="false" goodsbarTimeSign="true" class="buyCarClass"></shop-goodsBar>
+  <!-- 分割线 -->
+  <shop-dividerLayer dividerText="别拉啦，已经没有了，≥▽≤" dividerIndexMarginTop="{{120}}"></shop-dividerLayer>
+  <!-- 提交组件 -->
+  <shop-submitBar></shop-submitBar>
   <!-- 弹出层在最外层 -->
   <van-dialog id="van-dialog" />
   <!-- 留空 -->

@@ -1,10 +1,10 @@
 <!-- 主页商品栏组件 -->
 <!-- 头部 -->
-<view style="position: relative; top: 80rpx; height: {{goodsNumber === 3? '560rpx' : '460rpx'}}">
+<view style="position: relative; margin-top: 20rpx; height: {{goodsNumber === 3? '500rpx' : '426rpx'}}; margin-left:{{marginLeftAndRight}}; margin-right:{{marginLeftAndRight}}" class="{{buyCarClass}}">
   <view class="goodsbarHeader" wx:if="{{goodsbarHeaderSign}}">
     <view class="goodsbarTitle" style="font-size: {{TitleFontSize}}rpx; color: {{TitleColor}}">{{Title}}</view>
     <view class="goodsbarSecondTitle" hidden="{{SecondTitleSign}}" style="margin-left: {{goodsbarSecondTitleMarginLeft}}rpx; margin-top: {{goodsbarSecondTitleMarginTop}}rpx; font-size: {{goodsbarSecondTitleFontSize}}rpx; color: {{goodsbarSecondTitleColor}}">{{SecondTitle}}</view>
-    <view class="goodsbarTime">
+    <view class="goodsbarTime" hidden="{{goodsbarTimeSign}}">
       <van-count-down use-slot millisecond="{{millisecond}}" time="{{ time }}" bind:change="onChange" auto-start="{{autoStart}}">
         剩余
         <text class="item">{{ timeData.hours }}</text>
@@ -21,21 +21,23 @@
   <!-- 商品 -->
   <view class="Goodsbar">
     <view class="imgRow">
-      <view wx:for="{{goodsNumber}}" wx:key="index" class="{{goodsNumber === 3? 'imgRowForThree' : 'imgRowFor'}}">
-        <image class="goodImg" src="{{imgs[index]}}" mode="scaleToFill" lazy-load="true"></image>
-        <image class="goodDiscountImg" src="{{disCountImg}}" mode="scaleToFill" lazy-load="true"></image>
-        <view class="DiscountText">{{DiscountText[index]}}</view>
+      <view wx:for="{{goodsNumber}}" wx:key="index" class="{{goodsNumber === 3? 'imgRowForThree' : (goodsNumber === 4 ? 'imgRowFor' : 'imgRowForTwo')}}">
+        <image class="goodImg" src="{{imgs[index]}}" mode="scaleToFill" lazy-load="true" style="border-radius:{{goodImgBorderRaduis}}rpx"></image>
+        <!-- <view style="position: absolute">
+          <image class="goodDiscountImg" src="{{disCountImg}}" mode="scaleToFill" lazy-load="true" style="border-bottom-left-radius:{{goodImgBorderRaduis}}rpx; border-top-right-radius:{{goodImgBorderRaduis}}rpx"></image>
+          <view class="DiscountText">{{DiscountText[index]}}</view>
+        </view> -->
       </view>
     </view>
-    <view class="{{goodsNumber === 3? 'TitleRowThree' : 'TitleRow'}}">
+    <view class="{{goodsNumber === 3? 'TitleRowThree' : (goodsNumber === 4 ? 'TitleRow' : 'TitleRowTwo')}}">
       <view class="TitleCol" wx:for="{{goodsNumber}}" wx:key="index">{{TitleText[index]}}</view>
     </view>
-    <view class="{{goodsNumber === 3? 'priceTypeIconThree' : 'priceTypeIcon'}}">
+    <view class="{{goodsNumber === 3? 'priceTypeIconThree' : (goodsNumber === 4 ? 'priceTypeIcon' : 'priceTypeIconTwo')}}">
       <view class="priceTypeIconItem" wx:for="{{goodsNumber}}" wx:key="index">
         <view class="priceTypeIconItemTitle" style="color: {{priceType[priceTypeSign].color}};border-color: {{priceType[priceTypeSign].color}}">{{priceType[priceTypeSign].title}}</view>
       </view>
     </view>
-    <view class="{{goodsNumber === 3? 'priceRowThree' : 'priceRow'}}">
+    <view class="{{goodsNumber === 3? 'priceRowThree' : (goodsNumber === 4 ? 'priceRow' : 'priceRowTwo')}}">
       <view class="priceRowChild" wx:for="{{goodsNumber}}" wx:key="index">
         <view class="priceColLeft">
           <view class="iconfont icon-money moneyIcon"></view>
@@ -48,8 +50,10 @@
         </view>
       </view>
     </view>
-    <view class="{{goodsNumber === 3? 'priceRow2Three' : 'priceRow2'}}">
-      <view class="priceColLeftOld" wx:for="{{goodsNumber}}" wx:key="index">{{priceColLeftOld[index]}}</view>
+    <view class="{{goodsNumber === 3? 'priceRow2Three' : (goodsNumber === 4 ? 'priceRow2' : 'priceRow2Two')}}">
+      <view class="priceColLeftOld" wx:for="{{goodsNumber}}" wx:key="index">
+        <view class="{{goodsNumber === 2 ? 'extra' : ''}}">{{priceColLeftOld[index]}}</view>
+      </view>
     </view>
   </view>
 </view>

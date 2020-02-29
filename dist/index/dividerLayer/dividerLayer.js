@@ -3,10 +3,6 @@ Component({
 
   properties: {
     //left center right
-    dividerIndexMarginTop: {
-      "type": String,
-      "value": "0"
-    },
     contentPosition: {
       "type": String,
       "value": "center"
@@ -29,7 +25,7 @@ Component({
     },
     dividerText: {
       "type": String,
-      "value": "你可能还想买"
+      "value": "分割线"
     },
   },
   created() { },

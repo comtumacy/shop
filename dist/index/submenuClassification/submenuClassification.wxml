@@ -1,14 +1,8 @@
 <!-- 主页分类圆形按钮组件 -->
-<view class="submenuClassification">
-  <view class="outerLayer" wx:for="{{contents}}" wx:key="item" style="background-color: {{backgroundColor[index]}}">
-    <view class="iconfont icon-{{icons[index]}} submenuClassification{{index}}">
+<view class="submenuClassificationIndex">
+  <view class="submenuClassOuterLayer" wx:for="{{contents}}" wx:key="item">
+    <view class="iconfont icon-{{icons[index]}} submenuClassIcon" style="background-color:{{backgroundColor[index]}}">
     </view>
-  </view>
-</view>
-<view class="submenuClassificationText">
-  <view wx:for="{{contents}}" wx:key="item">
-    <view class="icon{{index}}">
-      {{item}}
-    </view>
+    <view class="submenuText">{{contents[index]}}</view>
   </view>
 </view>

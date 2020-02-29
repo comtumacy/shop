@@ -5,7 +5,7 @@
 .goodsbarHeader {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -25,7 +25,7 @@
 
 .goodsbarHeader .more {
   flex: none;
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: rgb(128, 132, 143);
 }
 
@@ -48,6 +48,7 @@
 /* 商品 */
 
 .Goodsbar .imgRow {
+  position: relative;
   margin-top: 20rpx;
   display: flex;
   flex-flow: row nowrap;
@@ -56,49 +57,66 @@
 }
 
 .Goodsbar .imgRow .imgRowFor {
-  height: 160rpx;
+  position: relative;
+  text-align: center;
+  height: 150rpx;
 }
 
 .Goodsbar .imgRow .imgRowForThree {
-  height: 220rpx;
+  position: relative;
+  text-align: center;
+  height: 205rpx;
+}
+
+.Goodsbar .imgRow .imgRowForTwo {
+  position: relative;
+  text-align: center;
+  height: 270rpx;
 }
 
 .Goodsbar .imgRow .imgRowFor .goodImg {
-  width: 160rpx;
-  height: 160rpx;
-  border-bottom-left-radius: 20rpx;
-  border-top-right-radius: 20rpx;
+  width: 150rpx;
+  height: 150rpx;
 }
 
 .Goodsbar .imgRow .imgRowForThree .goodImg {
-  width: 220rpx;
-  height: 220rpx;
-  border-bottom-left-radius: 20rpx;
-  border-top-right-radius: 20rpx;
+  width: 205rpx;
+  height: 205rpx;
 }
 
-.Goodsbar .imgRow .imgRowFor .goodDiscountImg {
+.Goodsbar .imgRow .imgRowForTwo .goodImg {
+  width: 330rpx;
+  height: 270rpx;
+}
+
+/* .Goodsbar .imgRow .imgRowFor .goodDiscountImg {
   position: relative;
+  right: 16rpx;
   bottom: 50rpx;
   width: 120rpx;
   height: 40rpx;
-  border-bottom-left-radius: 20rpx;
-  border-top-right-radius: 20rpx;
 }
 
 .Goodsbar .imgRow .imgRowForThree .goodDiscountImg {
   position: relative;
+  right: 42rpx;
   bottom: 50rpx;
   width: 120rpx;
   height: 40rpx;
-  border-bottom-left-radius: 20rpx;
-  border-top-right-radius: 20rpx;
 }
 
-.Goodsbar .imgRow .imgRowFor .DiscountText {
+.Goodsbar .imgRow .imgRowForTwo .goodDiscountImg {
   position: relative;
-  left: 14rpx;
-  bottom: 96rpx;
+  right: 42rpx;
+  bottom: 50rpx;
+  width: 120rpx;
+  height: 40rpx;
+} */
+
+/* .Goodsbar .imgRow .imgRowFor .DiscountText {
+  position: relative;
+  right: 14rpx;
+  bottom: 90rpx;
   font-family: SimHei;
   font-size: 24rpx;
   color: #fff;
@@ -106,12 +124,21 @@
 
 .Goodsbar .imgRow .imgRowForThree .DiscountText {
   position: relative;
-  left: 14rpx;
-  bottom: 96rpx;
+  right: 40rpx;
+  bottom: 92rpx;
   font-family: SimHei;
   font-size: 24rpx;
   color: #fff;
 }
+
+.Goodsbar .imgRow .imgRowForTwo .DiscountText {
+  position: relative;
+  right: 40rpx;
+  bottom: 92rpx;
+  font-family: SimHei;
+  font-size: 24rpx;
+  color: #fff;
+} */
 
 .Goodsbar .TitleRow {
   position: relative;
@@ -127,30 +154,53 @@
   display: flex;
   top: 10rpx;
   flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Goodsbar .TitleRowTwo {
+  position: relative;
+  display: flex;
+  top: 10rpx;
+  flex-flow: row nowrap;
   justify-content: space-around;
   align-items: flex-start;
 }
 
 .Goodsbar .TitleRow .TitleCol {
   flex: 0 0 auto;
-  width: 160rpx;
-  font-size: 28rpx;
+  width: 150rpx;
+  font-size: 24rpx;
 }
 
 .Goodsbar .TitleRowThree .TitleCol {
   flex: 0 0 auto;
-  width: 200rpx;
+  width: 204rpx;
+  font-size: 30rpx;
+}
+
+.Goodsbar .TitleRowTwo .TitleCol {
+  flex: 0 0 auto;
+  width: 310rpx;
   font-size: 30rpx;
 }
 
 .Goodsbar .priceTypeIcon {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
 .Goodsbar .priceTypeIconThree {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Goodsbar .priceTypeIconTwo {
   position: relative;
   display: flex;
   right: 10px;
@@ -161,15 +211,34 @@
 
 .Goodsbar .priceTypeIcon .priceTypeIconItem {
   flex: 0 0 auto;
-  width: 176rpx;
+  width: 150rpx;
 }
 
 .Goodsbar .priceTypeIconThree .priceTypeIconItem {
   flex: 0 0 auto;
-  width: 176rpx;
+  width: 204rpx;
+}
+
+.Goodsbar .priceTypeIconTwo .priceTypeIconItem {
+  position: relative;
+  flex: 0 0 auto;
+  width: 310rpx;
+  left: 20rpx;
 }
 
 .Goodsbar .priceTypeIcon .priceTypeIconItem .priceTypeIconItemTitle {
+  position: relative;
+  padding: 2rpx;
+  top: 20rpx;
+  width: 50rpx;
+  text-align: center;
+  font-size: 16rpx;
+  border-width: 1rpx;
+  border-style: solid;
+  border-radius: 20rpx;
+}
+
+.Goodsbar .priceTypeIconThree .priceTypeIconItem .priceTypeIconItemTitle {
   position: relative;
   top: 20rpx;
   width: 90rpx;
@@ -180,7 +249,7 @@
   border-radius: 20rpx;
 }
 
-.Goodsbar .priceTypeIconThree .priceTypeIconItem .priceTypeIconItemTitle {
+.Goodsbar .priceTypeIconTwo .priceTypeIconItem .priceTypeIconItemTitle {
   position: relative;
   top: 20rpx;
   width: 90rpx;
@@ -209,6 +278,15 @@
   align-items: flex-start;
 }
 
+.Goodsbar .priceRowTwo {
+  position: relative;
+  display: flex;
+  top: 15px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .Goodsbar .priceRow .priceRowChild {
   display: flex;
   flex-flow: row nowrap;
@@ -225,12 +303,26 @@
   flex: 1 0 auto;
 }
 
+.Goodsbar .priceRowTwo .priceRowChild {
+  display: flex;
+  width: 330rpx;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 0 0 auto;
+}
+
 .Goodsbar .priceRow .priceRowChild .priceColLeft {
   display: flex;
   align-items: flex-start;
 }
 
 .Goodsbar .priceRowThree .priceRowChild .priceColLeft {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Goodsbar .priceRowTwo .priceRowChild .priceColLeft {
   display: flex;
   align-items: flex-start;
 }
@@ -243,12 +335,20 @@
   font-size: 24rpx;
 }
 
+.Goodsbar .priceRowTwo .priceRowChild .priceColLeft .moneyIcon {
+  font-size: 28rpx;
+}
+
 .Goodsbar .priceRow .priceRowChild .priceColLeft .priceColLeftNew {
   font-size: 26rpx;
 }
 
 .Goodsbar .priceRowThree .priceRowChild .priceColLeft .priceColLeftNew {
   font-size: 32rpx;
+}
+
+.Goodsbar .priceRowTwo .priceRowChild .priceColLeft .priceColLeftNew {
+  font-size: 38rpx;
 }
 
 .Goodsbar .priceRow .priceRowChild .priceColLeft .priceColLeftNew .priceColLeftCompany {
@@ -261,6 +361,12 @@
   position: relative;
   right: 8rpx;
   font-size: 20rpx;
+}
+
+.Goodsbar .priceRowTwo .priceRowChild .priceColLeft .priceColLeftNew .priceColLeftCompany {
+  position: relative;
+  right: 8rpx;
+  font-size: 26rpx;
 }
 
 .Goodsbar .priceRow .priceRowChild .priceColRight {
@@ -285,6 +391,16 @@
   background-color: #19be6b;
 }
 
+.Goodsbar .priceRowTwo .priceRowChild .priceColRight {
+  position: relative;
+  top: 10rpx;
+  padding: 16rpx;
+  width: 24rpx;
+  align-self: center;
+  border-radius: 30rpx;
+  background-color: #19be6b;
+}
+
 .Goodsbar .priceRow .priceRowChild .priceColRight .iconfont {
   flex: 1 0 auto;
   align-self: center;
@@ -293,6 +409,13 @@
 }
 
 .Goodsbar .priceRowThree .priceRowChild .priceColRight .iconfont {
+  flex: 1 0 auto;
+  align-self: center;
+  font-size: 22rpx;
+  color: #fff;
+}
+
+.Goodsbar .priceRowTwo .priceRowChild .priceColRight .iconfont {
   flex: 1 0 auto;
   align-self: center;
   font-size: 22rpx;
@@ -310,6 +433,13 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Goodsbar .priceRow2Two {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -331,4 +461,19 @@
   font-size: 24rpx;
   color: #80848f;
   text-decoration: line-through;
+}
+
+.Goodsbar .priceRow2Two .priceColLeftOld {
+  position: relative;
+  top: 20rpx;
+  width: 330rpx;
+  flex: 0 0 auto;
+  font-size: 24rpx;
+  color: #80848f;
+  text-decoration: line-through;
+}
+
+.Goodsbar .priceRow2Two .priceColLeftOld .extra {
+  position: relative;
+  left: 30rpx;
 }

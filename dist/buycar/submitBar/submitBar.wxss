@@ -1,0 +1,16 @@
+@import "../../../font/allow.wxss";
+@import "../goodBar/moneyFont.wxss";
+
+.submitBarIndex {
+  position: fixed;
+  bottom: 60rpx;
+  display: flex;
+  width: 92%;
+  height: 110rpx;
+  margin: 0 4%;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f9
+}
+

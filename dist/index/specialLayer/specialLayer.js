@@ -17,11 +17,6 @@ Component({
       "type": String,
       "value": "今日秒杀"
     },
-    // 子标题
-    SecondTitle: {
-      "type": String,
-      "value": "每晚22点自动更新"
-    },
     // 开启小标题开关
     SecondTitleSign: {
       "type": Boolean,
@@ -73,22 +68,15 @@ Component({
       "value": ["点击进入", "点击进入", "点击进入"]
     },
     // 样式
-    // 小标题外边距、字体大小、 字体颜色
-    specialSecondTitleMarginLeft: {
+    // 2栏图片圆角边距
+    specialContentTwoImageBorderRadius: {
       "type": String,
       "value": "20"
     },
-    specialSecondTitleMarginTop: {
+    // 3栏图片圆角边距
+    specialContentThreeImageBorderRadius: {
       "type": String,
-      "value": "10"
-    },
-    specialSecondTitleFontSize: {
-      "type": String,
-      "value": "16"
-    },
-    specialSecondTitleColor: {
-      "type": String,
-      "value": "#80848F"
+      "value": "20"
     }
   },
 

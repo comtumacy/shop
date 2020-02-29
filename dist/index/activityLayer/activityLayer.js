@@ -10,6 +10,14 @@ Component({
     imgUrl: {
       "type": String,
       "value": "../../../image/activity/activity.jpg"
+    },
+    height: {
+      "type": String,
+      "value": "130"
+    },
+    borderRadius: {
+      "type": String,
+      "value": "20"
     }
   },
   data: {},

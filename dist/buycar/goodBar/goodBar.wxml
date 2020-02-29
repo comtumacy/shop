@@ -1,5 +1,18 @@
+<!-- 换购组件 -->
+<view class="repurchaseIndex">
+  <view class="repurchaseLeft" style="font-size: {{repurchaseLeftFontSize}}rpx; padding:{{repurchaseLeftPadingUD}}rpx {{repurchaseLeftPadingLR}}rpx; background-color:{{repurchaseLeftBackgroundColor}}; color:{{repurchaseLeftColor}}; border-radius:{{repurchaseLeftBorderRadius}}rpx;">
+    {{repurchaseLeft}}
+  </view>
+  <view class="repurchaseMiddle" style="font-size:{{repurchaseMiddleFontSize}}rpx">
+    {{describe1}}<text style="color: {{repurchaseMiddleColor}}"> {{number1}} </text>{{company1}}可{{verb}} {{number2}} {{company2}}商品，还{{describe2}} {{number3}} {{company3}}
+  </view>
+  <view class="repurchaseRight" style="font-size:{{repurchaseRightFontSize}}rpx">
+    去{{repurchaseRightText}}
+    <text class="iconfont icon-youjiantou2 repurchaseRightAllow"></text>
+  </view>
+</view>
 <!-- 商品栏组件，单商品 -->
-<view class="goodBar">
+<view class="goodBar" wx:for="{{goodBarNumber}}" wx:key="index">
   <van-swipe-cell id="swipe-cell" right-width="{{ 65 }}" left-width="{{ 65 }}" async-close bind:close="onClose" outButtonColor="{{outButtonColor}}" outButtonBgLeftColor="{{outButtonBgLeftColor}}" outButtonBgRightColor="{{outButtonBgRightColor}}" disabled="{{swipeNotDisabled}}">
     <view slot="left">收藏</view>
     <van-cell-group>
@@ -11,13 +24,13 @@
           <image class="goodBarImg" src="{{img}}" style="border-radius: {{goodBarImgBorderRadius}}rpx"></image>
         </view>
         <view class="goodBarContent">
-          <view class="goodBarContentTop" style="font-size:{{goodBarContentTopFontSize}}rpx">{{title}}
+          <view class="goodBarContentTop" style="font-size:{{goodBarContentTopFontSize}}rpx">{{title[index]}}
           </view>
           <view class="goodBarContentBottom">
             <view class="goodBarPrice">
-              <view class="goodBarOldPrice" style="color:{{goodBarOldPriceColor}}">3000</view>
+              <view class="goodBarOldPrice" style="color:{{goodBarOldPriceColor}}">{{goodBarOldPrice[index]}}</view>
               <view class="iconfont icon-money goodBarIcon"></view>
-              <view class="goodBarNewPrice">2499</view>
+              <view class="goodBarNewPrice">{{goodBarNewPrice[index]}}</view>
             </view>
             <view class="goodsBarStepper">
               <van-stepper value="{{ 1 }}" input-width="30px" button-size="28px" />
@@ -29,6 +42,8 @@
     </van-cell-group>
     <view slot="right">删除</view>
   </van-swipe-cell>
+</view>
+<view class="goodBarBottomBGColor">
 </view>
 
 

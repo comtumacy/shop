@@ -13,7 +13,7 @@ Component({
     },
     icons: {
       "type": ArrayBuffer,
-      "value": ["shujukanban", "tubiao-zhexiantu", "tubiao-zhuzhuangtu", "yunyingguanli", "fenzuguanli"]
+      "value": ["xiaohonghua", "xiaohonghua", "xiaohonghua", "xiaohonghua", "xiaohonghua"]
     },
     backgroundColor: {
       "type": ArrayBuffer,

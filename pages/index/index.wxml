@@ -16,6 +16,8 @@
   <shop-goodsBar class="goodsBar" goodsNumber="3"></shop-goodsBar>
   <!-- 特惠专区组件 -->
   <shop-specialLayer class="specialLayer"></shop-specialLayer>
+  <!-- 分隔符 -->
+  <shop-dividerLayer dividerText="别拉啦，已经没有了，≥▽≤"></shop-dividerLayer>
   <!-- 留空 -->
   <view class="blank"></view>
 </view>

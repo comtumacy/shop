@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    goodsbarHeaderSign: false
+    goodsbarHeaderSign: false,
+    shopGoodBarNumber: 2
   },
   changeStepper: function(res) {
     console.log(res.detail)
@@ -13,11 +14,18 @@ Page({
   selectGood: function (res) {
     console.log(res)
   },
+  onPageScroll: function() {
+    // const query = wx.createSelectorQuery()
+    // query.select('.buyCarClass').boundingClientRect()
+    // query.selectViewport().scrollOffset()
+    // query.exec(function (res) {
+    //   console.log(res);
+    // })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
   },
 
   /**

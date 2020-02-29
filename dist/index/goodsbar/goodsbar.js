@@ -3,7 +3,8 @@
 Component({
   externalClasses: ['sp-class'],
   created() {},
-  attached(res) {},
+  attached() {
+  },
   ready() {},
   moved() {},
   detached() {},
@@ -13,6 +14,11 @@ Component({
     goodsbarHeaderSign: {
       "type": Boolean,
       "value": true
+    },
+    // 时间控件显示
+    goodsbarTimeSign: {
+      "type": Boolean,
+      "value": false
     },
     // 时间设置
     time: {
@@ -106,6 +112,16 @@ Component({
     },
 
     // 样式设置
+    // 购物车商品栏类名
+    buyCarClass: {
+      "type": String,
+      "value": ""
+    },
+    // 左右边距控制
+    marginLeftAndRight: {
+      "type": String,
+      "value": "0"
+    },
     // 大标题字体大小与颜色
     TitleFontSize: {
       "type": String,
@@ -126,11 +142,15 @@ Component({
     },
     goodsbarSecondTitleFontSize: {
       "type": String,
-      "value": "16"
+      "value": "20"
     },
     goodsbarSecondTitleColor: {
       "type": String,
       "value": "#80848F"
+    },
+    goodImgBorderRaduis: {
+      "type": String,
+      "value": "20"
     }
   },
   data: {
