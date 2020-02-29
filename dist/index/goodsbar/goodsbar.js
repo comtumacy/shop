@@ -1,10 +1,7 @@
-
-
 Component({
   externalClasses: ['sp-class'],
   created() {},
-  attached() {
-  },
+  attached() {},
   ready() {},
   moved() {},
   detached() {},

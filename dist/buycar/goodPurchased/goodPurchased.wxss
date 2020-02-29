@@ -1,0 +1,9 @@
+.goodPurchased {
+  position: relative
+}
+
+.goodPurchased .title{
+  position: relative;
+  text-align: center;
+  padding-top: 20rpx
+}

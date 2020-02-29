@@ -1,5 +1,4 @@
 const getContent = () => {
-  let content = []
   return new Promise((resolve, reject) => {
     wx.request({
       url: 'https://yitongli.cn/newsApi/get/news_get1',

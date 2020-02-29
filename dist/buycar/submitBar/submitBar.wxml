@@ -1,5 +1,5 @@
 <!-- 提交组件 -->
-<view class="submitBarIndex" style="border-radius: {{submitBarIndexBorderRadius}}rpx">
+<view class="submitBarIndex" style="border-radius: {{submitBarIndexBorderRadius}}rpx; bottom:{{submitIndexBottom}}rpx">
   <view class="left">
     <view class="allow" bind:tap="selectGood">
       <view class="iconfont icon-duigou allowItem" style="border-color: {{allowBorderColor}}; border-radius:{{allowBorderRadius}}rpx; background-color:{{allowItemSelected? allowItemSelectedColor: '#ffffff'}}"></view>
@@ -9,13 +9,13 @@
   <view class="middle">
     <view class="middleTop">
       <view class="topText">合计：</view>
-      <view class="moneyTop"></view>
-      <view class="newPrice"></view>
+      <view class="moneyTop iconfont icon-money goodBarIcon"></view>
+      <view class="newPrice">{{newPrice}}</view>
     </view>
     <view class="middleBottom">
       <view class="topText">优惠减：</view>
-      <view class="moneyBottom"></view>
-      <view class="oldPrice"></view>
+      <view class="moneyBottom iconfont icon-money goodBarIcon"></view>
+      <view class="discountPrice">{{discountPrice}}</view>
     </view>
   </view>
   <view class="right">去结算({{allNumber}})</view>

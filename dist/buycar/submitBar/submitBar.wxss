@@ -1,9 +1,8 @@
-@import "../../../font/allow.wxss";
+@import "../../../font/style.wxss";
 @import "../goodBar/moneyFont.wxss";
 
 .submitBarIndex {
   position: fixed;
-  bottom: 60rpx;
   display: flex;
   width: 92%;
   height: 110rpx;
@@ -11,6 +10,96 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #f8f8f9
+  z-index: 80;
+  background-color: #f8f8f9;
 }
 
+.submitBarIndex .left {
+  position: relative;
+  display: flex;
+  width: 180rpx;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.submitBarIndex .left .allow {
+  position: relative;
+  margin-left: 40rpx;
+}
+
+.submitBarIndex .left .allow .allowItem {
+  padding: 5rpx;
+  width: 32rpx;
+  height: 32rpx;
+  border-style: solid;
+  border-width: 2rpx;
+  color: white;
+}
+
+.submitBarIndex .left .goSubmit {
+  position: relative;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.submitBarIndex .middle {
+  position: relative;
+  margin-right: 60rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.submitBarIndex .middle .middleTop {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.submitBarIndex .middle .middleTop .goodBarIcon {
+  font-size: 20rpx;
+}
+
+.submitBarIndex .middle .middleTop .topText {
+  font-size: 32rpx;
+}
+
+.submitBarIndex .middle .middleTop .newPrice {
+  font-size: 40rpx;
+}
+
+.submitBarIndex .middle .middleBottom {
+  display: flex;
+  flex-flow: row nowrap;
+  color: #bbbec4;
+}
+
+.submitBarIndex .middle .middleBottom .topText {
+  font-size: 20rpx;
+}
+
+.submitBarIndex .middle .middleBottom .goodBarIcon {
+  position: relative;
+  padding-left: 16rpx;
+  font-size: 14rpx;
+}
+
+.submitBarIndex .middle .middleBottom .discountPrice {
+  position: relative;
+  padding-left: 10rpx;
+  font-size: 20rpx;
+}
+
+.submitBarIndex .right {
+  position: relative;
+  padding: 12rpx 28rpx;
+  margin-right: 10px;
+  background-color: #19be6b;
+  font-size: 30rpx;
+  color: white;
+  border-radius: 20rpx;
+}
+
+.submitBarIndex .right:active {
+  background-color: rgb(33, 220, 185);
+}

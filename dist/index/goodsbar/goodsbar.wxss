@@ -176,7 +176,7 @@
 .Goodsbar .TitleRowThree .TitleCol {
   flex: 0 0 auto;
   width: 204rpx;
-  font-size: 30rpx;
+  font-size: 25rpx;
 }
 
 .Goodsbar .TitleRowTwo .TitleCol {

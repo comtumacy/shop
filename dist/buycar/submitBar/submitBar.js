@@ -1,3 +1,5 @@
+const util = require('../../../utils/getUserInfo.js')
+
 Component({
   externalClasses: ['sp-class'],
 
@@ -10,14 +12,22 @@ Component({
       "type": Number,
       "value": 2
     },
+    newPrice: {
+      "type": Number,
+      "value": 3000.00
+    },
+    discountPrice: {
+      "type": Number,
+      "value": 501.00
+    },
     // 样式
     submitBarIndexBorderRadius: {
       "type": String,
-      "value": "40"
+      "value": "30"
     },
     allowBorderColor: {
       "type": String,
-      "value": "#19be6b"
+      "value": "#bbbec4"
     },
     allowItemSelectedColor: {
       "type": String,
@@ -28,14 +38,22 @@ Component({
       "value": "40"
     },
   },
-  created() { },
-  attached() { },
-  ready() { },
-  detached() { },
-  moved() { },
+  created() {},
+  attached() {
+    util.info().then((res) => {
+      let bottom = (res.screenHeight - res.safeArea.bottom + 65) * 2
+      this.setData({
+        submitIndexBottom: bottom
+      })
+    })
+  },
+  ready() {},
+  detached() {},
+  moved() {},
 
-  data: {},
+  data: {
+    submitIndexBottom: 120
+  },
 
-  methods: {
-  }
+  methods: {}
 })

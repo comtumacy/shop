@@ -103,11 +103,11 @@ Component({
     },
     img: {
       "type": String,
-      "value": "../../../image/carBar/ipad.jpg"
+      "value": "../../../image/carBar/vivo.jpg"
     },
     title: {
       "type": ArrayBuffer,
-      "value": ["Apple iPad 平板电脑 （32G WLAN版/iPadOS系统/Retina显示屏/MW762CH/A）金色", "Apple iPad 平板电脑 （32G WLAN版/iPadOS系统/Retina显示屏/MW762CH/A）金色", "Apple iPad 平板电脑 （32G WLAN版/iPadOS系统/Retina显示屏/MW762CH/A）金色"]
+      "value": ["vivo X30 Pro双模5G新品手机官方旗舰店官网新款限量版，(4000mAh-5999mAh)", "vivo X30 Pro双模5G新品手机官方旗舰店官网新款限量版，(4000mAh-5999mAh)", "vivo X30 Pro双模5G新品手机官方旗舰店官网新款限量版，(4000mAh-5999mAh)"]
     },
     goodBarNewPrice: {
       "type": ArrayBuffer,
@@ -197,7 +197,10 @@ Component({
         allowItemSelected: selected
       })
       let select = this.data.title
-      this.triggerEvent('click', {'Select': select});
+      this.triggerEvent('click', {'Select': select})
     },
+    openpopup: function() {
+      this.triggerEvent('popupOpen', {})
+    }
   }
 })

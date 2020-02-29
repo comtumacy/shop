@@ -4,7 +4,9 @@
     "shop-dividerLayer": "../../dist/buycar/dividerLayer/dividerLayer",
     "shop-goodsBar": "../../dist/index/goodsbar/goodsbar",
     "shop-submitBar": "../../dist/buycar/submitBar/submitBar",
-    "van-dialog": "../../dist/vant/dialog/index"
+    "shop-goodPurchased": "../../dist/buycar/goodPurchased/goodPurchased",
+    "van-dialog": "../../dist/vant/dialog/index",
+    "van-popup": "../../dist/vant/popup/index"
   },
   "navigationBarTitleText": "购物车"
 }

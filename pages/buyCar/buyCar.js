@@ -6,13 +6,22 @@ Page({
    */
   data: {
     goodsbarHeaderSign: false,
-    shopGoodBarNumber: 2
+    shopGoodBarNumber: 2,
+    popupShow: true
   },
   changeStepper: function(res) {
     console.log(res.detail)
   },
   selectGood: function (res) {
     console.log(res)
+  },
+  // 打开内容弹出层
+  showPopup() {
+    this.setData({ popupShow: true });
+  },
+  // 关闭内容弹出层
+  onClose() {
+    this.setData({ popupShow: false });
   },
   onPageScroll: function() {
     // const query = wx.createSelectorQuery()
