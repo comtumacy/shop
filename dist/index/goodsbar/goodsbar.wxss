@@ -297,10 +297,11 @@
 
 .Goodsbar .priceRowThree .priceRowChild {
   display: flex;
+  width: 218rpx;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  flex: 1 0 auto;
+  flex: 0 0 auto;
 }
 
 .Goodsbar .priceRowTwo .priceRowChild {
@@ -383,7 +384,6 @@
 .Goodsbar .priceRowThree .priceRowChild .priceColRight {
   position: relative;
   top: 10rpx;
-  right: 24rpx;
   padding: 16rpx;
   width: 24rpx;
   align-self: center;
