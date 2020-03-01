@@ -1,6 +1,7 @@
 @import '../common/index.wxss';
 
 .van-search {
+  font-family: PingFangNew;
   -webkit-align-items: center;
   align-items: center;
   box-sizing: border-box;
@@ -28,6 +29,7 @@
 }
 
 .van-search__label {
+  font-family: PingFangNew;
   padding: 0 5px;
   padding: var(--search-label-padding, 0 5px);
   font-size: 14px;
@@ -55,6 +57,7 @@
 .van-search__action {
   /* padding: 0 8px;
   padding: var(--search-action-padding, 0 8px); */
+  font-family: PingFangNew;
   font-size: 14px;
   font-size: var(--search-action-font-size, 14px);
   line-height: 34px;

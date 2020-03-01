@@ -1,4 +1,4 @@
-const util = require('../../../utils/getUserInfo.js')
+const util = require('../../../utils/getPhoneInfo.js')
 
 Component({
   externalClasses: ['sp-class'],

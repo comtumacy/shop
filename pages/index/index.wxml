@@ -1,7 +1,7 @@
 <!-- 首页页面 -->
 <view class="index">
   <!-- 搜索组件 -->
-  <shop-search class="shop-search" bind:search="onSearch"></shop-search>
+  <shop-search class="shop-search" bind:search="onSearch" bind:clickImg="clickImg"></shop-search>
   <!-- 分类组件 -->
   <shop-classify class="shop-classify" bind:change="onChange" bind:click="clickClass"></shop-classify>
   <!-- 滚动组件 -->

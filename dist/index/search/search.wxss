@@ -13,6 +13,7 @@
 .searchIndex .first {
   flex: 0 0 auto;
   margin-left: 20rpx;
+  font-family: PingFangNew;
   font-size: 30rpx;
 }
 
@@ -20,6 +21,7 @@
   position: absolute;
   width: 100rpx;
   font-size: 20rpx;
+  font-family: PingFangNew;
   color: #bbbec4;
 }
 
@@ -46,7 +48,8 @@
 
 .searchIndex van-search .search .search3 {
   bottom: 6rpx;
-  font-size: 30rpx
+  font-size: 30rpx;
+  font-family: PingFangNew;
 }
 
 .searchIndex .third i-badge .i-badgeLog {

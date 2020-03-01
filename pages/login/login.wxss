@@ -1,0 +1,45 @@
+.loginIndex .loginIconImgView {
+  position: relative;
+  text-align: center;
+  margin-top: 25%
+}
+
+.loginIndex .loginIconImgView .loginIconImg {
+  border-radius: 100%;
+}
+
+.loginIndex .title1 {
+  position: relative;
+  margin-top: 10%;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.loginIndex .title2 {
+  position: relative;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 28rpx;
+  font-weight: 400;
+}
+
+.loginIndex .loginButton {
+  position: relative;
+  margin-top: 8%;
+  background-image: linear-gradient(to right, rgb(31,242,190), rgb(27,236,142));
+  border-radius: 80rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  color: white
+}
+
+.loginIndex .loginButton:active {
+  background-image: linear-gradient(to right, #00C957, #00C957);
+}
+
+.loginIndex .loginImg {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

@@ -1,0 +1,4 @@
+<!--启动页-->
+<view style="overflow:hidden; height: 100%">
+  <image class="startImg" src="{{imgUrl}}" style="height: {{height}}px"></image>
+</view>

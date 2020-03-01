@@ -1,10 +1,13 @@
-// pages/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {},
+  // 点击图片事件
+  clickImg: function(res) {
+    console.log(res)
+  },
   // 返回搜索框输入内容
   onSearch: (res) => {
     console.log(res)

@@ -1,6 +1,6 @@
 <!-- 主界面头像、搜索组件 -->
 <view class="searchIndex">
-  <image class="searchIcon" src="{{url}}" mode="scaleToFill"></image>
+  <image class="searchIcon" src="{{url}}" mode="scaleToFill" bind:tap="clickImg"></image>
   <view class="first">
     <view class="select">
       <text class="address">{{city}}</text>

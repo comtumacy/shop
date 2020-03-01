@@ -1,4 +1,13 @@
 /**app.wxss**/
+
+view {
+  font-family: PingFangNew;
+}
+
+text {
+  font-family: PingFangNew;
+}
+
 .container {
   height: 100%;
   display: flex;

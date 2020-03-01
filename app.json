@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/buyCar/buyCar",
+    "pages/start/start",
+    "pages/login/login",
     "pages/index/index",
+    "pages/buyCar/buyCar",
     "pages/user/user",
     "pages/logs/logs",
     "pages/getuser/getuser"

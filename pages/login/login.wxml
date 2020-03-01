@@ -1,0 +1,10 @@
+<!-- 登录页 -->
+<view class="loginIndex">
+  <view class="loginIconImgView">
+    <image class="loginIconImg" src="{{iconUrl}}" style="width: {{iconImgSize}}rpx; height: {{iconImgSize}}rpx"></image>
+  </view>
+  <view class="title1">趣便购买申请获得以下信息</view>
+  <view class="title2">获得您的公开信息(昵称，头像等)</view>
+  <button class="loginButton" style="width:{{buttonWidth}}rpx" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">确认授权</button>
+  <image class="loginImg" src="{{imgBottomUrl}}" style="height: {{backImgHeight}}rpx"></image>
+</view>

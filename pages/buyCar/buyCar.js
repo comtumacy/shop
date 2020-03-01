@@ -7,7 +7,7 @@ Page({
   data: {
     goodsbarHeaderSign: false,
     shopGoodBarNumber: 2,
-    popupShow: true
+    popupShow: false
   },
   changeStepper: function(res) {
     console.log(res.detail)
