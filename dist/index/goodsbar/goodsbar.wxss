@@ -432,7 +432,7 @@
 .Goodsbar .priceRow2Three {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -455,9 +455,10 @@
 
 .Goodsbar .priceRow2Three .priceColLeftOld {
   position: relative;
+  width: 204rpx;
   top: 20rpx;
-  left: 24rpx;
-  flex: 1 0 auto;
+  margin-left: 28rpx;
+  flex: 0 0 auto;
   font-size: 24rpx;
   color: #80848f;
   text-decoration: line-through;
