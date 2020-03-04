@@ -1,6 +1,6 @@
 <!-- 商品栏组件 -->
 <!-- 头部 -->
-<view style="position: relative; margin-top: 20rpx; height: {{goodsNumber === 3? '500rpx' : '426rpx'}}; margin-left:{{marginLeftAndRight}}; margin-right:{{marginLeftAndRight}}" class="{{buyCarClass}}">
+<view style="position: relative; margin-top: 20rpx; margin-left:{{marginLeftAndRight}}; margin-right:{{marginLeftAndRight}}" class="{{buyCarClass}}">
   <view class="goodsbarHeader" wx:if="{{goodsbarHeaderSign}}">
     <view class="goodsbarTitle" style="font-size: {{TitleFontSize}}rpx; color: {{TitleColor}}">{{Title}}</view>
     <view class="goodsbarSecondTitle" hidden="{{SecondTitleSign}}" style="margin-left: {{goodsbarSecondTitleMarginLeft}}rpx; margin-top: {{goodsbarSecondTitleMarginTop}}rpx; font-size: {{goodsbarSecondTitleFontSize}}rpx; color: {{goodsbarSecondTitleColor}}">{{SecondTitle}}</view>
@@ -107,6 +107,23 @@
         </view>
         <view class="goodsBarPriceRight">
           <view class="goodsBarPriceRightIconThree iconfont icon-gouwuche21"></view>
+        </view>
+      </view>
+    </view>
+    <!-- 价格2栏目 -->
+    <view class="goodsBarPriceIndex" wx:if="{{goodsNumber === 2}}">
+      <view class="goodsbarPriceTwoFor" wx:for="{{contentTwo}}" wx:key="index">
+        <view class="goodsBarPriceLeft">
+          <view class="priceLeftTop">
+            <view class="goodsBarPriceLeftMoneyIcon1Two iconfont icon-money"></view>
+            <view class="goodsBarPriceTwo">{{contentTwo[index].price}}</view>
+            <view class="goodsBarCompanyTwo">{{contentTwo[index].company}}</view>
+            <view class="goodsBarPriceLeftMoneyIcon2Two iconfont icon-money"></view>
+            <view class="goodsBarOldPriceTwo">{{contentTwo[index].oldPrice}}</view>
+          </view>
+        </view>
+        <view class="goodsBarPriceRight">
+          <view class="goodsBarPriceRightIconTwo iconfont icon-gouwuche21"></view>
         </view>
       </view>
     </view>

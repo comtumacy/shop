@@ -1,7 +1,7 @@
 <view class="goodPurchasedIndex">
  <!-- catchtouchmove="catchtouchmove" -->
   <view class="title">换购商品</view>
-    <view class="goodPurchased">
+    <view class="goodPurchased" wx:for="{{3}}" wx:key="index">
       <view class="allow" bind:tap="selectGood">
         <view class="iconfont icon-duigou allowItem" style="border-color: {{allowBorderColor}}; border-radius:{{allowBorderRadius}}rpx; background-color:{{allowItemSelected? allowItemSelectedColor: '#ffffff'}}"></view>
       </view>
@@ -24,4 +24,5 @@
       </view>
     </view>
     <view class="goodPurchasedButton" bind:tap="enterPurchased">加入购物车</view>
+    <view style="height: 200rpx"></view>
 </view>

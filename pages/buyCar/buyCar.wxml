@@ -15,7 +15,7 @@
   <!-- 消息弹出层在最外层 -->
   <van-dialog id="van-dialog" />
   <!-- 内容弹出层在最外层 -->
-  <van-popup show="{{ popupShow }}" bind:close="onClose" position="bottom" round="true" custom-style="height: 530rpx" closeable="true" bind:enterPurchased="enterPurchased">
+  <van-popup show="{{ popupShow }}" bind:close="onClose" position="bottom" round="true" custom-style="height: 80%" bind:enterPurchased="enterPurchased" lock-scroll="true" safe-area-inset-bottom="true">
     <shop-goodPurchased></shop-goodPurchased>
   </van-popup>
   <!-- 留空 -->

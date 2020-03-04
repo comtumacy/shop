@@ -78,9 +78,7 @@ Component({
   data: {},
 
   methods: {
-    // 禁止滚动
-    catchtouchmove: function() {
-    },
+
     // 按钮点击事件
     enterPurchased: function () {
       let content = this.data.title

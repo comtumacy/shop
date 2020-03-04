@@ -6,7 +6,8 @@ Page({
    */
   data: {
     goodsbarHeaderSign: false,
-    popupShow: false
+    // 弹出层显示控制信号
+    popupShow: true
   },
   changeStepper: function(res) {
     console.log(res.detail)

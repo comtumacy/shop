@@ -155,7 +155,7 @@
 }
 
 .goodsbarTitleThree {
-  height: 64rpx;
+  height: 74rpx;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -221,6 +221,12 @@
   width: 210rpx;
 }
 
+.goodsbarPriceTwoFor {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 320rpx;
+}
+
 .goodsBarPriceLeft {
   width: 66.6%;
 }
@@ -238,7 +244,11 @@
 }
 
 .goodsBarPriceLeftMoneyIcon1Three {
-  font-size: 18rpx;
+  font-size: 26rpx;
+}
+
+.goodsBarPriceLeftMoneyIcon1Two {
+  font-size: 30rpx;
 }
 
 .goodsBarPriceFour {
@@ -246,7 +256,11 @@
 }
 
 .goodsBarPriceThree {
-  font-size: 28rpx;
+  font-size: 36rpx;
+}
+
+.goodsBarPriceTwo {
+  font-size: 40rpx;
 }
 
 .goodsBarCompanyFour {
@@ -256,7 +270,12 @@
 
 .goodsBarCompanyThree {
   align-self: flex-end;
-  font-size: 16rpx;
+  font-size: 20rpx;
+}
+
+.goodsBarCompanyTwo {
+  align-self: flex-end;
+  font-size: 20rpx;
 }
 
 .goodsBarPriceLeftMoneyIcon2Four {
@@ -265,7 +284,14 @@
 }
 
 .goodsBarPriceLeftMoneyIcon2Three {
-  font-size: 12rpx;
+  font-size: 18rpx;
+  color: #bbbec4;
+}
+
+.goodsBarPriceLeftMoneyIcon2Two {
+  margin-left: 10rpx;
+  align-self: center;
+  font-size: 20rpx;
   color: #bbbec4;
 }
 
@@ -277,7 +303,14 @@
 
 .goodsBarOldPriceThree {
   text-decoration: line-through;
-  font-size: 22rpx;
+  font-size: 28rpx;
+  color: #bbbec4;
+}
+
+.goodsBarOldPriceTwo {
+  align-self: flex-end;
+  text-decoration: line-through;
+  font-size: 32rpx;
   color: #bbbec4;
 }
 
@@ -297,10 +330,21 @@
   position: relative;
   left: 10rpx;
   top: 20rpx;
-  padding: 10rpx;
-  font-size: 20rpx;
+  padding: 12rpx;
+  font-size: 26rpx;
   background-color: #1FDDAF;
   border-radius: 40rpx;
   color: #fff;
-  font-weight: 600
+  font-weight: 500
+}
+
+.goodsBarPriceRightIconTwo {
+  position: relative;
+  left: 30rpx;
+  padding: 12rpx;
+  font-size: 32rpx;
+  background-color: #1FDDAF;
+  border-radius: 40rpx;
+  color: #fff;
+  font-weight: 500
 }

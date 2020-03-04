@@ -1,11 +1,10 @@
 {
   "pages": [
+    "pages/buyCar/buyCar",
     "pages/start/start",
     "pages/login/login",
     "pages/index/index",
-    "pages/buyCar/buyCar",
     "pages/user/user",
-    "pages/logs/logs",
     "pages/getuser/getuser",
     "pages/conpou/conpou"
   ],
@@ -35,10 +34,6 @@
       {
         "pagePath": "pages/user/user",
         "text": "我的"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "测试4"
       },
       {
         "pagePath": "pages/getuser/getuser",
