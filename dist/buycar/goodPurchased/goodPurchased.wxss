@@ -1,9 +1,106 @@
-.goodPurchased {
+@import "../../../font/style.wxss";
+@import "../goodBar/moneyFont.wxss";
+@import "../../../font/allow.wxss";
+
+.goodPurchasedIndex {
   position: relative
 }
 
-.goodPurchased .title{
+.goodPurchasedIndex .title{
   position: relative;
   text-align: center;
   padding-top: 20rpx
+}
+
+.goodPurchasedIndex .goodPurchased {
+  position: relative;
+  margin: 30rpx 4% 0 4%;
+  display: flex;
+  flex-flow: flex-start;
+}
+
+.goodPurchasedIndex .goodPurchased .allow {
+  position: relative;
+  margin-right: 28rpx;
+  align-self: center;
+  flex: 0 1 auto;
+}
+
+.goodPurchasedIndex .goodPurchased .allow .allowItem {
+  padding: 5rpx;
+  width: 32rpx;
+  height: 32rpx;
+  border-style: solid;
+  border-width: 2rpx;
+  color: white;
+}
+
+.goodPurchasedIndex .goodPurchased .img {
+  position: relative;
+  margin-right: 28rpx;
+  flex: 0 1 auto;
+}
+
+.goodPurchasedIndex .goodPurchased .img .goodBarImg {
+  width: 230rpx;
+  height: 230rpx;
+}
+
+.goodPurchasedIndex .goodPurchased .goodBarContent {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex: 0 1 auto;
+}
+
+.goodPurchasedIndex .goodPurchased .goodBarContent .goodBarContentBottom {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.goodPurchasedIndex .goodPurchased .goodBarContent .goodBarContentBottom .goodBarPrice {
+  font-size: 36rpx;
+}
+
+.goodPurchased .goodBarContent .goodBarContentBottom .goodBarPrice .goodBarIcon {
+  display: inline;
+  font-size: 36rpx;
+}
+
+.goodPurchased .goodBarContent .goodBarContentBottom .goodBarPrice .goodBarNewPrice {
+  display: inline;
+}
+
+.goodPurchased .goodBarContent .goodBarContentBottom .goodBarPrice .goodBarOldPrice {
+  position: relative;
+  left: 10rpx;
+  display: block;
+  font-size: 20rpx;
+  text-decoration: line-through;
+}
+
+.goodPurchased .goodBarContent .goodBarContentBottom goodNumber {
+  font-size: 28rpx
+}
+
+.goodPurchasedIndex .goodPurchasedButton {
+  position: absolute;
+  right: 0;
+  margin-top: 20rpx;
+  padding: 10rpx 0;
+  width: 200rpx;
+  margin-right: 20rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: white;
+  background-image: linear-gradient(to right, rgb(33,220,185), rgb(24,223,131))
+}
+
+.goodPurchasedIndex .goodPurchasedButton:active {
+  background-image: linear-gradient(to right, #00C957, #00C957);
 }

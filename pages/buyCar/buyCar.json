@@ -2,7 +2,7 @@
   "usingComponents": {
     "shop-goodBar": "../../dist/buycar/goodBar/goodBar",
     "shop-dividerLayer": "../../dist/buycar/dividerLayer/dividerLayer",
-    "shop-goodsBar": "../../dist/index/goodsbar/goodsbar",
+    "shop-goodsBar": "../../dist/common/goodBar1/goodBar1",
     "shop-submitBar": "../../dist/buycar/submitBar/submitBar",
     "shop-goodPurchased": "../../dist/buycar/goodPurchased/goodPurchased",
     "van-dialog": "../../dist/vant/dialog/index",

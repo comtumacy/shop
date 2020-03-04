@@ -1,0 +1,78 @@
+<!-- 优惠券页 -->
+<view class="conpou">
+  <van-tabs swipeable animated custom-class="customClass" nav-class="navClass" tab-class="tabClass" tab-active-class="tabActiveClass" color="#fff" sticky="true">
+
+    <!-- 未使用 -->
+    <van-tab class="conpouContent" title="未使用" style="height: {{height}}rpx">
+      <view class="conpouCart" wx:for="{{contentNotUse}}" wx:key="index">
+        <view class="conpouCartLeftNotUse">
+          <view class="conpouCartLeftMoney">
+            <view class="conpouCartLeftMoneyIcon iconfont icon-money"></view>
+            <view class="conpouCartLeftMoneyItem">{{contentNotUse[index].price}}</view>
+          </view>
+          <view class="conpouCartLeftEnoughMoney">满{{contentNotUse[index].enoughPrice}}元使用</view>
+        </view>
+        <view class="conpouCartRight">
+          <view class="conpouCartRightSignNotUse">
+            <view class="conpouCartRightSignItem">{{contentNotUse[index].conpouCartRightSign}}</view>
+          </view>
+          <view class="conpouCartRightText">
+            <view class="conpouCartRightTitle">{{contentNotUse[index].title}}</view>
+            <view class="conpouCartRightTime">有效期：{{contentNotUse[index].timeStart}}-{{contentNotUse[index].timeEnd}}</view>
+          </view>
+        </view>
+      </view>
+      <van-divider contentPosition="center" customStyle="color: #bbbec4;font-size: 28rpx;margin: 0 40rpx">已加载完毕</van-divider>
+    </van-tab>
+
+
+    <!-- 已使用 -->
+    <van-tab class="conpouContent" title="已使用" style="height: {{height}}rpx">
+      <view class="conpouCart" wx:for="{{contentUsed}}" wx:key="index">
+        <view class="conpouCartLeftUsed">
+          <view class="conpouCartLeftMoney">
+            <view class="conpouCartLeftMoneyIcon iconfont icon-money"></view>
+            <view class="conpouCartLeftMoneyItem">{{contentUsed[index].price}}</view>
+          </view>
+          <view class="conpouCartLeftEnoughMoney">满{{contentUsed[index].enoughPrice}}元使用</view>
+        </view>
+        <view class="conpouCartRight">
+          <view class="conpouCartRightSignUsed">
+            <view class="conpouCartRightSignItem">{{contentUsed[index].conpouCartRightSign}}</view>
+          </view>
+          <view class="conpouCartRightSignUsedIcon iconfont icon-yishiyong"></view>
+          <view class="conpouCartRightText">
+            <view class="conpouCartRightTitle">{{contentUsed[index].title}}</view>
+            <view class="conpouCartRightTime">有效期：{{contentUsed[index].timeStart}}-{{contentUsed[index].timeEnd}}</view>
+          </view>
+        </view>
+      </view>
+      <van-divider contentPosition="center" customStyle="color: #bbbec4;font-size: 28rpx;margin: 0 40rpx">已加载完毕</van-divider>
+    </van-tab>
+
+
+    <!-- 已过期 -->
+    <van-tab class="conpouContent" title="已过期" style="height: {{height}}rpx">
+      <view class="conpouCart" wx:for="{{contentOverdue}}" wx:key="index">
+        <view class="conpouCartLeftOverdue">
+          <view class="conpouCartLeftMoney">
+            <view class="conpouCartLeftMoneyIcon iconfont icon-money"></view>
+            <view class="conpouCartLeftMoneyItem">{{contentOverdue[index].price}}</view>
+          </view>
+          <view class="conpouCartLeftEnoughMoney">满{{contentOverdue[index].enoughPrice}}元使用</view>
+        </view>
+        <view class="conpouCartRight">
+          <view class="conpouCartRightSignOverdue">
+            <view class="conpouCartRightSignItem">{{contentOverdue[index].conpouCartRightSign}}</view>
+          </view>
+          <view class="conpouCartRightSignOverdueIcon iconfont icon-yiguoqi"></view>
+          <view class="conpouCartRightText">
+            <view class="conpouCartRightTitle">{{contentOverdue[index].title}}</view>
+            <view class="conpouCartRightTime">有效期：{{contentOverdue[index].timeStart}}-{{contentOverdue[index].timeEnd}}</view>
+          </view>
+        </view>
+      </view>
+      <van-divider contentPosition="center" customStyle="color: #bbbec4;font-size: 28rpx;margin: 0 40rpx">已加载完毕</van-divider>
+    </van-tab>
+  </van-tabs>
+</view>

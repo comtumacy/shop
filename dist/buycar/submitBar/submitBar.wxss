@@ -94,10 +94,14 @@
   position: relative;
   padding: 12rpx 28rpx;
   margin-right: 10px;
-  background-color: #19be6b;
+  background-image: linear-gradient(to right, rgb(33,220,185), rgb(24,223,131));
   font-size: 30rpx;
   color: white;
   border-radius: 20rpx;
+}
+
+.submitBarIndex .right:active {
+  background-image: linear-gradient(to right, #00C957, #00C957);
 }
 
 .submitBarIndex .right:active {

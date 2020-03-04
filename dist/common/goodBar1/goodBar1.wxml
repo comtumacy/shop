@@ -1,0 +1,114 @@
+<!-- 商品栏组件 -->
+<!-- 头部 -->
+<view style="position: relative; margin-top: 20rpx; height: {{goodsNumber === 3? '500rpx' : '426rpx'}}; margin-left:{{marginLeftAndRight}}; margin-right:{{marginLeftAndRight}}" class="{{buyCarClass}}">
+  <view class="goodsbarHeader" wx:if="{{goodsbarHeaderSign}}">
+    <view class="goodsbarTitle" style="font-size: {{TitleFontSize}}rpx; color: {{TitleColor}}">{{Title}}</view>
+    <view class="goodsbarSecondTitle" hidden="{{SecondTitleSign}}" style="margin-left: {{goodsbarSecondTitleMarginLeft}}rpx; margin-top: {{goodsbarSecondTitleMarginTop}}rpx; font-size: {{goodsbarSecondTitleFontSize}}rpx; color: {{goodsbarSecondTitleColor}}">{{SecondTitle}}</view>
+    <view class="goodsbarTime" hidden="{{goodsbarTimeSign}}">
+      <van-count-down use-slot millisecond="{{millisecond}}" time="{{ time }}" bind:change="onChange" auto-start="{{autoStart}}">
+        剩余
+        <text class="item">{{ timeData.hours }}</text>
+        <text>:</text>
+        <text class="item">{{ timeData.minutes }}</text>
+        <text>:</text>
+        <text class="item">{{ timeData.seconds }}</text>
+        <text wx:if="{{millisecond}}">:</text>
+        <text class="item" wx:if="{{millisecond}}">{{ timeData.milliseconds }}</text>
+      </van-count-down>
+    </view>
+    <view class="more">{{more}}</view>
+  </view>
+  <!-- 商品 -->
+  <view class="goodsbar">
+    <!-- 图片4栏目 -->
+    <view class="goodsbarImgIndex" wx:if="{{goodsNumber === 4}}">
+      <view class="goodsbarImgFourFor" wx:for="{{contentFour}}" wx:key="index">
+        <image class="goodsbarImgFour" src="{{contentFour[index].imgs}}"></image>
+        <image class="goodsbarDiscountImgFour" src="{{contentFour[index].discountImgs}}" wx:if="{{contentFour[index].priceTypeSign}}"></image>
+        <text class="goodsbarDiscountTextFour" wx:if="{{contentFour[index].priceTypeSign}}">{{contentFour[index].discountText}}</text>
+      </view>
+    </view>
+    <!-- 图片3栏目 -->
+    <view class="goodsbarImgIndex" wx:elif="{{goodsNumber === 3}}">
+      <view class="goodsbarImgThreeFor" wx:for="{{contentThree}}" wx:key="index">
+        <image class="goodsbarImgThree" src="{{contentThree[index].imgs}}"></image>
+        <image class="goodsbarDiscountImgThree" src="{{contentThree[index].discountImgs}}" wx:if="{{contentThree[index].priceTypeSign}}"></image>
+        <text class="goodsbarDiscountTextThree" wx:if="{{contentThree[index].priceTypeSign}}">{{contentThree[index].discountText}}</text>
+      </view>
+    </view>
+    <!-- 图片2栏目 -->
+    <view class="goodsbarImgIndex" wx:elif="{{goodsNumber === 2}}">
+      <view class="goodsbarImgTwoFor" wx:for="{{contentTwo}}" wx:key="index">
+        <image class="goodsbarImgTwo" src="{{contentTwo[index].imgs}}"></image>
+        <image class="goodsbarDiscountImgTwo" src="{{contentTwo[index].discountImgs}}" wx:if="{{contentTwo[index].priceTypeSign}}"></image>
+        <text class="goodsbarDiscountTextTwo" wx:if="{{contentTwo[index].priceTypeSign}}">{{contentTwo[index].discountText}}</text>
+      </view>
+    </view>
+    <!-- 标题4栏目 -->
+    <view class="goodsbarTitleIndex" wx:if="{{goodsNumber === 4}}">
+      <view class="goodsbarTitleFourFor" wx:for="{{contentFour}}" wx:key="index">
+        <view class="goodsbarTitleFour">{{contentFour[index].titleText}}</view>
+        <view class="goodsbarSecondTitleFour">
+          <text style="color: {{contentFour[index].priceType.color}}">{{contentFour[index].priceType.title}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 标题3栏目 -->
+    <view class="goodsbarTitleIndex" wx:elif="{{goodsNumber === 3}}">
+      <view class="goodsbarTitleThreeFor" wx:for="{{contentThree}}" wx:key="index">
+        <view class="goodsbarTitleThree">{{contentThree[index].titleText}}</view>
+        <view class="goodsbarSecondTitleThree">
+          <text style="color: {{contentThree[index].priceType.color}}">{{contentThree[index].priceType.title}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 标题2栏目 -->
+    <view class="goodsbarTitleIndex" wx:elif="{{goodsNumber === 2}}">
+      <view class="goodsbarTitleTwoFor" wx:for="{{contentTwo}}" wx:key="index">
+        <view class="goodsbarTitleTwo">{{contentTwo[index].titleText}}</view>
+        <view class="goodsbarSecondTitleTwo">
+          <text style="color: {{contentTwo[index].priceType.color}}">{{contentTwo[index].priceType.title}}</text>
+        </view>
+
+      </view>
+    </view>
+    <!-- 价格4栏目 -->
+    <view class="goodsBarPriceIndex" wx:if="{{goodsNumber === 4}}">
+      <view class="goodsbarPriceFourFor" wx:for="{{contentFour}}" wx:key="index">
+        <view class="goodsBarPriceLeft">
+          <view class="priceLeftTop">
+            <view class="goodsBarPriceLeftMoneyIcon1Four iconfont icon-money"></view>
+            <view class="goodsBarPriceFour">{{contentFour[index].price}}</view>
+            <view class="goodsBarCompanyFour">{{contentFour[index].company}}</view>
+          </view>
+          <view class="priceLeftBottom">
+            <view class="goodsBarPriceLeftMoneyIcon2Four iconfont icon-money"></view>
+            <view class="goodsBarOldPriceFour">{{contentFour[index].oldPrice}}</view>
+          </view>
+        </view>
+        <view class="goodsBarPriceRight">
+          <view class="goodsBarPriceRightIconFour iconfont icon-gouwuche21"></view>
+        </view>
+      </view>
+    </view>
+    <!-- 价格3栏目 -->
+    <view class="goodsBarPriceIndex" wx:if="{{goodsNumber === 3}}">
+      <view class="goodsbarPriceThreeFor" wx:for="{{contentThree}}" wx:key="index">
+        <view class="goodsBarPriceLeft">
+          <view class="priceLeftTop">
+            <view class="goodsBarPriceLeftMoneyIcon1Three iconfont icon-money"></view>
+            <view class="goodsBarPriceThree">{{contentThree[index].price}}</view>
+            <view class="goodsBarCompanyThree">{{contentThree[index].company}}</view>
+          </view>
+          <view class="priceLeftBottom">
+            <view class="goodsBarPriceLeftMoneyIcon2Three iconfont icon-money"></view>
+            <view class="goodsBarOldPriceThree">{{contentThree[index].oldPrice}}</view>
+          </view>
+        </view>
+        <view class="goodsBarPriceRight">
+          <view class="goodsBarPriceRightIconThree iconfont icon-gouwuche21"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

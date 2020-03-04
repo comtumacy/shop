@@ -1,7 +1,9 @@
 <!-- 购物车页面 -->
 <view class="buyCarIndex">
   <!-- 换购、商品栏组件 -->
-  <shop-goodBar bind:change="changeStepper" bind:click="selectGood" wx:for="{{shopGoodBarNumber}}" wx:key="index" bind:popupOpen="showPopup"></shop-goodBar>
+  <shop-goodBar bind:change="changeStepper" bind:click="selectGood" repurchaseRightText="优惠券" bind:popupOpen="showPopup"></shop-goodBar>
+  <!-- 换购、商品栏组件 -->
+  <shop-goodBar bind:change="changeStepper" bind:click="selectGood" repurchaseRightText="去换购" bind:popupOpen="showPopup"></shop-goodBar>
   <!-- 分割线 -->
   <shop-dividerLayer dividerText="你可能还想买"></shop-dividerLayer>
   <!-- 商品栏目组件 -->
@@ -13,7 +15,7 @@
   <!-- 消息弹出层在最外层 -->
   <van-dialog id="van-dialog" />
   <!-- 内容弹出层在最外层 -->
-  <van-popup show="{{ popupShow }}" bind:close="onClose" position="bottom" round="true" custom-style="height: 50%" closeable="true">
+  <van-popup show="{{ popupShow }}" bind:close="onClose" position="bottom" round="true" custom-style="height: 530rpx" closeable="true" bind:enterPurchased="enterPurchased">
     <shop-goodPurchased></shop-goodPurchased>
   </van-popup>
   <!-- 留空 -->

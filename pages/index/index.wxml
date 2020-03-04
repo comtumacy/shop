@@ -11,9 +11,9 @@
   <!-- 活动图片组件 -->
   <shop-activityLayer class="activityLayer" bind:enterActivity="enterActivity"></shop-activityLayer>
   <!-- 商品栏目组件 -->
-  <shop-goodsBar class="goodsBar" goodsNumber="4"></shop-goodsBar>
-  <!-- 商品栏目组件 -->
   <shop-goodsBar class="goodsBar" goodsNumber="3"></shop-goodsBar>
+  <!-- 商品栏目组件 -->
+  <shop-goodsBar class="goodsBar" goodsNumber="4"></shop-goodsBar>
   <!-- 特惠专区组件 -->
   <shop-specialLayer class="specialLayer"></shop-specialLayer>
   <!-- 分隔符 -->

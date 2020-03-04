@@ -1,0 +1,306 @@
+/* 头部 */
+@import "../../../font/moneyFont.wxss";
+@import "../../../font/buyCarFont.wxss";
+
+.goodsbarHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goodsbarHeader .goodsbarTitle {
+  flex: none;
+}
+
+.goodsbarHeader .goodsbarSecondTitle {
+  flex: none;
+}
+
+.goodsbarHeader .goodsbarTime {
+  margin-right: 10rpx;
+  flex: 1;
+  text-align: right;
+}
+
+.goodsbarHeader .more {
+  flex: none;
+  font-size: 28rpx;
+  color: rgb(128, 132, 143);
+}
+
+.goodsbarHeader .goodsbarTime van-count-down .van-count-down {
+  font-size: 80rpx;
+}
+
+.goodsbarHeader .goodsbarTime van-count-down .item {
+  display: inline-block;
+  width: 28rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  color: #fff;
+  font-size: 24rpx;
+  text-align: center;
+  background-color: rgb(85, 101, 127);
+  border-radius: 12rpx;
+}
+
+/* 商品 */
+
+.goodsbarImgIndex, .goodsbarTitleIndex {
+  position: relative;
+  display: flex;
+  margin-top: 20rpx;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.goodsbarImgFourFor, .goodsbarTitleFourFor {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 150rpx;
+}
+
+.goodsbarImgThreeFor, .goodsbarTitleThreeFor {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 210rpx;
+}
+
+.goodsbarImgTwoFor, .goodsbarTitleTwoFor {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 320rpx;
+}
+
+.goodsbarImgFour {
+  position: relative;
+  width: 100%;
+  height: 150rpx;
+  border-radius: 20rpx;
+}
+
+.goodsbarImgThree {
+  position: relative;
+  width: 100%;
+  height: 210rpx;
+  border-radius: 20rpx;
+}
+
+.goodsbarImgTwo {
+  position: relative;
+  width: 100%;
+  height: 260rpx;
+  border-radius: 20rpx;
+}
+
+.goodsbarDiscountImgFour {
+  position: absolute;
+  bottom: 0;
+  width: 100rpx;
+  height: 30rpx;
+  border-radius: 0 20rpx 0 20rpx;
+}
+
+.goodsbarDiscountImgThree {
+  position: absolute;
+  bottom: 0;
+  width: 120rpx;
+  height: 40rpx;
+  border-radius: 0 20rpx 0 20rpx;
+}
+
+.goodsbarDiscountImgTwo {
+  position: absolute;
+  bottom: 0;
+  width: 120rpx;
+  height: 40rpx;
+  border-radius: 0 20rpx 0 20rpx;
+}
+
+.goodsbarDiscountTextFour {
+  position: absolute;
+  margin-left: 10rpx;
+  bottom: 0;
+  font-size: 20rpx;
+  color: #fff;
+}
+
+.goodsbarDiscountTextThree {
+  position: absolute;
+  margin-left: 10rpx;
+  bottom: 0;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.goodsbarDiscountTextTwo {
+  position: absolute;
+  margin-left: 10rpx;
+  bottom: 0;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.goodsbarTitleFour {
+  height: 62rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 24rpx;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.goodsbarTitleThree {
+  height: 64rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 26rpx;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.goodsbarTitleTwo {
+  height: 40rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goodsbarSecondTitleFour text {
+  padding: 0 4rpx;
+  font-size: 20rpx;
+  border: solid 1px;
+  width: auto;
+  border-radius: 40rpx;
+}
+
+.goodsbarSecondTitleThree text {
+  padding: 0 6rpx;
+  font-size: 22rpx;
+  border: solid 1px;
+  width: auto;
+  border-radius: 40rpx;
+}
+
+.goodsbarSecondTitleTwo text {
+  padding: 3rpx 6rpx;
+  font-size: 24rpx;
+  border: solid 1px;
+  width: auto;
+  border-radius: 40rpx;
+}
+
+/* 价格 */
+
+.goodsBarPriceIndex {
+  position: relative;
+  display: flex;
+  margin-top: 20rpx;
+  width: 100%;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.goodsbarPriceFourFor {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 150rpx;
+}
+
+.goodsbarPriceThreeFor {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 210rpx;
+}
+
+.goodsBarPriceLeft {
+  width: 66.6%;
+}
+
+.priceLeftTop, .priceLeftBottom {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.goodsBarPriceLeftMoneyIcon1Four {
+  font-size: 18rpx;
+}
+
+.goodsBarPriceLeftMoneyIcon1Three {
+  font-size: 18rpx;
+}
+
+.goodsBarPriceFour {
+  font-size: 28rpx;
+}
+
+.goodsBarPriceThree {
+  font-size: 28rpx;
+}
+
+.goodsBarCompanyFour {
+  align-self: flex-end;
+  font-size: 16rpx;
+}
+
+.goodsBarCompanyThree {
+  align-self: flex-end;
+  font-size: 16rpx;
+}
+
+.goodsBarPriceLeftMoneyIcon2Four {
+  font-size: 12rpx;
+  color: #bbbec4;
+}
+
+.goodsBarPriceLeftMoneyIcon2Three {
+  font-size: 12rpx;
+  color: #bbbec4;
+}
+
+.goodsBarOldPriceFour {
+  text-decoration: line-through;
+  font-size: 22rpx;
+  color: #bbbec4;
+}
+
+.goodsBarOldPriceThree {
+  text-decoration: line-through;
+  font-size: 22rpx;
+  color: #bbbec4;
+}
+
+.goodsBarPriceRightIconFour {
+  position: relative;
+  left: 10rpx;
+  top: 20rpx;
+  padding: 10rpx;
+  font-size: 20rpx;
+  background-color: #1FDDAF;
+  border-radius: 40rpx;
+  color: #fff;
+  font-weight: 600
+}
+
+.goodsBarPriceRightIconThree {
+  position: relative;
+  left: 10rpx;
+  top: 20rpx;
+  padding: 10rpx;
+  font-size: 20rpx;
+  background-color: #1FDDAF;
+  border-radius: 40rpx;
+  color: #fff;
+  font-weight: 600
+}

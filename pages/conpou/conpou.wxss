@@ -1,0 +1,145 @@
+@import "../../font/moneyFont.wxss";
+@import "../../font/used.wxss";
+@import "../../font/overdue.wxss";
+
+.tabClass {
+  flex: 0 1 80px !important;
+}
+
+.tabActiveClass view {
+  position: relative;
+  height: 48rpx;
+  margin-top: 20rpx;
+  line-height: 48rpx;
+  border-radius: 80rpx;
+  background-image: linear-gradient(to right, #04d9b6, #18df83);
+  color: #fff;
+}
+
+.conpouContent {
+  position: relative;
+  background-color: #f9f9fa;
+}
+
+.conpouCart {
+  position: relative;
+  display: flex;
+  margin: 20rpx 40rpx;
+  height: 180rpx;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conpouCartLeftNotUse {
+  position: relative;
+  display: flex;
+  width: 180rpx;
+  height: 180rpx;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  background-image: linear-gradient(to right, #04d9b6, #18df83);
+  border-radius: 20rpx 0 0 20rpx;
+  color: #fff;
+}
+
+.conpouCartLeftUsed, .conpouCartLeftOverdue {
+  position: relative;
+  display: flex;
+  width: 180rpx;
+  height: 180rpx;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  background-color: #bbbec4;
+  border-radius: 20rpx 0 0 20rpx;
+  color: #fff;
+}
+
+.conpouCartRight {
+  height: 180rpx;
+  flex: 1 0 auto;
+  background-color: #fff;
+  border-radius: 0 20rpx 20rpx 0;
+}
+
+.conpouCartLeftMoney {
+  position: relative;
+  bottom: 5px;
+}
+
+.conpouCartLeftMoneyIcon {
+  position: relative;
+  bottom: 20rpx;
+  right: 8rpx;
+  display: inline-block;
+  font-size: 20rpx;
+}
+
+.conpouCartLeftMoneyItem {
+  display: inline-block;
+  font-size: 50rpx;
+}
+
+.conpouCartLeftEnoughMoney {
+  font-size: 20rpx;
+}
+
+.conpouCartRightText {
+  position: relative;
+  display: flex;
+  left: 40rpx;
+  top: 50rpx;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.conpouCartRightTitle {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #80848f;
+}
+
+.conpouCartRightTime {
+  margin-top: 8rpx;
+  font-size: 20rpx;
+  color: #bbbec4;
+}
+
+.conpouCartRightSignNotUse {
+  position: absolute;
+  width: 100rpx;
+  height: 30rpx;
+  right: 0;
+  border-radius: 0 20rpx 0 20rpx;
+  background-image: linear-gradient(to right, #18df83, #04d9b6);
+}
+
+.conpouCartRightSignUsed, .conpouCartRightSignOverdue {
+  position: absolute;
+  width: 100rpx;
+  height: 30rpx;
+  right: 0;
+  border-radius: 0 20rpx 0 20rpx;
+  background-color: #bbbec4
+}
+
+.conpouCartRightSignItem {
+  position: relative;
+  font-size: 20rpx;
+  top: 2rpx;
+  left: 20rpx;
+  color: #fff
+}
+
+.conpouCartRightSignUsedIcon, .conpouCartRightSignOverdueIcon {
+  position: absolute;
+  font-size: 80rpx;
+  right: 10rpx;
+  top: 60rpx;
+  color: #80848f
+}

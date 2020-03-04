@@ -6,7 +6,8 @@
     "pages/buyCar/buyCar",
     "pages/user/user",
     "pages/logs/logs",
-    "pages/getuser/getuser"
+    "pages/getuser/getuser",
+    "pages/conpou/conpou"
   ],
   "window": {
     "backgroundTextStyle": "light",

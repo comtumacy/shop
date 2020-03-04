@@ -1,11 +1,11 @@
 /**app.wxss**/
 
 view {
-  font-family: PingFangNew;
+  font-family: PingFangSc;
 }
 
 text {
-  font-family: PingFangNew;
+  font-family: PingFangSc;
 }
 
 .container {

@@ -7,7 +7,7 @@
     {{describe1}}<text style="color: {{repurchaseMiddleColor}}"> {{number1}} </text>{{company1}}可{{verb}} {{number2}} {{company2}}商品，还{{describe2}} {{number3}} {{company3}}
   </view>
   <view class="repurchaseRight" style="font-size:{{repurchaseRightFontSize}}rpx" bind:tap="openpopup">
-    去{{repurchaseRightText}}
+    {{repurchaseRightText}}
     <text class="iconfont icon-youjiantou2 repurchaseRightAllow"></text>
   </view>
 </view>

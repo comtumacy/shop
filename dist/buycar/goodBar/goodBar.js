@@ -49,7 +49,7 @@ Component({
     // 右边按钮文字
     repurchaseRightText: {
       "type": String,
-      "value": "凑单"
+      "value": "去凑单"
     },
     // 样式
     repurchaseLeftFontSize: {
@@ -200,7 +200,13 @@ Component({
       this.triggerEvent('click', {'Select': select})
     },
     openpopup: function() {
-      this.triggerEvent('popupOpen', {})
+      if (this.data.repurchaseRightText === "去换购") {
+        this.triggerEvent('popupOpen', {})
+      } else {
+        wx.navigateTo({
+          url: "../../pages/conpou/conpou"
+        })
+      }
     }
   }
 })

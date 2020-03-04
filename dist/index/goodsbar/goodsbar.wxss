@@ -1,6 +1,6 @@
 /* 头部 */
-@import "./moneyFont.wxss";
-@import "./buyCarFont.wxss";
+@import "../../../font/moneyFont.wxss";
+@import "../../../font/buyCarFont.wxss";
 
 .goodsbarHeader {
   display: flex;

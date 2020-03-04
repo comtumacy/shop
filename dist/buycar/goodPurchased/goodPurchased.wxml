@@ -1,3 +1,27 @@
-<view class="goodPurchased">
+<view class="goodPurchasedIndex">
+ <!-- catchtouchmove="catchtouchmove" -->
   <view class="title">换购商品</view>
+    <view class="goodPurchased">
+      <view class="allow" bind:tap="selectGood">
+        <view class="iconfont icon-duigou allowItem" style="border-color: {{allowBorderColor}}; border-radius:{{allowBorderRadius}}rpx; background-color:{{allowItemSelected? allowItemSelectedColor: '#ffffff'}}"></view>
+      </view>
+      <view class="img">
+        <image class="goodBarImg" src="{{img}}" style="border-radius: {{goodBarImgBorderRadius}}rpx"></image>
+      </view>
+      <view class="goodBarContent">
+        <view class="goodBarContentTop" style="font-size:{{goodBarContentTopFontSize}}rpx">{{title}}
+        </view>
+        <view class="goodBarContentBottom">
+          <view class="goodBarPrice">
+            <view class="goodBarOldPrice" style="color:{{goodBarOldPriceColor}}">{{goodBarOldPrice}}</view>
+            <view class="iconfont icon-money goodBarIcon"></view>
+            <view class="goodBarNewPrice">{{goodBarNewPrice}}</view>
+          </view>
+          <view class="goodNumber">
+            X{{goodNumber}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="goodPurchasedButton" bind:tap="enterPurchased">加入购物车</view>
 </view>

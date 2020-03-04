@@ -6,8 +6,7 @@ Page({
    */
   data: {
     goodsbarHeaderSign: false,
-    shopGoodBarNumber: 2,
-    popupShow: true
+    popupShow: false
   },
   changeStepper: function(res) {
     console.log(res.detail)
@@ -23,6 +22,11 @@ Page({
   onClose() {
     this.setData({ popupShow: false });
   },
+  // 换购栏商品按钮事件
+  enterPurchased(res) {
+    console.log(res)
+  },
+  // 监听滚动位置
   onPageScroll: function() {
     // const query = wx.createSelectorQuery()
     // query.select('.buyCarClass').boundingClientRect()
