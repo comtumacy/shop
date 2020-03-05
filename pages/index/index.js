@@ -6,7 +6,9 @@ Page({
   data: {},
   // 点击图片事件
   clickImg: function(res) {
-    console.log(res)
+    wx.navigateTo({
+      url: "../selectGroup/selectGroup",
+    })
   },
   // 返回搜索框输入内容
   onSearch: (res) => {
@@ -35,8 +37,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
-  },
+  onLoad: function(options) {},
 
   /**
    * 生命周期函数--监听页面初次渲染完成

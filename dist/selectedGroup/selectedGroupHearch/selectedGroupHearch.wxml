@@ -1,0 +1,29 @@
+<!-- 收货组件 -->
+<view class="selectedIndex">
+  <view class="header">
+    <view class="headerLeft">
+      <view class="headerIcon1 iconfont icon-dingwei"></view>
+      <view class="headerLocation">{{location}}</view>
+      <view class="headerIcon2 iconfont icon-jiantou9"></view>
+    </view>
+    <view class="headerRight">
+      <input class="search" placeholder="{{placeholder}}" placeholder-class="searchItem"></input>
+    </view>
+  </view>
+  <view class="selected">
+    <view class="title">{{title}}</view>
+    <view class="content">
+      <view class="contentLeft">
+        <image src="{{leader.img}}" mode="scaleToFill"></image>
+      </view>
+      <view class="contentMiddle">
+        <view class="top">{{leader.title}}</view>
+        <view class="middle">团长:{{leader.name}}</view>
+        <view class="bottom">{{leader.address}}</view>
+      </view>
+      <view class="contentRight">
+        <view class="contentRightIcon iconfont icon-jia_sekuai"></view>
+      </view>
+    </view>
+  </view>
+</view>

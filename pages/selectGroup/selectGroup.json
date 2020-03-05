@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "selectedGroup": "../../dist/selectedGroup/selectedGroupHearch/selectedGroupHearch",
+    "selectList": "../../dist/common/cart1/cart1"
+  }
+}

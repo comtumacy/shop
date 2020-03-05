@@ -78,7 +78,6 @@ Component({
   data: {},
 
   methods: {
-
     // 按钮点击事件
     enterPurchased: function () {
       let content = this.data.title

@@ -1,5 +1,5 @@
 <!-- 购物车页面 -->
-<view class="buyCarIndex">
+<view class="buyCarIndex" class="{{isLockScroll ? 'LockScroll' : ''}}">
   <!-- 换购、商品栏组件 -->
   <shop-goodBar bind:change="changeStepper" bind:click="selectGood" repurchaseRightText="优惠券" bind:popupOpen="showPopup"></shop-goodBar>
   <!-- 换购、商品栏组件 -->

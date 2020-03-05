@@ -1,0 +1,7 @@
+<!-- 选择团长页 -->
+<view class="seleceIndex">
+  <!-- 选择团长组件 -->
+  <selectedGroup></selectedGroup>
+  <!-- 选择团长列表组件 -->
+  <selectList></selectList>
+</view>

@@ -7,21 +7,28 @@ Page({
   data: {
     goodsbarHeaderSign: false,
     // 弹出层显示控制信号
-    popupShow: true
+    popupShow: false,
+    isLockScroll: false
   },
   changeStepper: function(res) {
     console.log(res.detail)
   },
-  selectGood: function (res) {
+  selectGood: function(res) {
     console.log(res)
   },
   // 打开内容弹出层
   showPopup() {
-    this.setData({ popupShow: true });
+    this.setData({
+      popupShow: true,
+      isLockScroll: true
+    });
   },
   // 关闭内容弹出层
   onClose() {
-    this.setData({ popupShow: false });
+    this.setData({
+      popupShow: false,
+      isLockScroll: false
+    });
   },
   // 换购栏商品按钮事件
   enterPurchased(res) {
@@ -39,8 +46,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
-  },
+  onLoad: function(options) {},
 
   /**
    * 生命周期函数--监听页面初次渲染完成

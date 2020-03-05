@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/buyCar/buyCar",
     "pages/start/start",
+    "pages/buyCar/buyCar",
     "pages/login/login",
     "pages/index/index",
     "pages/user/user",
     "pages/getuser/getuser",
-    "pages/conpou/conpou"
+    "pages/conpou/conpou",
+    "pages/selectGroup/selectGroup"
   ],
   "window": {
     "backgroundTextStyle": "light",

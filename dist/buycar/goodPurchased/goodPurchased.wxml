@@ -1,5 +1,5 @@
 <view class="goodPurchasedIndex">
- <!-- catchtouchmove="catchtouchmove" -->
+  <!-- catchtouchmove="catchtouchmove" -->
   <view class="title">换购商品</view>
     <view class="goodPurchased" wx:for="{{3}}" wx:key="index">
       <view class="allow" bind:tap="selectGood">
@@ -23,6 +23,6 @@
         </view>
       </view>
     </view>
-    <view class="goodPurchasedButton" bind:tap="enterPurchased">加入购物车</view>
-    <view style="height: 200rpx"></view>
+  <view class="goodPurchasedButton" bind:tap="enterPurchased">加入购物车</view>
+  <view style="height: 200rpx"></view>
 </view>

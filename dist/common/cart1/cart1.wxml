@@ -1,0 +1,19 @@
+<!-- 卡片组件1 -->
+<!-- 横向滚动，图片+文字2栏垂直分布 -->
+<view class="cartIndex">
+  <view class="header">
+   <view class="title">{{title}}</view>
+   <view class="more">
+   <view class="moreText">{{moreText}}</view>
+   <view class="moreIcon iconfont icon-youjiantou2"></view>
+   </view>
+  </view>
+  <view class="cart">
+    <view class="content" wx:for="{{content}}" wx:key="index">
+      <image src="{{content[index].img}}"></image>
+      <view class="text1">{{content[index].text1}}</view>
+      <view class="text2">{{content[index].text2}}</view>
+      <view></view>
+    </view>
+  </view>
+</view>
