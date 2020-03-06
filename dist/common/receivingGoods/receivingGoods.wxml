@@ -1,0 +1,19 @@
+<!-- 收货组件 -->
+<view class="selectedIndex">
+  <view class="iconLeft">
+    <view class="selectIconfont iconfont icon-ditu-dibiao"></view>
+  </view>
+  <view class="contentRight">
+    <view class="addressTop">
+      <view class="nameAndPhone">
+        <view class="name">{{name}}</view>
+        <view class="phone">{{phone}}</view>
+      </view>
+      <view class="change">
+        <view class="changeTitle">{{changeTitle}}</view>
+        <view class="allowIcon iconfont icon-youjiantou2"></view>
+      </view>
+    </view>
+    <view class="addressBottom">{{addressDetailed}}</view>
+  </view>
+</view>

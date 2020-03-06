@@ -1,0 +1,107 @@
+.cart2Index {
+  margin: 20rpx 0 0 0;
+  padding: 0 4%;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  transform: scaleY(1.05);
+}
+
+.more {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.moreText, .moreIcon {
+  color: #80848f;
+}
+
+.moreText {
+  font-size: 24rpx;
+}
+
+.moreIcon {
+  font-size: 20rpx;
+  line-height: 32rpx;
+}
+
+.cart2 {
+  position: relative;
+  display: flex;
+  margin-top: 20rpx;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentLeft {
+  flex: 0 0 auto;
+  width: 135rpx;
+}
+
+.contentLeft image {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 10rpx;
+}
+
+.contentMiddle {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contentRight {
+  flex: 0 0 auto;
+  width: 110rpx;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.top {
+  font-size: 28rpx;
+  font-weight: 600;
+  transform: scaleY(1.05);
+}
+
+.middle, .bottom {
+  font-size: 22rpx;
+  color: #80848f;
+}
+
+.contentRightButton {
+  position: relative;
+  padding: 4rpx;
+  margin-left: 10rpx;
+  width: 80rpx;
+  height: 45rpx;
+  font-size: 24rpx;
+  background-color: #19be6b;
+  text-align: center;
+  line-height: 44rpx;
+  color: #fff;
+  border-radius: 40rpx
+}
+
+.contentRightKilometre {
+  position: relative;
+  font-size: 18rpx;
+  margin-top: 6rpx;
+  color: #19be6b
+}

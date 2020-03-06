@@ -1,0 +1,27 @@
+<!-- 卡片组件2 -->
+<!-- 横向滚动，图片+文字（3行）+按钮+按钮下文字，3栏水平分布 -->
+<view class="cart2Index">
+  <view class="header">
+    <view class="title">{{title}}</view>
+    <view class="more" hidden="{{moreSign}}">
+      <view class="moreText">{{moreText}}</view>
+      <view class="moreIcon iconfont icon-youjiantou2"></view>
+    </view>
+  </view>
+  <view>
+    <view class="cart2" wx:for="{{content}}" wx:key="index">
+      <view class="contentLeft">
+        <image src="{{content[index].img}}" mode="scaleToFill"></image>
+      </view>
+      <view class="contentMiddle">
+        <view class="top">{{content[index].title}}</view>
+        <view class="middle">团长: {{content[index].name}}</view>
+        <view class="bottom">{{content[index].address}}</view>
+      </view>
+      <view class="contentRight">
+        <view class="contentRightButton">选择</view>
+        <view class="contentRightKilometre">距离{{content[index].kilometre}}Km</view>
+      </view>
+    </view>
+  </view>
+</view>

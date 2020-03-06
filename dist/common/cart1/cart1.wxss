@@ -36,7 +36,7 @@
   line-height: 32rpx
 }
 
-.cart {
+.cart1 {
   display: flex;
   flex-flow: row nowrap;
   overflow-x: auto;

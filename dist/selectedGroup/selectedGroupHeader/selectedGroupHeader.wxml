@@ -18,7 +18,7 @@
       </view>
       <view class="contentMiddle">
         <view class="top">{{leader.title}}</view>
-        <view class="middle">团长:{{leader.name}}</view>
+        <view class="middle">团长: {{leader.name}}</view>
         <view class="bottom">{{leader.address}}</view>
       </view>
       <view class="contentRight">

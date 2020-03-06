@@ -1,0 +1,72 @@
+@import "../../../font/allow.wxss";
+@import "../../../font/style.wxss";
+
+.selectedIndex {
+  padding: 0 4%;
+  position: relative;
+  display: flex;
+  height: 160rpx;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.iconLeft {
+  width: 15%;
+  align-self: center;
+}
+
+.selectIconfont {
+  text-align: center;
+  font-size: 48rpx;
+  color: #1cde94;
+}
+
+.contentRight {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 85%;
+}
+
+.addressTop {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name, .phone, .change, .changeTitle, .allowIcon {
+  display: inline-block;
+}
+
+.name, .phone {
+  font-size: 15px;
+  font-weight: 600;
+  transform: scaleY(1.1)
+}
+
+.phone, .allowIcon {
+  margin-left: 20rpx;
+}
+
+.change {
+  margin-bottom: 4rpx;
+}
+
+.changeTitle, .allowIcon {
+  font-size: 12px;
+  color: #80848f;
+}
+
+.addressBottom {
+  margin-top: 15rpx;
+  font-size: 24rpx;
+  max-width: 480rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #80848f;
+}

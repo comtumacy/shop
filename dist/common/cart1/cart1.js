@@ -15,6 +15,10 @@ Component({
       "type": String,
       "value": "查看更多"
     },
+    moreSign: {
+      "type": Boolean,
+      "value": false
+    },
     content: {
       "type": ArrayBuffer,
       "value": [{

@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "selectedGroup": "../../dist/selectedGroup/selectedGroupHearch/selectedGroupHearch",
-    "selectList": "../../dist/common/cart1/cart1"
+    "selectedHeader": "../../dist/selectedGroup/selectedGroupHeader/selectedGroupHeader",
+    "selectList": "../../dist/common/cart1/cart1",
+    "selectList2": "../../dist/common/cart2/cart2"
   }
 }

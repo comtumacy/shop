@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "goodBar": "../../dist/common/cart3/cart3"
+  }
+}

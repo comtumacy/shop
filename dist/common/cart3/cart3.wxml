@@ -1,0 +1,22 @@
+<!-- 卡片组件3 -->
+<!-- 竖直滚动，图片+文字+评分+分享，2栏水平分布 -->
+<view class="cart3Index">
+  <view class="cart3Row" wx:for="{{content.length / 2}}" wx:key="index">
+    <view class="cart3">
+      <view class="cart3Image" url="{{content[index * 2].img}}">
+        <image url="{{content[index * 2].img}}"></image>
+      </view>
+      <view class="cart3Title">{{content[index * 2].title}}</view>
+      <view class="cart3Stars">{{content[index * 2].star}}</view>
+      <view class="cartsBottom"></view>
+    </view>
+    <view class="cart3">
+      <view class="cart3Image">
+        <image url="{{content[index * 2 + 1].img}}"></image>
+      </view>
+      <view class="cart3Title">{{content[index * 2 + 1].title}}</view>
+      <view class="cart3Stars">{{content[index * 2 + 1].star}}</view>
+      <view class="cartsBottom"></view>
+    </view>
+  </view>
+</view>

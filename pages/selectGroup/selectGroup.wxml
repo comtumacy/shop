@@ -1,7 +1,11 @@
 <!-- 选择团长页 -->
 <view class="seleceIndex">
   <!-- 选择团长组件 -->
-  <selectedGroup></selectedGroup>
+  <selectedHeader></selectedHeader>
   <!-- 选择团长列表组件 -->
   <selectList></selectList>
+  <!-- 选择团长列表组件2 -->
+  <selectList2></selectList2>
+  <!-- 空 -->
+  <view style="margin-top: 40rpx"></view>
 </view>

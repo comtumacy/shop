@@ -1,0 +1,4 @@
+<!-- 收藏页 -->
+<view class="collectionIndex">
+  <goodBar></goodBar>
+</view>
