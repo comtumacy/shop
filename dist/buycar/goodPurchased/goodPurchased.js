@@ -1,3 +1,5 @@
+let app = getApp()
+
 Component({
   externalClasses: ['sp-class'],
 
@@ -13,7 +15,7 @@ Component({
     },
     img: {
       "type": String,
-      "value": "../../../image/carBar/vivo.jpg"
+      "value": `${app.globalData.url}carBar/vivo.jpg`
     },
     title: {
       "type": String,

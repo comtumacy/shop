@@ -7,7 +7,7 @@ Component({
     // tabbar个数
     tabbarNumber: {
       "type": Number,
-      "value": 3
+      "value": 4
     },
     // 当前激活index
     active: {
@@ -46,11 +46,11 @@ Component({
     },
     text3: {
       "type": String,
-      "value": "我的"
+      "value": "吃什么"
     },
     text4: {
       "type": String,
-      "value": "测试4"
+      "value": "我的"
     },
     text5: {
       "type": String,
@@ -62,8 +62,8 @@ Component({
       "value": [
         "/pages/index/index",
         "/pages/buyCar/buyCar",
+        "/pages/eatWhat/eatWhat",
         "/pages/user/user",
-        "/pages/logs/logs",
         "/pages/getuser/getuser"
       ]
     },
@@ -99,7 +99,7 @@ Component({
     },
     icon3: {
       "type": String,
-      "value": "friends-o"
+      "value": "good-job-o"
     },
     icon4: {
       "type": String,
@@ -120,7 +120,7 @@ Component({
     },
     iconActive3: {
       "type": String,
-      "value": "friends-o"
+      "value": "good-job-o"
     },
     iconActive4: {
       "type": String,

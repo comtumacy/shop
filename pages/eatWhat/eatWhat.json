@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "search": "../../dist/common/search1/search1"
+  }
+}

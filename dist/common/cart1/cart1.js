@@ -1,3 +1,5 @@
+let app = getApp()
+
 Component({
   externalClasses: ['sp-class'],
   created() {},
@@ -22,36 +24,36 @@ Component({
     content: {
       "type": ArrayBuffer,
       "value": [{
-          "img": "../../../image/icon/icon.jpg",
+          "img": `${app.globalData.url}icon/icon.jpg`,
           "text2": "陈显芳",
           "text1": "万盛中央公园团长"
         },
         {
-          "img": "../../../image/icon/icon.jpg",
+          "img": `${app.globalData.url}icon/icon.jpg`,
           "text2": "陈显芳",
           "text1": "万盛中央公园团长"
         }, {
-          "img": "../../../image/icon/icon.jpg",
+          "img": `${app.globalData.url}icon/icon.jpg`,
           "text2": "陈显芳",
           "text1": "万盛中央公园团长"
         }, {
-          "img": "../../../image/icon/icon.jpg",
+          "img": `${app.globalData.url}icon/icon.jpg`,
           "text2": "陈显芳",
           "text1": "万盛中央公园团长"
         }, {
-          "img": "../../../image/icon/icon.jpg",
+          "img": `${app.globalData.url}icon/icon.jpg`,
           "text2": "陈显芳",
           "text1": "万盛中央公园团长"
         }, {
-          "img": "../../../image/icon/icon.jpg",
+          "img": `${app.globalData.url}icon/icon.jpg`,
           "text2": "陈显芳",
           "text1": "万盛中央公园团长"
         }, {
-          "img": "../../../image/icon/icon.jpg",
+          "img": `${app.globalData.url}icon/icon.jpg`,
           "text2": "陈显芳",
           "text1": "万盛中央公园团长"
         }, {
-          "img": "../../../image/icon/icon.jpg",
+          "img": `${app.globalData.url}icon/icon.jpg`,
           "text2": "陈显芳",
           "text1": "万盛中央公园团长"
         }

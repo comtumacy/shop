@@ -13,4 +13,18 @@
       </view>
     </view>
   </view>
+  <view class="headerState">
+    <view class="headerStateLeft">
+      <view class="headerStateLeftTop">{{balance}}</view>
+      <view class="headerStateLeftBottom">余额</view>
+    </view>
+    <view class="headerStateMiddle">
+      <view class="headerStateMiddleTop">{{integral}}</view>
+      <view class="headerStateMiddleBottom">积分</view>
+    </view>
+    <view class="headerStateRight">
+      <view class="headerStateMiddleTop">{{coupon}}</view>
+      <view class="headerStateMiddleBottom">优惠券</view>
+    </view>
+  </view>
 </view>

@@ -1,0 +1,4 @@
+.eatWhatIndex {
+  position: relative;
+  background-color: #f8f8f9
+}

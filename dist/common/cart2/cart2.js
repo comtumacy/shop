@@ -1,3 +1,5 @@
+let app = getApp()
+
 Component({
   externalClasses: ['sp-class'],
   created() {},
@@ -22,61 +24,61 @@ Component({
     content: {
       "type": ArrayBuffer,
       "value": [{
-        "img": "../../../image/icon/icon.jpg",
+        "img": `${app.globalData.url}icon/icon.jpg`,
         "name": "陈显芳",
         "title": "万盛中央公园团长",
         "address": "万盛中央公园万盛中央公园门口",
         "kilometre": "0.99"
       }, {
-        "img": "../../../image/icon/icon.jpg",
+        "img": `${app.globalData.url}icon/icon.jpg`,
         "name": "陈显芳",
         "title": "万盛中央公园团长",
         "address": "万盛中央公园万盛中央公园门口",
         "kilometre": "0.99"
       }, {
-        "img": "../../../image/icon/icon.jpg",
+        "img": `${app.globalData.url}icon/icon.jpg`,
         "name": "陈显芳",
         "title": "万盛中央公园团长",
         "address": "万盛中央公园万盛中央公园门口",
         "kilometre": "0.99"
       }, {
-        "img": "../../../image/icon/icon.jpg",
+        "img": `${app.globalData.url}icon/icon.jpg`,
         "name": "陈显芳",
         "title": "万盛中央公园团长",
         "address": "万盛中央公园万盛中央公园门口",
         "kilometre": "0.99"
       }, {
-        "img": "../../../image/icon/icon.jpg",
+        "img": `${app.globalData.url}icon/icon.jpg`,
         "name": "陈显芳",
         "title": "万盛中央公园团长",
         "address": "万盛中央公园万盛中央公园门口",
         "kilometre": "0.99"
       }, {
-        "img": "../../../image/icon/icon.jpg",
+        "img": `${app.globalData.url}icon/icon.jpg`,
         "name": "陈显芳",
         "title": "万盛中央公园团长",
         "address": "万盛中央公园万盛中央公园门口",
         "kilometre": "0.99"
       }, {
-        "img": "../../../image/icon/icon.jpg",
+        "img": `${app.globalData.url}icon/icon.jpg`,
         "name": "陈显芳",
         "title": "万盛中央公园团长",
         "address": "万盛中央公园万盛中央公园门口",
         "kilometre": "0.99"
       }, {
-        "img": "../../../image/icon/icon.jpg",
+        "img": `${app.globalData.url}icon/icon.jpg`,
         "name": "陈显芳",
         "title": "万盛中央公园团长",
         "address": "万盛中央公园万盛中央公园门口",
         "kilometre": "0.99"
       }, {
-        "img": "../../../image/icon/icon.jpg",
+        "img": `${app.globalData.url}icon/icon.jpg`,
         "name": "陈显芳",
         "title": "万盛中央公园团长",
         "address": "万盛中央公园万盛中央公园门口",
         "kilometre": "0.99"
       }, {
-        "img": "../../../image/icon/icon.jpg",
+        "img": `${app.globalData.url}icon/icon.jpg`,
         "name": "陈显芳",
         "title": "万盛中央公园团长",
         "address": "万盛中央公园万盛中央公园门口",

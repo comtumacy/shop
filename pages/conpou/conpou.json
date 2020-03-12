@@ -1,8 +1,8 @@
 {
   "usingComponents": {
-    "van-tab": "../../dist/vant/tab/index",
-    "van-tabs": "../../dist/vant/tabs/index",
-    "van-divider": "../../dist/vant/divider/index"
+    "van-tab": "../../../dist/vant/tab/index",
+    "van-tabs": "../../../dist/vant/tabs/index",
+    "van-divider": "../../../dist/vant/divider/index"
   },
   "navigationBarTitleText": "我的优惠券"
 }

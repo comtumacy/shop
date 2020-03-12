@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "goodBar": "../../dist/common/cart3/cart3"
+    "goodBar": "../../../dist/common/cart3/cart3"
   }
 }

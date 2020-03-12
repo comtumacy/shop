@@ -1,0 +1,41 @@
+@import "../../../font/searchAndLove.wxss";
+
+.search1Index {
+  padding: 0 4%;
+  background-color: #fff
+}
+
+.search1Index, .search1Left {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.search1Left {
+  margin-right: 12rpx;
+  padding: 10rpx 0;
+  justify-content: center;
+  flex: 1;
+  background-color: #f8f8f9;
+  border-radius: 80rpx;
+}
+
+.search1Right {
+  flex: 0;
+  width: 100rpx;
+  font-size: 44rpx;
+  color: #495060;
+}
+
+.search1icon {
+  position: relative;
+  right: 10rpx;
+  font-size: 24rpx;
+  color: #bbbec4;
+  line-height: 36rpx
+}
+
+.search1LeftText {
+  font-size: 28rpx;
+  color: #bbbec4;
+}

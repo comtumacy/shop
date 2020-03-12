@@ -27,6 +27,18 @@ Component({
       "type": String,
       "value": "超级会员"
     },
+    balance: {
+      "type": String,
+      "value": "299.0"
+    },
+    integral: {
+      "type": String,
+      "value": "396"
+    },
+    coupon: {
+      "type": String,
+      "value": "3"
+    },
   },
   data: {
   },
