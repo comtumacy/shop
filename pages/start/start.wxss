@@ -1,3 +1,4 @@
 .startImg {
+  position: fixed;
   width: 100%
 }
