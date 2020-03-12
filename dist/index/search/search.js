@@ -32,7 +32,7 @@ Component({
     },
     url: {
       "type": String,
-      "value": "../../../image/icon/icon.jpg"
+      "value": ""
     }
   },
 

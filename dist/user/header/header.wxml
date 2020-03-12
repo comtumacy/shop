@@ -1,0 +1,16 @@
+<view class="headerIndex">
+  <view class="headerIconIndex">
+    <view class="headerIconLeft">
+      <image src="{{url}}"></image>
+    </view>
+    <view class="headerIconRight">
+      <view class="headerIconRightTop">{{nickName}}</view>
+      <view class="headerIconRightBottom">
+        <view class="headerIconRightBottomIcon iconfont icon-huiyuan"></view>
+        <view class="headerIconRightBottomText">
+          <view>{{headerIconRightBottomText}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,8 +1,8 @@
 <!-- 主页分类圆形按钮组件 -->
 <view class="submenuClassificationIndex">
   <view class="submenuClassOuterLayer" wx:for="{{contents}}" wx:key="item">
-    <view class="iconfont icon-{{icons[index]}} submenuClassIcon" style="background-color:{{backgroundColor[index]}}">
-    </view>
+    <image class="submenuClassIcon" src="{{icons[index]}}">
+    </image>
     <view class="submenuText">{{contents[index]}}</view>
   </view>
 </view>

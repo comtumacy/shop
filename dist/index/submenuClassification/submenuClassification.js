@@ -1,3 +1,5 @@
+let app = getApp()
+
 Component({
   externalClasses: ['sp-class'],
   created() {},
@@ -13,11 +15,7 @@ Component({
     },
     icons: {
       "type": ArrayBuffer,
-      "value": ["xiaohonghua", "xiaohonghua", "xiaohonghua", "xiaohonghua", "xiaohonghua"]
-    },
-    backgroundColor: {
-      "type": ArrayBuffer,
-      "value": ["rgb(255,158,154)", "rgb(120,239,233)", "rgb(255,232,0)", "rgb(254,168,93)", "rgb(127,205,255)"]
+      "value": [`${app.globalData.url}submenuClassification/1.png`, `${app.globalData.url}submenuClassification/2.png`, `${app.globalData.url}submenuClassification/3.png`, `${app.globalData.url}submenuClassification/4.png`, `${app.globalData.url}submenuClassification/5.png`]
     }
   },
   data: {},

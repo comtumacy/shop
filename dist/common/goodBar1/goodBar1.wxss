@@ -145,20 +145,26 @@
 }
 
 .goodsbarTitleFour {
-  height: 62rpx;
+  /* height: 67rpx;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 2; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150rpx;
   font-size: 24rpx;
   font-weight: 600;
   overflow: hidden;
 }
 
 .goodsbarTitleThree {
-  height: 74rpx;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  /* height: 74rpx; */
+  /* display: -webkit-box; */
+  /* -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; */
+  max-width: 210rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 26rpx;
   font-weight: 600;
   overflow: hidden;

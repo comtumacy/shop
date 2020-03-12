@@ -1,19 +1,21 @@
+let app = getApp()
+
 Component({
   externalClasses: ['sp-class'],
-  created() { },
-  attached(res) { },
-  ready() { },
-  moved() { },
-  detached() { },
-  error() { },
+  created() {},
+  attached(res) {},
+  ready() {},
+  moved() {},
+  detached() {},
+  error() {},
   properties: {
     imgUrl: {
       "type": String,
-      "value": "../../../image/activity/activity.jpg"
+      "value": `${app.globalData.url}activity/5.png`
     },
     height: {
       "type": String,
-      "value": "130"
+      "value": "170"
     },
     borderRadius: {
       "type": String,
@@ -23,11 +25,11 @@ Component({
   data: {},
 
   methods: {
-    click (res) {
+    click(res) {
       let imgUrl = this.data.imgUrl
-    this.triggerEvent('enterActivity', {
-      imgUrl
-    });
+      this.triggerEvent('enterActivity', {
+        imgUrl
+      });
     }
   }
 })

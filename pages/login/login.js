@@ -7,11 +7,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgBottomUrl: "../../image/login/login.jpg",
+    imgBottomUrl: `${app.globalData.url}login/login.jpg`,
     backImgHeight: null,
     iconImgSize: null,
     buttonWidth: null,
-    iconUrl: "../../image/icon/icon.jpg"
+    iconUrl: `${app.globalData.url}icon/icon.jpg`
   },
   // 获取用户信息
   bindGetUserInfo: function(res) {

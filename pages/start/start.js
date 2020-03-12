@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    imgUrl: '../../image/start/start.jpg',
+    imgUrl: `${app.globalData.url}start/start.jpg`,
     height: 0,
     time: 2000
   },

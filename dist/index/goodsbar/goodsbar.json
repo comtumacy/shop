@@ -1,6 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "van-count-down": "../../vant/count-down/index"
-  }
-}

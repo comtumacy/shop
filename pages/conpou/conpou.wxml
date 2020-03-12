@@ -1,6 +1,6 @@
 <!-- 优惠券页 -->
 <view class="conpou">
-  <van-tabs swipeable animated custom-class="customClass" nav-class="navClass" tab-class="tabClass" tab-active-class="tabActiveClass" color="#fff" sticky="true">
+  <van-tabs animated custom-class="customClass" nav-class="navClass" tab-class="tabClass" tab-active-class="tabActiveClass" color="#fff" sticky="true">
 
     <!-- 未使用 -->
     <van-tab class="conpouContent" title="未使用" style="height: {{height}}rpx">

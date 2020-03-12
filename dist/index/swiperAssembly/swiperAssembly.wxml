@@ -1,6 +1,6 @@
 <!-- 主页轮播图组件 -->
 <view class="swiperIndex">
-  <swiper autoplay="true" circular="true" autoplay="1000">
+  <swiper autoplay="true" circular="true" autoplay="1000" indicator-dots="true" >
     <swiper-item wx:for="{{images}}" wx:key="index">
       <image class="swiperImage" src="{{item}}" mode="scaleToFill" bindtap="changeItem" data-item="{{item}}" style="border-radius:{{swiperIndexBorderRadius}}rpx"></image>
     </swiper-item>

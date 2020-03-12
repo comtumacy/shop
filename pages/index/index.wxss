@@ -1,7 +1,11 @@
 /* pages/index.wxss */
 
 .index {
-  margin: 0 4%
+  margin: 0 4%;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
 }
 
 .blank {

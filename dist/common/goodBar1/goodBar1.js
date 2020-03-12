@@ -1,3 +1,5 @@
+let app = getApp()
+
 Component({
   externalClasses: ['sp-class'],
   created() {},
@@ -59,8 +61,8 @@ Component({
       "type": ArrayBuffer,
       "value": [
         {
-          "imgs": "../../../image/goodsbar/fruits/apple.jpg",
-          "discountImgs": "../../../image/goodsbar/discount/discount.jpg",
+          "imgs": `${app.globalData.url}goodsbar/fruits/apple.png`,
+          "discountImgs": `${app.globalData.url}goodsbar/discount/discount.jpg`,
           "discountText": "立省4元",
           "titleText": "烟台红富士苹果过长文字过长文字",
           "priceType": {
@@ -73,8 +75,8 @@ Component({
           "company": "/份"
         },
         {
-          "imgs": "../../../image/goodsbar/fruits/banana.jpg",
-          "discountImgs": "../../../image/goodsbar/discount/discount.jpg",
+          "imgs": `${app.globalData.url}goodsbar/fruits/banana.png`,
+          "discountImgs": `${app.globalData.url}goodsbar/discount/discount.jpg`,
           "discountText": "立省6元",
           "titleText": "都乐进口香蕉2kg装过长文字过长文字过长文字过长文字",
           "priceType": {
@@ -87,8 +89,8 @@ Component({
           "company": "/箱"
         },
         {
-          "imgs": "../../../image/goodsbar/fruits/cherry.jpg",
-          "discountImgs": "../../../image/goodsbar/discount/discount.jpg",
+          "imgs": `${app.globalData.url}goodsbar/fruits/cherry.png`,
+          "discountImgs": `${app.globalData.url}goodsbar/discount/discount.jpg`,
           "discountText": "立省14元",
           "titleText": "山东大樱桃智利车厘子过长文字过长文字过长文字过长文字",
           "priceType": {
@@ -101,8 +103,8 @@ Component({
           "company": "/盒"
         },
         {
-          "imgs": "../../../image/goodsbar/fruits/jujube.jpg",
-          "discountImgs": "../../../image/goodsbar/discount/discount.jpg",
+          "imgs": `${app.globalData.url}goodsbar/fruits/jujube.png`,
+          "discountImgs": `${app.globalData.url}goodsbar/discount/discount.jpg`,
           "discountText": "立省10元",
           "titleText": "福建牛奶青枣2kg一装过长文字过长文字过长文字过长文字",
           "priceType": {
@@ -120,8 +122,8 @@ Component({
       "type": ArrayBuffer,
       "value": [
         {
-          "imgs": "../../../image/goodsbar/fruits/apple.jpg",
-          "discountImgs": "../../../image/goodsbar/discount/discount.jpg",
+          "imgs": `${app.globalData.url}goodsbar/fruits/apple.png`,
+          "discountImgs": `${app.globalData.url}goodsbar/discount/discount.jpg`,
           "discountText": "立省4元",
           "titleText": "烟台红富士苹果过长文字过长文字",
           "priceType": {
@@ -134,8 +136,8 @@ Component({
           "company": "/份"
         },
         {
-          "imgs": "../../../image/goodsbar/fruits/banana.jpg",
-          "discountImgs": "../../../image/goodsbar/discount/discount.jpg",
+          "imgs": `${app.globalData.url}goodsbar/fruits/banana.png`,
+          "discountImgs": `${app.globalData.url}goodsbar/discount/discount.jpg`,
           "discountText": "立省6元",
           "titleText": "都乐进口香蕉2kg装过长文字过长文字过长文字过长文字",
           "priceType": {
@@ -148,8 +150,8 @@ Component({
           "company": "/箱"
         },
         {
-          "imgs": "../../../image/goodsbar/fruits/cherry.jpg",
-          "discountImgs": "../../../image/goodsbar/discount/discount.jpg",
+          "imgs": `${app.globalData.url}goodsbar/fruits/cherry.png`,
+          "discountImgs": `${app.globalData.url}goodsbar/discount/discount.jpg`,
           "discountText": "立省14元",
           "titleText": "山东大樱桃智利车厘子过长文字过长文字过长文字过长文字",
           "priceType": {
@@ -167,8 +169,8 @@ Component({
       "type": ArrayBuffer,
       "value": [
         {
-          "imgs": "../../../image/goodsbar/fruits/apple.jpg",
-          "discountImgs": "../../../image/goodsbar/discount/discount.jpg",
+          "imgs": `${app.globalData.url}goodsbar/fruits/apple.png`,
+          "discountImgs": `${app.globalData.url}goodsbar/discount/discount.jpg`,
           "discountText": "立省4元",
           "titleText": "烟台红富士苹果过长文字过长文字过长文字过长文字",
           "priceType": {
@@ -181,8 +183,8 @@ Component({
           "company": "/份"
         },
         {
-          "imgs": "../../../image/goodsbar/fruits/banana.jpg",
-          "discountImgs": "../../../image/goodsbar/discount/discount.jpg",
+          "imgs": `${app.globalData.url}goodsbar/fruits/banana.png`,
+          "discountImgs": `${app.globalData.url}goodsbar/discount/discount.jpg`,
           "discountText": "立省6元",
           "titleText": "都乐进口香蕉2kg装过长文字过长文字过长文字过长文字过长文字过长文字",
           "priceType": {
@@ -247,7 +249,7 @@ Component({
   data: {
     // 开启毫秒计算
     millisecond: true,
-    disCountImg: "../../../image/goodsbar/discount/discount.jpg"
+    disCountImg: `${app.globalData.url}goodsbar/discount/discount.jpg`
   },
 
   methods: {

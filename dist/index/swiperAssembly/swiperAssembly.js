@@ -1,3 +1,5 @@
+let app = getApp()
+
 Component({
   externalClasses: ['sp-class'],
   created() {},
@@ -9,7 +11,7 @@ Component({
   properties: {
     images: {
       "type": ArrayBuffer,
-      "value": ["../../../image/swiper/swiper.jpg", "../../../image/swiper/swiper2.jpg", "../../../image/swiper/swiper3.jpg", "../../../image/swiper/swiper1.jpg"]
+      "value": [`${app.globalData.url}swiper/1.png`, `${app.globalData.url}swiper/2.png`, `${app.globalData.url}swiper/3.png`, `${app.globalData.url}swiper/4.png`]
     },
     swiperIndexBorderRadius: {
       "type": String,

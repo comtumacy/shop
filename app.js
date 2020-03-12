@@ -8,6 +8,8 @@ App({
     // })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    // my页面头部子组件头像使用静态网络地址
+    url: 'https://yitongli.cn/shopImage/'
   }
 })

@@ -1,2 +1,4 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="userIndex">
+  <!-- 头组件 -->
+  <user-header></user-header>
+</view>

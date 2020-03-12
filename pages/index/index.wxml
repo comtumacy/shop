@@ -1,23 +1,23 @@
 <!-- 首页页面 -->
 <view class="index">
   <!-- 搜索组件 -->
-  <shop-search class="shop-search" bind:search="onSearch" bind:clickImg="clickImg"></shop-search>
+  <shop-search class="shop-search" bind:search="onSearch" bind:clickImg="clickImg" style="order: {{searchOrder}}"></shop-search>
   <!-- 分类组件 -->
-  <shop-classify class="shop-classify" bind:change="onChange" bind:click="clickClass"></shop-classify>
+  <shop-classify class="shop-classify" bind:change="onChange" bind:click="clickClass" style="order: {{classifyOrder}}"></shop-classify>
   <!-- 滚动组件 -->
-  <shop-swiper class="shop-swiper" bind:clickSwiper="swiperChange"></shop-swiper>
+  <shop-swiper class="shop-swiper" bind:clickSwiper="swiperChange" style="order: {{swiperOrder}}"></shop-swiper>
   <!-- 子菜单分类组件 -->
-  <shop-submenuClassification class="submenuClassification"></shop-submenuClassification>
+  <shop-submenuClassification class="submenuClassification" style="order: {{submenuClassificationOrder}}"></shop-submenuClassification>
   <!-- 活动图片组件 -->
-  <shop-activityLayer class="activityLayer" bind:enterActivity="enterActivity"></shop-activityLayer>
+  <shop-activityLayer class="activityLayer" bind:enterActivity="enterActivity" style="order: {{activityLayer}}"></shop-activityLayer>
   <!-- 商品栏目组件 -->
-  <shop-goodsBar class="goodsBar" goodsNumber="4"></shop-goodsBar>
+  <shop-goodsBar class="goodsBar" goodsNumber="4" style="order: {{goodsBar1Order}}"></shop-goodsBar>
   <!-- 商品栏目组件 -->
-  <shop-goodsBar class="goodsBar" goodsNumber="3"></shop-goodsBar>
+  <shop-goodsBar class="goodsBar" goodsNumber="3" style="order: {{goodsBar2Order}}"></shop-goodsBar>
   <!-- 特惠专区组件 -->
-  <shop-specialLayer class="specialLayer"></shop-specialLayer>
+  <shop-specialLayer class="specialLayer" style="order: {{specialLayerOrder}}"></shop-specialLayer>
   <!-- 分隔符 -->
-  <shop-dividerLayer dividerText="别拉啦，已经没有了，≥▽≤"></shop-dividerLayer>
+  <shop-dividerLayer dividerText="别拉啦，已经没有了，≥▽≤" style="order: {{dividerLayer}}"></shop-dividerLayer>
   <!-- 留空 -->
-  <view class="blank"></view>
+  <view class="blank" style="order: {{blankOrder}}"></view>
 </view>

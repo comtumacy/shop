@@ -3,7 +3,18 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {},
+  data: {
+    searchOrder: 1,
+    classifyOrder: 2,
+    swiperOrder: 3,
+    submenuClassificationOrder: 4,
+    activityLayer: 5,
+    goodsBar1Order: 6,
+    goodsBar2Order: 7,
+    specialLayerOrder: 8,
+    dividerLayer: 9,
+    blankOrder: 10
+  },
   // 点击图片事件
   clickImg: function(res) {
     wx.navigateTo({

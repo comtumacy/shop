@@ -1,5 +1,3 @@
-@import "./font.wxss";
-
 .submenuClassificationIndex {
   position: relative;
   margin-top: 20rpx;
@@ -28,5 +26,4 @@
   position: relative;
   margin-top: 4rpx;
   font-size: 28rpx;
-  color: #80848F
 }
