@@ -1,3 +1,4 @@
+@import "../../../font/searchAndLove.wxss";
 .searchIndex {
   margin: 20rpx 0;
   display: flex;
@@ -35,24 +36,35 @@
   align-self: flex-start
 }
 
-.searchIndex van-search .search {
-  margin: 0 16rpx;
-  padding: 0
+.search1Left {
+  margin-left: 40rpx;
+  margin-right: 12rpx;
+  display: flex;
+  padding: 10rpx 0;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #f8f8f9;
+  border-radius: 80rpx;
 }
 
-.searchIndex van-search .search .search2 {
-  height: 60rpx;
-  padding-left: 30rpx;
-  border: 1rpx solid #bbbec4;
-  border-radius: 40rpx;
+.search1icon {
+  position: relative;
+  right: 10rpx;
+  font-size: 24rpx;
+  color: #bbbec4;
+  line-height: 36rpx
 }
 
-.searchIndex van-search .search .search3 {
-  bottom: 6rpx;
-  font-size: 30rpx;
-  font-family: PingFangNew;
+.search1LeftText {
+  font-size: 28rpx;
+  color: #bbbec4;
 }
 
 .searchIndex .third i-badge .i-badgeLog {
   margin-bottom: 20rpx
+}
+
+.third {
+  align-self: center;
 }

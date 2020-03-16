@@ -9,7 +9,8 @@
     "pages/conpou/conpou",
     "pages/selectGroup/selectGroup",
     "pages/collection/collection",
-    "pages/eatWhat/eatWhat"
+    "pages/eatWhat/eatWhat",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",

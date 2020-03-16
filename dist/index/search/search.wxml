@@ -8,11 +8,14 @@
     </view>
     <text class="addressLess">{{addressLess}}</text>
   </view>
-  <van-search class="second" value="{{ value }}" placeholder="{{placeholder}}" background="#ffffff" shape="round" custom-class="search" field-class="search2" input-class="search3" />
-  <view class="third">
-    <i-icon class="i-iconClass" type="remind_fill" i-class="i-iconLog2" size="24" />
-    <i-badge dot i-class="i-badgeLog">
-      <view class="demo-badge"></view>
-    </i-badge>
+  <view class="search1Left" bindtap="enterSearchPage">
+    <view class="search1icon iconfont icon-sousuo"></view>
+    <view class="search1LeftText">{{text}}</view>
   </view>
+<view class="third">
+  <i-icon class="i-iconClass" type="remind_fill" i-class="i-iconLog2" size="24" />
+  <i-badge dot i-class="i-badgeLog">
+    <view class="demo-badge"></view>
+  </i-badge>
+</view>
 </view>

@@ -1,0 +1,50 @@
+<view class="functionIconIndex">
+  <!-- 首行固定 -->
+  <view class="functionFirstIndex">
+    <view class="functionFirst1 functionFirst">
+      <image src="{{iconFirst[0].img}}"></image>
+      <view>{{iconFirst[0].text}}</view>
+    </view>
+    <view class="functionFirst2 functionFirst">
+      <image src="{{iconFirst[1].img}}"></image>
+      <view>{{iconFirst[1].text}}</view>
+    </view>
+    <view class="functionFirst3 functionFirst">
+      <image src="{{iconFirst[2].img}}"></image>
+      <view>{{iconFirst[2].text}}</view>
+    </view>
+    <view class="functionFirst4 functionFirst">
+      <image src="{{iconFirst[3].img}}"></image>
+      <view>{{iconFirst[3].text}}</view>
+    </view>
+    <view class="functionFirst5 functionFirst">
+      <image src="{{iconFirst[4].img}}"></image>
+      <view>{{iconFirst[4].text}}</view>
+    </view>
+  </view>
+  <!-- 循环 -->
+  <view class="functionIconContent">
+    <view class="functionIconContentRow" wx:for="{{firstSign.length / 5}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+      <view class="functionIconContentRowChild">
+        <image src="{{firstContent[firstSign[index * 5]].img}}"></image>
+        <view>{{firstContent[firstSign[index * 5]].text}}</view>
+      </view>
+      <view class="functionIconContentRowChild">
+        <image src="{{firstContent[firstSign[index * 5 + 1]].img}}"></image>
+        <view>{{firstContent[firstSign[index * 5 + 1]].text}}</view>
+      </view>
+      <view class="functionIconContentRowChild">
+        <image src="{{firstContent[firstSign[index * 5 + 2]].img}}"></image>
+        <view>{{firstContent[firstSign[index * 5 + 2]].text}}</view>
+      </view>
+      <view class="functionIconContentRowChild">
+        <image src="{{firstContent[firstSign[index * 5 + 3]].img}}"></image>
+        <view>{{firstContent[firstSign[index * 5 + 3]].text}}</view>
+      </view>
+      <view class="functionIconContentRowChild">
+        <image src="{{firstContent[firstSign[index * 5 + 4]].img}}"></image>
+        <view>{{firstContent[firstSign[index * 5 + 4]].text}}</view>
+      </view>
+    </view>
+  </view>
+</view>

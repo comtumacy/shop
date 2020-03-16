@@ -1,4 +1,6 @@
 <view class="userIndex">
   <!-- 头组件 -->
   <user-header></user-header>
+  <!-- 按钮图标组件 -->
+  <user-functionIcon></user-functionIcon>
 </view>

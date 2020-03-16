@@ -1,0 +1,12 @@
+<!-- 搜索页 -->
+<view class="searchPageIndex">
+  <van-search placeholder="请输入搜索关键词" value="{{ value }}" background="#fff" show-action="true" custom-class="customClass" field-class="ieldClass" input-class="inputClass" cancel-class="cancelClass" focus="true" bind:search="search"/>
+  <view class="guess">
+    <view class="guessTitle">猜你想找</view>
+    <view class="guessContent">
+      <view wx:for="{{guessContent}}" wx:key="index" catch:tap="enterGuess" data-enterGuessChild="{{guessContent[index]}}">
+        {{guessContent[index]}}
+      </view>
+    </view>
+  </view>
+</view>

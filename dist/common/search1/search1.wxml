@@ -1,8 +1,9 @@
 <!-- 只读搜索组件1， 带右边按钮 -->
 <view class="search1Index">
-  <view class="search1Left">
+  <view class="search1Left" bindtap="enterSearchPage">
     <view class="search1icon iconfont icon-sousuo"></view>
     <view class="search1LeftText">{{text}}</view>
   </view>
-  <view class="search1Right iconfont icon-shoucang"></view>
+  <view class="search1Right iconfont icon-shoucang" wx:if="{{sign === '1'}}"></view>
+  <view class="textButton" wx:if="{{sign === '2'}}">取消</view>
 </view>

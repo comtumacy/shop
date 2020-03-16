@@ -1,0 +1,39 @@
+.guess {
+  margin: 0 4%;
+}
+
+.guessTitle {
+  margin: 30rpx 0;
+  font-size: 28rpx;
+  color: #c3c3c3;
+}
+
+.guessContent {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.guessContent view {
+  padding: 18rpx;
+  margin: 0 20rpx 20rpx 0;
+  background-color: #f4f4f4;
+  border-radius: 10rpx;
+  font-size: 24rpx;
+}
+
+.customClass {
+  padding: 20rpx !important;
+}
+
+.ieldClass {
+  margin-right: 20rpx;
+  background-color: #F4F4F4;
+  border-radius: 40rpx;
+}
+
+.field-index--van-field {
+  padding: 10rpx 20rpx 10rpx 20rpx !important
+}

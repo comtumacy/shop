@@ -1,0 +1,38 @@
+.functionIconIndex {
+  margin: 0 4%
+}  
+
+.functionFirstIndex, .functionIconContentRow {
+  margin-top: 50rpx;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center
+}
+
+.functionFirst, .functionIconContentRowChild {
+  position: relative;
+  display: flex;
+  flex: 1 0;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center
+}
+
+.functionFirst image, .functionIconContentRowChild image {
+  width: 50rpx;
+  height: 50rpx
+}
+
+.functionFirst view, .functionIconContentRowChild view {
+  margin-top: 10rpx;
+  font-size: 22rpx;
+  transform: scaleY(1.05)
+}
+
+.functionFirst5 {
+  border-left: solid 2px #EBECF0;
+}
+
+

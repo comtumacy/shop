@@ -4,7 +4,15 @@
   position: relative;
   width: 100%;
   height: 480rpx;
-  background: url("https://yitongli.cn/shopImage/my/my.jpg");
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480rpx;
+  z-index: -2
 }
 
 .headerIconIndex {

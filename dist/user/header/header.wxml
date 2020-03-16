@@ -22,9 +22,10 @@
       <view class="headerStateMiddleTop">{{integral}}</view>
       <view class="headerStateMiddleBottom">积分</view>
     </view>
-    <view class="headerStateRight">
+    <view class="headerStateRight" bindtap="enterPage">
       <view class="headerStateMiddleTop">{{coupon}}</view>
       <view class="headerStateMiddleBottom">优惠券</view>
     </view>
   </view>
+  <image class="bgImage" src="{{img}}"></image>
 </view>

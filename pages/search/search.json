@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "van-search": "../../dist/vant/search/index"
+  }
+}

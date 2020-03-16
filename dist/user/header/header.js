@@ -2,18 +2,17 @@ let app = getApp()
 
 Component({
   externalClasses: ['sp-class'],
-  created() { },
+  created() {},
   attached() {
-    console.log(app.globalData.userInfo)
     this.setData({
       url: app.globalData.userInfo.avatarUrl,
       nickName: app.globalData.userInfo.nickName
     })
   },
-  ready() { },
-  moved() { },
-  detached() { },
-  error() { },
+  ready() {},
+  moved() {},
+  detached() {},
+  error() {},
   properties: {
     url: {
       "type": String,
@@ -39,10 +38,18 @@ Component({
       "type": String,
       "value": "3"
     },
+    img: {
+      "type": String,
+      "value": `${app.globalData.url}my/my.jpg`
+    }
   },
-  data: {
-  },
+  data: {},
 
   methods: {
+    enterPage: function() {
+      wx.navigateTo({
+        url: '/pages/conpou/conpou'
+      })
+    }
   }
 })

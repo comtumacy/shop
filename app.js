@@ -9,7 +9,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    // my页面头部子组件头像使用静态网络地址
+    // 使用静态网络地址
     url: 'https://yitongli.cn/shopImage/'
   }
 })

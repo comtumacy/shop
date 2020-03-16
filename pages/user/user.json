@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "user-header": "../../../dist/user/header/header"
+    "user-header": "../../../dist/user/header/header",
+    "user-functionIcon": "../../../dist/user/functionIcon/functionIcon"
   }
 }

@@ -26,9 +26,9 @@ Component({
       "value": "国际软件园"
     },
     // 搜索框文字
-    placeholder: {
+    text: {
       "type": String,
-      "value": "请输入关键字搜索"
+      "value": "搜索菜谱、食材"
     },
     url: {
       "type": String,
@@ -42,6 +42,12 @@ Component({
   methods: {
     clickImg: function() {
       this.triggerEvent('clickImg', {})
+    },
+    
+    enterSearchPage: function () {
+      wx.navigateTo({
+        url: '/pages/search/search'
+      })
     }
   }
 })

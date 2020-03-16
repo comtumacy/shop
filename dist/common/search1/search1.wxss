@@ -39,3 +39,10 @@
   font-size: 28rpx;
   color: #bbbec4;
 }
+
+.textButton {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  transform: scaleY(1.05);
+  align-self: center
+}
