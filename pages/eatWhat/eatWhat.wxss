@@ -1,4 +1,13 @@
 .eatWhatIndex {
   position: relative;
-  background-color: #f8f8f9
 }
+
+.eatWhatIndexCart4 {
+  margin: 20rpx 0;
+}
+
+/* .eatWhatSearchFixed {
+  position: fixed;
+  width: 96%;
+  z-index: 40
+} */

@@ -1,3 +1,8 @@
 <view class="eatWhatIndex">
-  <search></search>
+  <!-- 公共搜索组件 -->
+  <search class="eatWhatSearchFixed"></search>
+  <!-- 公共分类组件 -->
+  <classify></classify>
+  <!-- 公共组件卡片商品栏4 -->
+  <cart4 class="eatWhatIndexCart4"></cart4>
 </view>

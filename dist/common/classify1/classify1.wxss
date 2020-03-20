@@ -1,0 +1,46 @@
+@import "../../../font/allow.wxss";
+
+.commonclassifyIndex {
+  margin: 24rpx 4% 0 4%;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commonclassifyChildFirst, .commonclassifyChildMore {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.commonclassifyFirstTitleLeft {
+  margin-right: 12rpx;
+  width: 12rpx;
+  background-image: linear-gradient(to bottom, #48d661 , #3cba63);
+}
+
+.commonclassifyFirstTitle {
+  font-size: 36rpx;
+  font-weight: 600;
+  transform: scaleY(1.05)
+}
+
+.commonclassifyChild {
+  font-size: 28rpx;
+  transform: scaleY(1.05);
+  color: #bbbec4;
+}
+
+.commonclassifyMoreText {
+  font-size: 30rpx;
+  transform: scaleY(1.05);
+  color: #bbbec4;
+}
+
+.commonclassifyIcon {
+  line-height: 40rpx;
+  color: #bbbec4;
+}

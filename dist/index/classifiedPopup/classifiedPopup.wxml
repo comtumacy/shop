@@ -1,0 +1,15 @@
+<!-- 主页分类顶部弹出层内容 -->
+<view class="classifiedPopupIndex">
+  <view class="classifiedPopupTitle">
+    <view class="classifiedPopupTitle1">分类：</view>
+    <view class="classifiedPopupTitle2">
+      <view class="classifiedText">查看详细分类</view>
+      <view class="classifiedIcon iconfont icon-youjiantou2"></view>
+    </view>
+  </view>
+  <view class="contentFlex">
+    <view class="content" wx:for="{{content}}" wx:key="index" catch:tap="enterClassified" data-classified="{{content[index]}}">
+      {{content[index]}}
+    </view>
+  </view>
+</view>

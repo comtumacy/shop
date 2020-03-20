@@ -1,7 +1,7 @@
 /* pages/index.wxss */
 
 .index {
-  margin: 0 4%;
+  padding: 0 4%;
   position: relative;
   display: flex;
   flex-flow: column nowrap;
@@ -11,4 +11,10 @@
 .blank {
   position: relative;
   height: 160rpx
+}
+
+.LockScroll {
+  position: fixed;
+  width: 92%;
+  overflow: hidden
 }

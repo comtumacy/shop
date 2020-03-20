@@ -33,5 +33,11 @@ Component({
   },
   data: {},
 
-  methods: {}
+  methods: {
+    enterSearchPage: function () {
+      wx.navigateTo({
+        url: '/pages/search/search'
+      })
+    }
+  }
 })

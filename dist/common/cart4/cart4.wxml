@@ -1,0 +1,28 @@
+<wxs src="./cart4.wxs" module="cart4Wxs" />
+<!-- 卡片4组件 -->
+<!-- 图片，标题，评分，人数为一商品，每行2商品，弹性布局row，换行 -->
+<!-- 吃什么首页 -->
+<view class="cart4Index">
+  <view class="cart4Flex cart4Left">
+    <!-- 左列 -->
+    <view class="cart4Content" wx:for="{{content.length / 2}}" wx:key="index">
+      <image class="cart4Image" src="{{content[index * 2].img}}" mode="widthFix"></image>
+      <view class="{{content[index * 2].price === '0' && content[index * 2].peopleNumber === '0' ? 'addMarginBottom' : ''}} cart4Title">{{content[index * 2].title}}</view>
+      <view class="cart4Bottom">
+        <view class="cart4Price" wx:if="{{content[index * 2].price !== '0'}}">{{content[index * 2].price}}人做过</view>
+        <view class="cart4PeopleNumber" wx:if="{{content[index * 2].peopleNumber !== '0'}}">{{content[index * 2].peopleNumber}}分</view>
+      </view>
+    </view>
+  </view>
+  <view class="cart4Flex cart4Right">
+    <!-- 右列 -->
+    <view class="cart4Content" wx:for="{{content.length / 2}}" wx:key="index" wx:if="{{cart4Wxs.judgementExists(content[index * 2 + 1].img) === '1'}}">
+      <image class="cart4Image" src="{{content[index * 2 + 1].img}}" mode="widthFix"></image>
+      <view class="{{content[index * 2 + 1].price === '0' && content[index * 2 + 1].peopleNumber === '0' ? 'addMarginBottom' : ''}} cart4Title">{{content[index * 2 + 1].title}}</view>
+      <view class="cart4Bottom">
+        <view class="cart4Price" wx:if="{{content[index * 2 + 1].price !== '0'}}">{{content[index * 2 + 1].price}}人做过</view>
+        <view class="cart4PeopleNumber" wx:if="{{content[index * 2 + 1].peopleNumber !== '0'}}">{{content[index * 2 + 1].peopleNumber}}分</view>
+      </view>
+    </view>
+  </view>
+</view>

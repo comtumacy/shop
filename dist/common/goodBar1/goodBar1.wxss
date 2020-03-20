@@ -336,6 +336,8 @@
   position: relative;
   left: 10rpx;
   top: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
   padding: 12rpx;
   font-size: 26rpx;
   background-color: #1FDDAF;

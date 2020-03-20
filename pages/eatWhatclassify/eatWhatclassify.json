@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "eatWhatClassifyGood": "../../dist/common/eatWhatClassify/eatWhatClassify"
+  }
+}

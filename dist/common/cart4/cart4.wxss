@@ -1,0 +1,57 @@
+.cart4Index {
+  margin: 0 4% 20rpx 4%;
+}
+
+.cart4Flex {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 200rpx;
+}
+
+.cart4Left {
+  float: left
+}
+
+.cart4Right {
+  float: right
+}
+
+.cart4Content {
+  position: relative;
+  display: flex;
+  width: 330rpx;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.addMarginBottom {
+  margin-bottom: 20rpx
+}
+
+.cart4Image {
+  width: 330rpx;
+  border-radius: 10rpx;
+}
+
+.cart4Bottom {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.cart4Title {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  transform: scaleY(1.05);
+}
+
+.cart4Price, .cart4PeopleNumber {
+  margin: 10rpx 0;
+  font-size: 20rpx;
+  color: #c0c0c0;
+}
+
+.cart4Price {
+  margin-right: 20rpx;
+}

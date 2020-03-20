@@ -1,0 +1,16 @@
+<!-- 分类组件1 -->
+<!-- 标题，三标签，全部分类按钮 -->
+<!-- 吃什么页面 分类标签-->
+<view class="commonclassifyIndex">
+  <view class="commonclassifyChildFirst">
+    <view class="commonclassifyFirstTitleLeft"></view>
+    <view class="commonclassifyFirstTitle">{{firstTitle}}</view>
+  </view>
+  <view class="commonclassifyChild">{{title2}}</view>
+  <view class="commonclassifyChild">{{title3}}</view>
+  <view class="commonclassifyChild">{{title4}}</view>
+  <view class="commonclassifyChildMore" bindtap="enterPage">
+    <view class="commonclassifyMoreText">{{moreText}}</view>
+    <view class="commonclassifyIcon iconfont icon-youjiantou2"></view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!-- 今日吃什么分类页 -->
+<view class="eatWhatClassifyIndex">
+  <!-- 热门分类 -->
+  <eatWhatClassifyGood title="{{content1Title}}" content="{{content1}}"></eatWhatClassifyGood>
+  <!-- 菜式 -->
+  <eatWhatClassifyGood title="{{content2Title}}" content="{{content2}}"></eatWhatClassifyGood>
+  <!-- 场景 -->
+  <eatWhatClassifyGood title="{{content3Title}}" content="{{content3}}"></eatWhatClassifyGood>
+  <view style="height: 50rpx"></view>
+</view>

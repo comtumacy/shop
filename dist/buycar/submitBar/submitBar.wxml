@@ -1,4 +1,4 @@
-<!-- 提交组件 -->
+<!-- 购物车提交结算组件 -->
 <view class="submitBarIndex" style="border-radius: {{submitBarIndexBorderRadius}}rpx; bottom:{{submitIndexBottom}}rpx">
   <view class="left">
     <view class="allow" bind:tap="selectGood">

@@ -1,0 +1,46 @@
+.eatWhatClassifyContentTitle {
+  margin-top: 20rpx;
+  font-weight: 600;
+  font-size: 36rpx;
+}
+
+.eatWhatClassifyFlex {
+  margin-top: 30rpx;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.eatWhatClassifyChild {
+  width: 150rpx;
+  height: 150rpx
+}
+
+.eatWhatClassifyChild image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 20rpx;
+}
+
+.eatWhatClassifyChildText {
+  position: absolute;
+  bottom: 20rpx;
+  width: 150rpx;
+  color: #fff;
+  font-weight: 600;
+  z-index: 30
+}
+
+.eatWhatClassifyChildText view {
+  text-align: center;
+}
+
+.eatWhatClassifyChildBG {
+  position: absolute;
+  width: 150rpx;
+  height: 150rpx;
+  bottom: 0;
+  z-index: 20;
+  border-radius: 0 0 20rpx 20rpx
+}

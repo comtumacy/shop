@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "search": "../../dist/common/search1/search1"
+    "search": "../../dist/common/search1/search1",
+    "classify": "../../dist/common/classify1/classify1",
+    "cart4": "../../dist/common/cart4/cart4"
   }
 }

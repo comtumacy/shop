@@ -1,4 +1,4 @@
-<!-- 收货组件 -->
+<!-- 选择团长当前团长组件 -->
 <view class="selectedIndex">
   <view class="header">
     <view class="headerLeft">
@@ -7,7 +7,7 @@
       <view class="headerIcon2 iconfont icon-jiantou9"></view>
     </view>
     <view class="headerRight">
-      <input class="search" placeholder="{{placeholder}}" placeholder-class="searchItem"></input>
+      <input class="search" placeholder="{{placeholder}}" placeholder-class="searchItem" disabled="false" bindtap="enterSearchPage"></input>
     </view>
   </view>
   <view class="selected">

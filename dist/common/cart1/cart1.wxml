@@ -1,5 +1,6 @@
 <!-- 卡片组件1 -->
 <!-- 横向滚动，图片+文字2栏垂直分布 -->
+<!-- 选择团长曾用社区 -->
 <view class="cartIndex">
   <view class="header">
    <view class="title">{{title}}</view>

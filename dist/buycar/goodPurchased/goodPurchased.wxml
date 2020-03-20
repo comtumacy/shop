@@ -1,3 +1,4 @@
+<!-- 购物车换购商品底部弹出栏内部商品内容 -->
 <view class="goodPurchasedIndex">
   <!-- catchtouchmove="catchtouchmove" -->
   <view class="title">换购商品</view>

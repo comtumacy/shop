@@ -1,0 +1,6 @@
+<!-- 分割线组件 -->
+<!-- 主页底部 -->
+<!-- 购物车 -->
+<view class="dividerIndex">
+  <van-divider contentPosition="{{contentPosition}}" customStyle="color: {{dividerColor}}; border-color: {{dividerBorderColor}}; font-size: {{dividerFontSize}}rpx;" hairline="{{dividerHairLine}}">{{dividerText}}</van-divider>
+</view>

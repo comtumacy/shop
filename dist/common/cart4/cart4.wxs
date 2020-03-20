@@ -1,0 +1,12 @@
+// 判断是否为未定义空值
+var judgementExists = function (res) {
+  if (typeof res !== 'string' ) {
+    return '0'
+  } else {
+    return '1'
+  }
+}
+
+module.exports = {
+  judgementExists: judgementExists
+}

@@ -1,0 +1,35 @@
+<!-- 想吃什么分类组件 -->
+<wxs src="./eatWhatClassify.wxs" module="eatWhatClassifyWxs" />
+<view class="eatWhatClassifyContent">
+  <view class="eatWhatClassifyContentTitle">{{title}}</view>
+  <view class="eatWhatClassifyFlex" wx:for="{{content.length / 4}}" wx:key="index">
+    <view class="eatWhatClassifyChild">
+      <image src="{{content[index * 4].img}}"></image>
+      <view class="eatWhatClassifyChildBG" style="background-image: linear-gradient(to top, {{content[index * 4].bgColor}}, transparent"></view>
+      <view class="eatWhatClassifyChildText">
+        <view>{{content[index * 4].title}}</view>
+      </view>
+    </view>
+    <view class="eatWhatClassifyChild">
+      <image src="{{content[index * 4 + 1].img}}"></image>
+      <view class="eatWhatClassifyChildBG" style="background-image: linear-gradient(to top, {{content[index * 4 + 1].bgColor}}, transparent"></view>
+      <view class="eatWhatClassifyChildText">
+        <view>{{content[index * 4 + 1].title}}</view>
+      </view>
+    </view>
+    <view class="eatWhatClassifyChild">
+      <image src="{{content[index * 4 + 2].img}}"></image>
+      <view class="eatWhatClassifyChildBG" style="background-image: linear-gradient(to top, {{content[index * 4 + 2].bgColor}}, transparent"></view>
+      <view class="eatWhatClassifyChildText">
+        <view>{{content[index * 4 + 2].title}}</view>
+      </view>
+    </view>
+    <view class="eatWhatClassifyChild">
+      <image src="{{content[index * 4 + 3].img}}"></image>
+      <view class="eatWhatClassifyChildBG" style="background-image: linear-gradient(to top, {{content[index * 4 + 3].bgColor}}, transparent"></view>
+      <view class="eatWhatClassifyChildText">
+        <view>{{content[index * 4 + 3].title}}</view>
+      </view>
+    </view>
+  </view>
+</view>

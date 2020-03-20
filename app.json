@@ -1,16 +1,17 @@
 {
   "pages": [
+    "pages/eatWhat/eatWhat",
     "pages/start/start",
+    "pages/index/index",
     "pages/user/user",
     "pages/buyCar/buyCar",
     "pages/login/login",
-    "pages/index/index",
     "pages/getuser/getuser",
     "pages/conpou/conpou",
     "pages/selectGroup/selectGroup",
     "pages/collection/collection",
-    "pages/eatWhat/eatWhat",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/eatWhatclassify/eatWhatclassify"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,12 +33,12 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/buyCar/buyCar",
-        "text": "购物车"
-      },
-      {
         "pagePath": "pages/eatWhat/eatWhat",
         "text": "吃什么"
+      },
+      {
+        "pagePath": "pages/buyCar/buyCar",
+        "text": "购物车"
       },
       {
         "pagePath": "pages/user/user",

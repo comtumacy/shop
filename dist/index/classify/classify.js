@@ -25,5 +25,8 @@ Component({
   },
 
   methods: {
+    openpopup: function () {
+      this.triggerEvent('popupOpen', {})
+    }
   }
 })

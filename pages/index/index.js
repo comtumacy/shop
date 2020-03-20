@@ -13,7 +13,10 @@ Page({
     goodsBar2Order: 7,
     specialLayerOrder: 8,
     dividerLayer: 9,
-    blankOrder: 10
+    blankOrder: 10,
+    // 弹出层显示控制信号
+    popupShow: false,
+    isLockScroll: false
   },
   // 点击图片事件
   clickImg: function(res) {
@@ -44,6 +47,20 @@ Page({
   // 返回时间控制事件
   onChangeTime: function(res) {
     console.log(res)
+  },
+  // 打开内容弹出层
+  showPopup() {
+    this.setData({
+      popupShow: true,
+      isLockScroll: true
+    });
+  },
+  // 关闭内容弹出层
+  onClose() {
+    this.setData({
+      popupShow: false,
+      isLockScroll: false
+    });
   },
   /**
    * 生命周期函数--监听页面加载

@@ -7,7 +7,9 @@
     "shop-activityLayer": "../../../dist/index/activityLayer/activityLayer",
     "shop-goodsBar": "../../../dist/common/goodBar1/goodBar1",
     "shop-specialLayer": "../../../dist/index/specialLayer/specialLayer",
-    "shop-dividerLayer": "../../../dist/index/dividerLayer/dividerLayer"
+    "shop-dividerLayer": "../../../dist/common/dividerLayer/dividerLayer",
+    "van-popup": "../../dist/vant/popup/index",
+    "shop-classifiedPopup": "../../dist/index/classifiedPopup/classifiedPopup"
   },
   "navigationBarTitleText": "趣便购买"
 }

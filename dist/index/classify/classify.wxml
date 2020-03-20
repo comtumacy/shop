@@ -5,5 +5,5 @@
   <i-tabs class="i-tabs" i-class="i-tabsLog" current="{{current}}" scroll color="rgb(128,132,143)">
     <i-tab wx:for="{{contentClassify}}" wx:key="item" key="{{item}}" title="{{item}}"></i-tab>
   </i-tabs>
-  <text class="iconfont icon-wuxupailie classifyIcon"></text>
+  <text class="iconfont icon-wuxupailie classifyIcon" bindtap="openpopup"></text>
 </view>

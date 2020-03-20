@@ -1,9 +1,9 @@
 <!-- 首页页面 -->
-<view class="index">
+<view class="index {{isLockScroll ? 'LockScroll' : ''}}">
   <!-- 搜索组件 -->
   <shop-search class="shop-search" bind:search="onSearch" bind:clickImg="clickImg" style="order: {{searchOrder}}"></shop-search>
   <!-- 分类组件 -->
-  <shop-classify class="shop-classify" bind:change="onChange" bind:click="clickClass" style="order: {{classifyOrder}}"></shop-classify>
+  <shop-classify class="shop-classify" bind:change="onChange" bind:click="clickClass" style="order: {{classifyOrder}}" bind:popupOpen="showPopup"></shop-classify>
   <!-- 滚动组件 -->
   <shop-swiper class="shop-swiper" bind:clickSwiper="swiperChange" style="order: {{swiperOrder}}"></shop-swiper>
   <!-- 子菜单分类组件 -->
@@ -18,6 +18,10 @@
   <shop-specialLayer class="specialLayer" style="order: {{specialLayerOrder}}"></shop-specialLayer>
   <!-- 分隔符 -->
   <shop-dividerLayer dividerText="别拉啦，已经没有了，≥▽≤" style="order: {{dividerLayer}}"></shop-dividerLayer>
+  <!-- 内容弹出层在最外层 -->
+  <van-popup show="{{popupShow}}" bind:close="onClose" position="top" round="true" custom-style="height: 364rpx" bind:enterPurchased="enterPurchased" lock-scroll="true" safe-area-inset-bottom="true" safe-area-inset-top="true">
+    <shop-classifiedPopup></shop-classifiedPopup>
+  </van-popup>
   <!-- 留空 -->
   <view class="blank" style="order: {{blankOrder}}"></view>
 </view>

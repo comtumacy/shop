@@ -42,11 +42,11 @@ Component({
     },
     text2: {
       "type": String,
-      "value": "购物车"
+      "value": "吃什么"
     },
     text3: {
       "type": String,
-      "value": "吃什么"
+      "value": "购物车"
     },
     text4: {
       "type": String,
@@ -61,8 +61,8 @@ Component({
       "type": ArrayBuffer,
       "value": [
         "/pages/index/index",
-        "/pages/buyCar/buyCar",
         "/pages/eatWhat/eatWhat",
+        "/pages/buyCar/buyCar",
         "/pages/user/user",
         "/pages/getuser/getuser"
       ]
@@ -95,11 +95,11 @@ Component({
     },
     icon2: {
       "type": String,
-      "value": "shopping-cart-o"
+      "value": "good-job-o"
     },
     icon3: {
       "type": String,
-      "value": "good-job-o"
+      "value": "shopping-cart - o"
     },
     icon4: {
       "type": String,

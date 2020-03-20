@@ -1,0 +1,4 @@
+.dividerIndex {
+  position: relative;
+  margin: 0 4%;
+}
