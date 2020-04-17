@@ -7,10 +7,6 @@
   height: 280rpx
 }
 
-.swiperIndex swiper {
-  height: 280rpx
-}
-
 .swiperIndex .swiperImage {
   width: 100%;
   height: 280rpx
